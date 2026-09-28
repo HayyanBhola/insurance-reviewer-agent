@@ -88,3 +88,38 @@ class IntakeResult(BaseModel):
     issues: list[ValidationIssue]
     missing_fields: list[str]
     ready_for_review: bool  # False if there are errors or missing required fields
+
+
+# ---------------------------------------------------------------------------
+# Photo assessment v2 (experiment): every damage must be backed by what is SEEN
+# ---------------------------------------------------------------------------
+class GroundedDamageItem(BaseModel):
+    """One damage, with the visible evidence for it."""
+    part: str = Field(description="Car part, e.g. 'rear bumper', 'front left door', 'headlight'")
+    damage_type: DamageType = Field(description="Type of this damage")
+    severity: Severity = Field(description="Severity of THIS item alone, using the severity scale")
+    evidence: str = Field(description="What you actually see on this part, in a few words")
+    confidence: Literal["high", "medium", "low"] = Field(
+        description="high = clearly visible; medium = probably damage; low = unsure")
+
+
+class GroundedPhotoAssessment(BaseModel):
+    """Photo assessment where each listed damage carries its evidence and confidence."""
+    is_vehicle_photo: bool = Field(description="True if the photo shows a car or part of a car")
+    all_damages: list[GroundedDamageItem] = Field(
+        description="Every separate damage you can clearly see, one item each. Empty if no damage.")
+    damaged_part: Optional[str] = Field(description="Part with the main damage (chosen by the priority rules)")
+    damage_type: DamageType = Field(description="Main damage type, chosen by the priority rules")
+    severity: Severity = Field(description="Severity of the main damage item")
+    description: str = Field(description="One or two sentences describing only what is visible")
+    image_quality_ok: bool = Field(description="False if the photo is too blurry, dark or cropped to judge")
+
+    def to_assessment(self) -> "PhotoAssessment":
+        """Convert to the normal shape. Low-confidence items are dropped, so a damage the
+        model is unsure about can never raise the price ceiling in the cost check."""
+        kept = [DamageItem(part=d.part, damage_type=d.damage_type, severity=d.severity)
+                for d in self.all_damages if d.confidence != "low"]
+        return PhotoAssessment(is_vehicle_photo=self.is_vehicle_photo, all_damages=kept,
+                               damaged_part=self.damaged_part, damage_type=self.damage_type,
+                               severity=self.severity, description=self.description,
+                               image_quality_ok=self.image_quality_ok)

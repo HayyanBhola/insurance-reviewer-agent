@@ -30,7 +30,7 @@ class CountingLLM:
 def _fake_llm(monkeypatch, tmp_path):
     CountingLLM.calls = 0
     monkeypatch.setattr(llm, "CACHE_FILE", tmp_path / "cache.sqlite")
-    monkeypatch.setattr(llm, "get_structured_llm", lambda schema, **kw: CountingLLM())
+    monkeypatch.setattr(llm, "_candidates", lambda schema, openai_model=None: [CountingLLM()])
 
 
 # ---------------------------------------------------------------------------
@@ -177,3 +177,34 @@ def test_mentions_of_addons_in_core_text_are_not_addons():
     assert not policy_index.is_addon({"section": "Section A", "text": "loss of value (see Endorsement 89)."})
     assert not policy_index._is_heading("Endorsement89.")
     assert not policy_index._is_heading("IMT 7.")
+
+
+def test_backup_model_answers_are_not_cached_as_the_main_model(monkeypatch, tmp_path):
+    """If the main model fails and the backup answers, that answer must NOT be saved under
+    the main model's name (otherwise a benchmark could silently mix two models)."""
+    import llm
+    from langchain_core.messages import HumanMessage
+    from pydantic import BaseModel
+
+    class S(BaseModel):
+        a: int
+
+    class Failing:
+        def invoke(self, messages):
+            raise RuntimeError("429 RESOURCE_EXHAUSTED")
+
+    class Working:
+        calls = 0
+
+        def invoke(self, messages):
+            Working.calls += 1
+            return S(a=1)
+
+    monkeypatch.setattr(llm, "CACHE_FILE", tmp_path / "cache.sqlite")
+    monkeypatch.setenv("LLM_CACHE", "1")
+    monkeypatch.setattr(llm, "_candidates", lambda schema, openai_model=None: [Failing(), Working()])
+    msgs = [HumanMessage("same prompt")]
+    assert llm.structured_call(S, msgs).a == 1
+    llm.structured_call(S, msgs)
+    assert Working.calls == 2  # not served from the cache
+

@@ -1,0 +1,73 @@
+{
+  "claim_id": "C041",
+  "claim_form": {
+    "claim_number": "C041",
+    "date_submitted": "2026-09-21",
+    "claimant_name": "Kashif Mirza",
+    "cnic": "21542-6276722-5",
+    "phone": "0321-7780932",
+    "policy_number": "PMC-2026-10037",
+    "vehicle": "Hyundai Tucson",
+    "registration_number": "ICT-10-8989",
+    "incident_date": "2026-09-16",
+    "location": "Srinagar Highway, Islamabad",
+    "description": "My car struck a raised divider, and the front bumper cracked. The damage is serious.",
+    "amount_claimed": 63300.0
+  },
+  "estimate": {
+    "workshop": "Ittefaq Autos",
+    "invoice_number": "INV-156837",
+    "estimate_date": "2026-09-17",
+    "customer_name": "Kashif Mirza",
+    "vehicle": "Hyundai Tucson (ICT-10-8989)",
+    "registration_number": "ICT-10-8989",
+    "line_items": [
+      {
+        "item": "Front Bumper - replacement / repair parts",
+        "amount": 31900.0
+      },
+      {
+        "item": "Front Bumper - denting & painting",
+        "amount": 12200.0
+      },
+      {
+        "item": "Labour charges",
+        "amount": 19200.0
+      }
+    ],
+    "total": 63300.0
+  },
+  "photo": {
+    "is_vehicle_photo": true,
+    "all_damages": [
+      {
+        "part": "front bumper",
+        "damage_type": "crack",
+        "severity": "severe"
+      },
+      {
+        "part": "front left fender",
+        "damage_type": "dent",
+        "severity": "moderate"
+      },
+      {
+        "part": "front left fender",
+        "damage_type": "scratch",
+        "severity": "moderate"
+      },
+      {
+        "part": "front left headlight",
+        "damage_type": "lamp broken",
+        "severity": "moderate"
+      }
+    ],
+    "damaged_part": "front bumper",
+    "damage_type": "crack",
+    "severity": "severe",
+    "description": "The front bumper is torn and split with a missing lower section. The front left fender has visible deformation and surface scratches, and the front left headlight lens/housing appears damaged.",
+    "image_quality_ok": true
+  },
+  "issues": [],
+  "missing_fields": [],
+  "ready_for_review": true
+}

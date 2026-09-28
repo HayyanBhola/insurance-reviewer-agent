@@ -1,63 +1,63 @@
 {
-  "claim_id": "C023",
-  "claim_form": {
-    "claim_number": "C023",
-    "date_submitted": "2025-12-11",
-    "claimant_name": "Nida Raza",
-    "cnic": "53719-3194789-5",
-    "phone": "0317-8175395",
-    "policy_number": "PMC-2026-10014",
-    "vehicle": "Hyundai Tucson",
-    "registration_number": "ICT-11-1932",
-    "incident_date": "2025-12-08",
-    "location": "F-7 Markaz, Islamabad",
-    "description": "Another car hit my vehicle, causing a noticeable dent on the rear quarter\npanel.",
-    "amount_claimed": 32200.0
-  },
-  "estimate": {
-    "workshop": "Khan Denting & Painting",
-    "invoice_number": "INV-256294",
-    "estimate_date": "2025-12-08",
-    "customer_name": "Nida Raza",
-    "vehicle": "Hyundai Tucson (ICT-11-1932)",
-    "registration_number": "ICT-11-1932",
-    "line_items": [
-      {
-        "item": "Rear Quarter Panel - replacement / repair parts",
-        "amount": 18300.0
-      },
-      {
-        "item": "Rear Quarter Panel - denting & painting",
-        "amount": 6000.0
-      },
-      {
-        "item": "Labour charges",
-        "amount": 7900.0
-      }
-    ],
-    "total": 32200.0
-  },
-  "photo": {
-    "is_vehicle_photo": true,
-    "all_damages": [
-      {
-        "part": "rear left quarter panel",
-        "damage_type": "dent",
-        "severity": "moderate"
-      },
-      {
-        "part": "rear left quarter panel",
-        "damage_type": "scratch",
-        "severity": "moderate"
-      }
-    ],
-    "damaged_part": "rear left quarter panel",
+ "claim_id": "C023",
+ "claim_form": {
+  "claim_number": "C023",
+  "date_submitted": "2025-12-11",
+  "claimant_name": "Nida Raza",
+  "cnic": "53719-3194789-5",
+  "phone": "0317-8175395",
+  "policy_number": "PMC-2026-10014",
+  "vehicle": "Hyundai Tucson",
+  "registration_number": "ICT-11-1932",
+  "incident_date": "2025-12-08",
+  "location": "F-7 Markaz, Islamabad",
+  "description": "Another car hit my vehicle, causing a noticeable dent on the rear quarter\npanel.",
+  "amount_claimed": 32200.0
+ },
+ "estimate": {
+  "workshop": "Khan Denting & Painting",
+  "invoice_number": "INV-256294",
+  "estimate_date": "2025-12-08",
+  "customer_name": "Nida Raza",
+  "vehicle": "Hyundai Tucson (ICT-11-1932)",
+  "registration_number": "ICT-11-1932",
+  "line_items": [
+   {
+    "item": "Rear Quarter Panel - replacement / repair parts",
+    "amount": 18300.0
+   },
+   {
+    "item": "Rear Quarter Panel - denting & painting",
+    "amount": 6000.0
+   },
+   {
+    "item": "Labour charges",
+    "amount": 7900.0
+   }
+  ],
+  "total": 32200.0
+ },
+ "photo": {
+  "is_vehicle_photo": true,
+  "all_damages": [
+   {
+    "part": "rear side panel",
     "damage_type": "dent",
-    "severity": "moderate",
-    "description": "The rear left quarter panel shows a visible dent around the fuel filler area with multiple scratches/scuff marks below and around it. No broken lamp, glass damage, or flat tire is visible.",
-    "image_quality_ok": true
-  },
-  "issues": [],
-  "missing_fields": [],
-  "ready_for_review": true
+    "severity": "moderate"
+   },
+   {
+    "part": "rear side panel",
+    "damage_type": "scratch",
+    "severity": "moderate"
+   }
+  ],
+  "damaged_part": "rear side panel",
+  "damage_type": "dent",
+  "severity": "moderate",
+  "description": "The rear side panel shows a visible dent with multiple સફ scratches/scuff marks across the panel. Pre-existing wear: some dulling and weathering along the trim area.",
+  "image_quality_ok": true
+ },
+ "issues": [],
+ "missing_fields": [],
+ "ready_for_review": true
 }

@@ -1,0 +1,78 @@
+{
+  "claim_id": "C015",
+  "claim_form": {
+    "claim_number": "C015",
+    "date_submitted": "2026-01-15",
+    "claimant_name": "Mariam Ahmed",
+    "cnic": "87128-4694634-1",
+    "phone": "0300-4841005",
+    "policy_number": "PMC-2026-10007",
+    "vehicle": "Suzuki Cultus",
+    "registration_number": "FDA-14-5513",
+    "incident_date": "2026-01-10",
+    "location": "D Ground, Faisalabad",
+    "description": "Another car hit my vehicle, causing a minor dent on the front fender.",
+    "amount_claimed": 22000.0
+  },
+  "estimate": {
+    "workshop": "Prime Auto Garage",
+    "invoice_number": "INV-349565",
+    "estimate_date": "2026-01-12",
+    "customer_name": "Mariam Ahmed",
+    "vehicle": "Suzuki Cultus (FDA-14-5513)",
+    "registration_number": "FDA-14-5513",
+    "line_items": [
+      {
+        "item": "Front Fender - replacement / repair parts",
+        "amount": 11700.0
+      },
+      {
+        "item": "Front Fender - denting & painting",
+        "amount": 2900.0
+      },
+      {
+        "item": "Labour charges",
+        "amount": 7400.0
+      }
+    ],
+    "total": 22000.0
+  },
+  "photo": {
+    "is_vehicle_photo": true,
+    "all_damages": [
+      {
+        "part": "front left door",
+        "damage_type": "scratch",
+        "severity": "minor"
+      },
+      {
+        "part": "front left fender",
+        "damage_type": "scratch",
+        "severity": "moderate"
+      },
+      {
+        "part": "rear edge of front left door",
+        "damage_type": "dent",
+        "severity": "minor"
+      },
+      {
+        "part": "front left wheel arch area",
+        "damage_type": "scratch",
+        "severity": "moderate"
+      },
+      {
+        "part": "front left tire",
+        "damage_type": "tire flat",
+        "severity": "severe"
+      }
+    ],
+    "damaged_part": "front left tire",
+    "damage_type": "tire flat",
+    "severity": "severe",
+    "description": "The front left tire appears deflated. There are visible scratches along the front left door and front left fender, with a small dent at the rear edge of the front left door.",
+    "image_quality_ok": true
+  },
+  "issues": [],
+  "missing_fields": [],
+  "ready_for_review": true
+}

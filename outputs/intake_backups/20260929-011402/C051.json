@@ -1,0 +1,69 @@
+{
+  "claim_id": "C051",
+  "claim_form": {
+    "claim_number": "C051",
+    "date_submitted": "2026-06-20",
+    "claimant_name": "Saad Khan",
+    "cnic": "73993-4681284-5",
+    "phone": "0337-1486955",
+    "policy_number": "PMC-2026-10023",
+    "vehicle": "Honda Civic",
+    "registration_number": "RIR-53-6724",
+    "incident_date": "2026-06-15",
+    "location": "Murree Road, Rawalpindi",
+    "description": "A motorcycle collided with my car and broke the headlight. The damage\nis serious.",
+    "amount_claimed": 692400.0
+  },
+  "estimate": {
+    "workshop": "Ittefaq Autos",
+    "invoice_number": "INV-233827",
+    "estimate_date": "2026-06-15",
+    "customer_name": "Saad Khan",
+    "vehicle": "Honda Civic",
+    "registration_number": "RIR-53-6724",
+    "line_items": [
+      {
+        "item": "Headlight - replacement / repair parts",
+        "amount": 402600.0
+      },
+      {
+        "item": "Labour charges",
+        "amount": 289800.0
+      }
+    ],
+    "total": 692400.0
+  },
+  "photo": {
+    "is_vehicle_photo": true,
+    "all_damages": [
+      {
+        "part": "front left headlight",
+        "damage_type": "lamp broken",
+        "severity": "severe"
+      },
+      {
+        "part": "front bumper",
+        "damage_type": "crack",
+        "severity": "severe"
+      },
+      {
+        "part": "front left fender",
+        "damage_type": "dent",
+        "severity": "moderate"
+      },
+      {
+        "part": "front left fender",
+        "damage_type": "scratch",
+        "severity": "minor"
+      }
+    ],
+    "damaged_part": "front left headlight",
+    "damage_type": "lamp broken",
+    "severity": "severe",
+    "description": "The front left headlight lens is shattered and the front bumper is split/open. The front left fender is deformed with visible scratches.",
+    "image_quality_ok": true
+  },
+  "issues": [],
+  "missing_fields": [],
+  "ready_for_review": true
+}

@@ -1,63 +1,63 @@
 {
-  "claim_id": "C019",
-  "claim_form": {
-    "claim_number": "C019",
-    "date_submitted": "2026-03-03",
-    "claimant_name": "Junaid Aslam",
-    "cnic": "58843-3182975-9",
-    "phone": "0309-6530541",
-    "policy_number": "PMC-2026-10054",
-    "vehicle": "Changan Alsvin",
-    "registration_number": "KHI-25-6830",
-    "incident_date": "2026-03-02",
-    "location": "Gulshan-e-Iqbal, Karachi",
-    "description": "While parking, another vehicle scraped the rear door, leaving minor scratches on the paint.",
-    "amount_claimed": 13200.0
-  },
-  "estimate": {
-    "workshop": "Khan Denting & Painting",
-    "invoice_number": "INV-886730",
-    "estimate_date": "2026-03-05",
-    "customer_name": "Junaid Aslam",
-    "vehicle": "Changan Alsvin (KHI-25-6830)",
-    "registration_number": "KHI-25-6830",
-    "line_items": [
-      {
-        "item": "Rear Door - replacement / repair parts",
-        "amount": 7600.0
-      },
-      {
-        "item": "Rear Door - denting & painting",
-        "amount": 2700.0
-      },
-      {
-        "item": "Labour charges",
-        "amount": 2900.0
-      }
-    ],
-    "total": 13200.0
-  },
-  "photo": {
-    "is_vehicle_photo": true,
-    "all_damages": [
-      {
-        "part": "left front door",
-        "damage_type": "scratch",
-        "severity": "moderate"
-      },
-      {
-        "part": "left front door",
-        "damage_type": "dent",
-        "severity": "minor"
-      }
-    ],
-    "damaged_part": "left front door",
+ "claim_id": "C019",
+ "claim_form": {
+  "claim_number": "C019",
+  "date_submitted": "2026-03-03",
+  "claimant_name": "Junaid Aslam",
+  "cnic": "58843-3182975-9",
+  "phone": "0309-6530541",
+  "policy_number": "PMC-2026-10054",
+  "vehicle": "Changan Alsvin",
+  "registration_number": "KHI-25-6830",
+  "incident_date": "2026-03-02",
+  "location": "Gulshan-e-Iqbal, Karachi",
+  "description": "While parking, another vehicle scraped the rear door, leaving minor scratches on the paint.",
+  "amount_claimed": 13200.0
+ },
+ "estimate": {
+  "workshop": "Khan Denting & Painting",
+  "invoice_number": "INV-886730",
+  "estimate_date": "2026-03-05",
+  "customer_name": "Junaid Aslam",
+  "vehicle": "Changan Alsvin (KHI-25-6830)",
+  "registration_number": "KHI-25-6830",
+  "line_items": [
+   {
+    "item": "Rear Door - replacement / repair parts",
+    "amount": 7600.0
+   },
+   {
+    "item": "Rear Door - denting & painting",
+    "amount": 2700.0
+   },
+   {
+    "item": "Labour charges",
+    "amount": 2900.0
+   }
+  ],
+  "total": 13200.0
+ },
+ "photo": {
+  "is_vehicle_photo": true,
+  "all_damages": [
+   {
+    "part": "front left door",
+    "damage_type": "scratch",
+    "severity": "moderate"
+   },
+   {
+    "part": "front left door",
     "damage_type": "dent",
-    "severity": "minor",
-    "description": "The left front door shows several visible scratches and a small area of panel deformation near the lower section. No broken lights, glass damage, or tire damage are visible.",
-    "image_quality_ok": true
-  },
-  "issues": [],
-  "missing_fields": [],
-  "ready_for_review": true
+    "severity": "minor"
+   }
+  ],
+  "damaged_part": "front left door",
+  "damage_type": "dent",
+  "severity": "minor",
+  "description": "Visible scratches and a small dent on the front left door. Pre-existing wear: some faint older scuffs and marks elsewhere on the panel.",
+  "image_quality_ok": true
+ },
+ "issues": [],
+ "missing_fields": [],
+ "ready_for_review": true
 }

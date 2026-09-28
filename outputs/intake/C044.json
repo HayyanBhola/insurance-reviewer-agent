@@ -1,73 +1,78 @@
 {
-  "claim_id": "C044",
-  "claim_form": {
-    "claim_number": "C044",
-    "date_submitted": "2026-04-25",
-    "claimant_name": "Hina Mirza",
-    "cnic": "51359-3005795-9",
-    "phone": "0313-4630331",
-    "policy_number": "PMC-2026-10030",
-    "vehicle": "MG HS",
-    "registration_number": "ICT-71-4630",
-    "incident_date": "2026-04-24",
-    "location": "I-8, Islamabad",
-    "description": "Another car hit my vehicle, causing a noticeable dent on the rear door.",
-    "amount_claimed": 66100.0
-  },
-  "estimate": {
-    "workshop": "Prime Auto Garage",
-    "invoice_number": "INV-725780",
-    "estimate_date": "2026-04-26",
-    "customer_name": "Hina Mirza",
-    "vehicle": "MG HS (ICT-71-4630)",
-    "registration_number": "ICT-71-4630",
-    "line_items": [
-      {
-        "item": "Rear Door - replacement / repair parts",
-        "amount": 39400.0
-      },
-      {
-        "item": "Rear Door - denting & painting",
-        "amount": 14900.0
-      },
-      {
-        "item": "Labour charges",
-        "amount": 11800.0
-      }
-    ],
-    "total": 66100.0
-  },
-  "photo": {
-    "is_vehicle_photo": true,
-    "all_damages": [
-      {
-        "part": "rear left door",
-        "damage_type": "dent",
-        "severity": "moderate"
-      },
-      {
-        "part": "rear left door",
-        "damage_type": "scratch",
-        "severity": "moderate"
-      },
-      {
-        "part": "left rear quarter panel",
-        "damage_type": "scratch",
-        "severity": "minor"
-      },
-      {
-        "part": "rear wheel arch area",
-        "damage_type": "scratch",
-        "severity": "minor"
-      }
-    ],
-    "damaged_part": "rear left door",
+ "claim_id": "C044",
+ "claim_form": {
+  "claim_number": "C044",
+  "date_submitted": "2026-04-25",
+  "claimant_name": "Hina Mirza",
+  "cnic": "51359-3005795-9",
+  "phone": "0313-4630331",
+  "policy_number": "PMC-2026-10030",
+  "vehicle": "MG HS",
+  "registration_number": "ICT-71-4630",
+  "incident_date": "2026-04-24",
+  "location": "I-8, Islamabad",
+  "description": "Another car hit my vehicle, causing a noticeable dent on the rear door.",
+  "amount_claimed": 66100.0
+ },
+ "estimate": {
+  "workshop": "Prime Auto Garage",
+  "invoice_number": "INV-725780",
+  "estimate_date": "2026-04-26",
+  "customer_name": "Hina Mirza",
+  "vehicle": "MG HS (ICT-71-4630)",
+  "registration_number": "ICT-71-4630",
+  "line_items": [
+   {
+    "item": "Rear Door - replacement / repair parts",
+    "amount": 39400.0
+   },
+   {
+    "item": "Rear Door - denting & painting",
+    "amount": 14900.0
+   },
+   {
+    "item": "Labour charges",
+    "amount": 11800.0
+   }
+  ],
+  "total": 66100.0
+ },
+ "photo": {
+  "is_vehicle_photo": true,
+  "all_damages": [
+   {
+    "part": "rear left door",
     "damage_type": "dent",
-    "severity": "moderate",
-    "description": "The rear left door shows a large dent with visible scratches and scuff marks. There are also minor scratches near the left rear wheel arch and on the left rear quarter panel.",
-    "image_quality_ok": true
-  },
-  "issues": [],
-  "missing_fields": [],
-  "ready_for_review": true
+    "severity": "moderate"
+   },
+   {
+    "part": "rear left door",
+    "damage_type": "scratch",
+    "severity": "minor"
+   },
+   {
+    "part": "rear left quarter panel",
+    "damage_type": "dent",
+    "severity": "moderate"
+   },
+   {
+    "part": "rear left wheel arch",
+    "damage_type": "scratch",
+    "severity": "minor"
+   },
+   {
+    "part": "rear bumper lower edge",
+    "damage_type": "scratch",
+    "severity": "minor"
+   }
+  ],
+  "damaged_part": "rear left door",
+  "damage_type": "dent",
+  "severity": "moderate",
+  "description": "The rear left door has a large visible dent with light scratches on it. There is also deformation around the rear left quarter panel and minor scuffing/scratches near the wheel arch and lower bumper edge; some dull wear is visible on the lower body trim.",
+  "image_quality_ok": true
+ },
+ "issues": [],
+ "missing_fields": [],
+ "ready_for_review": true
 }

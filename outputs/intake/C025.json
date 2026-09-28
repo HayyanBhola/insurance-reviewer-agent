@@ -1,58 +1,58 @@
 {
-  "claim_id": "C025",
-  "claim_form": {
-    "claim_number": "C025",
-    "date_submitted": "2026-04-30",
-    "claimant_name": "Zainab Qureshi",
-    "cnic": "19508-1156287-8",
-    "phone": "0349-2677407",
-    "policy_number": "PMC-2026-10012",
-    "vehicle": "Suzuki Cultus",
-    "registration_number": "ICT-78-3592",
-    "incident_date": "2026-04-26",
-    "location": "I-8, Islamabad",
-    "description": "While parking, another vehicle scraped the front fender, leaving\nnoticeable scratches on the paint.",
-    "amount_claimed": 26500.0
-  },
-  "estimate": {
-    "workshop": "City Car Care",
-    "invoice_number": "INV-238890",
-    "estimate_date": "2026-04-28",
-    "customer_name": "Zainab Qureshi",
-    "vehicle": "Suzuki Cultus (ICT-78-3592)",
-    "registration_number": "ICT-78-3592",
-    "line_items": [
-      {
-        "item": "Front Fender - replacement / repair parts",
-        "amount": 15300.0
-      },
-      {
-        "item": "Front Fender - denting & painting",
-        "amount": 6100.0
-      },
-      {
-        "item": "Labour charges",
-        "amount": 5100.0
-      }
-    ],
-    "total": 26500.0
-  },
-  "photo": {
-    "is_vehicle_photo": true,
-    "all_damages": [
-      {
-        "part": "front bumper",
-        "damage_type": "scratch",
-        "severity": "moderate"
-      }
-    ],
-    "damaged_part": "front bumper",
+ "claim_id": "C025",
+ "claim_form": {
+  "claim_number": "C025",
+  "date_submitted": "2026-04-30",
+  "claimant_name": "Zainab Qureshi",
+  "cnic": "19508-1156287-8",
+  "phone": "0349-2677407",
+  "policy_number": "PMC-2026-10012",
+  "vehicle": "Suzuki Cultus",
+  "registration_number": "ICT-78-3592",
+  "incident_date": "2026-04-26",
+  "location": "I-8, Islamabad",
+  "description": "While parking, another vehicle scraped the front fender, leaving\nnoticeable scratches on the paint.",
+  "amount_claimed": 26500.0
+ },
+ "estimate": {
+  "workshop": "City Car Care",
+  "invoice_number": "INV-238890",
+  "estimate_date": "2026-04-28",
+  "customer_name": "Zainab Qureshi",
+  "vehicle": "Suzuki Cultus (ICT-78-3592)",
+  "registration_number": "ICT-78-3592",
+  "line_items": [
+   {
+    "item": "Front Fender - replacement / repair parts",
+    "amount": 15300.0
+   },
+   {
+    "item": "Front Fender - denting & painting",
+    "amount": 6100.0
+   },
+   {
+    "item": "Labour charges",
+    "amount": 5100.0
+   }
+  ],
+  "total": 26500.0
+ },
+ "photo": {
+  "is_vehicle_photo": true,
+  "all_damages": [
+   {
+    "part": "front bumper",
     "damage_type": "scratch",
-    "severity": "moderate",
-    "description": "There are visible white scrape marks on the front bumper near the headlight and wheel arch. No cracking or deformation is visible.",
-    "image_quality_ok": true
-  },
-  "issues": [],
-  "missing_fields": [],
-  "ready_for_review": true
+    "severity": "moderate"
+   }
+  ],
+  "damaged_part": "front bumper",
+  "damage_type": "scratch",
+  "severity": "moderate",
+  "description": "Fresh white scratches are visible on the front bumper near the headlight. The headlight lens and tire appear intact in this photo.",
+  "image_quality_ok": true
+ },
+ "issues": [],
+ "missing_fields": [],
+ "ready_for_review": true
 }

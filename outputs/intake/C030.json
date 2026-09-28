@@ -1,54 +1,59 @@
 {
-  "claim_id": "C030",
-  "claim_form": {
-    "claim_number": "C030",
-    "date_submitted": "2026-05-07",
-    "claimant_name": "Amna Javed",
-    "cnic": "35928-8132648-2",
-    "phone": "0343-3499627",
-    "policy_number": "PMC-2026-10034",
-    "vehicle": "Toyota Yaris",
-    "registration_number": "ICT-28-1269",
-    "incident_date": "2026-05-02",
-    "location": "F-7 Markaz, Islamabad",
-    "description": "A stone hit the car and the windshield shattered. The damage is\nserious.",
-    "amount_claimed": 126100.0
-  },
-  "estimate": {
-    "workshop": "Star Motors Body Shop",
-    "invoice_number": "INV-931131",
-    "estimate_date": "2026-05-04",
-    "customer_name": "Amna Javed",
-    "vehicle": "Toyota Yaris (ICT-28-1269)",
-    "registration_number": "ICT-28-1269",
-    "line_items": [
-      {
-        "item": "Windshield - replacement / repair parts",
-        "amount": 65400.0
-      },
-      {
-        "item": "Labour charges",
-        "amount": 60700.0
-      }
-    ],
-    "total": 126100.0
-  },
-  "photo": {
-    "is_vehicle_photo": true,
-    "all_damages": [
-      {
-        "part": "windshield",
-        "damage_type": "glass shatter",
-        "severity": "severe"
-      }
-    ],
-    "damaged_part": "windshield",
+ "claim_id": "C030",
+ "claim_form": {
+  "claim_number": "C030",
+  "date_submitted": "2026-05-07",
+  "claimant_name": "Amna Javed",
+  "cnic": "35928-8132648-2",
+  "phone": "0343-3499627",
+  "policy_number": "PMC-2026-10034",
+  "vehicle": "Toyota Yaris",
+  "registration_number": "ICT-28-1269",
+  "incident_date": "2026-05-02",
+  "location": "F-7 Markaz, Islamabad",
+  "description": "A stone hit the car and the windshield shattered. The damage is\nserious.",
+  "amount_claimed": 126100.0
+ },
+ "estimate": {
+  "workshop": "Star Motors Body Shop",
+  "invoice_number": "INV-931131",
+  "estimate_date": "2026-05-04",
+  "customer_name": "Amna Javed",
+  "vehicle": "Toyota Yaris (ICT-28-1269)",
+  "registration_number": "ICT-28-1269",
+  "line_items": [
+   {
+    "item": "Windshield - replacement / repair parts",
+    "amount": 65400.0
+   },
+   {
+    "item": "Labour charges",
+    "amount": 60700.0
+   }
+  ],
+  "total": 126100.0
+ },
+ "photo": {
+  "is_vehicle_photo": true,
+  "all_damages": [
+   {
+    "part": "windshield",
     "damage_type": "glass shatter",
-    "severity": "severe",
-    "description": "The windshield is heavily shattered with multiple spiderweb cracks and impact points. The red body panels and wiper area are visible but no other clear damage is shown.",
-    "image_quality_ok": true
-  },
-  "issues": [],
-  "missing_fields": [],
-  "ready_for_review": true
+    "severity": "severe"
+   },
+   {
+    "part": "front hood",
+    "damage_type": "crack",
+    "severity": "moderate"
+   }
+  ],
+  "damaged_part": "windshield",
+  "damage_type": "glass shatter",
+  "severity": "severe",
+  "description": "The windshield is heavily shattered with multiple impact points and spiderweb cracking. There is also a visible split/gap at the front edge of the hood near the windshield; the rest of the vehicle shows pre-existing wear such as light dirt and small scuffs.",
+  "image_quality_ok": true
+ },
+ "issues": [],
+ "missing_fields": [],
+ "ready_for_review": true
 }

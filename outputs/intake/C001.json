@@ -1,73 +1,68 @@
 {
-  "claim_id": "C001",
-  "claim_form": {
-    "claim_number": "C001",
-    "date_submitted": "2026-01-09",
-    "claimant_name": "Zainab Hussain",
-    "cnic": "42742-2264748-8",
-    "phone": "0341-1848731",
-    "policy_number": "PMC-2026-10009",
-    "vehicle": "Changan Alsvin",
-    "registration_number": "LE-79-341",
-    "incident_date": "2026-01-07",
-    "location": "Gulberg, Lahore",
-    "description": "Another car hit my vehicle, causing a serious dent on the front bumper.",
-    "amount_claimed": 148500.0
-  },
-  "estimate": {
-    "workshop": "Star Motors Body Shop",
-    "invoice_number": "INV-274389",
-    "estimate_date": "2026-01-10",
-    "customer_name": "Zainab Hussain",
-    "vehicle": "Changan Alsvin (LE-79-341)",
-    "registration_number": null,
-    "line_items": [
-      {
-        "item": "Front Bumper - replacement / repair parts",
-        "amount": 73800.0
-      },
-      {
-        "item": "Front Bumper - denting & painting",
-        "amount": 19600.0
-      },
-      {
-        "item": "Labour charges",
-        "amount": 55100.0
-      }
-    ],
-    "total": 148500.0
-  },
-  "photo": {
-    "is_vehicle_photo": true,
-    "all_damages": [
-      {
-        "part": "front bumper",
-        "damage_type": "crack",
-        "severity": "severe"
-      },
-      {
-        "part": "front left fender",
-        "damage_type": "dent",
-        "severity": "severe"
-      },
-      {
-        "part": "front left door",
-        "damage_type": "dent",
-        "severity": "severe"
-      },
-      {
-        "part": "front bumper",
-        "damage_type": "scratch",
-        "severity": "moderate"
-      }
-    ],
-    "damaged_part": "front bumper",
+ "claim_id": "C001",
+ "claim_form": {
+  "claim_number": "C001",
+  "date_submitted": "2026-01-09",
+  "claimant_name": "Zainab Hussain",
+  "cnic": "42742-2264748-8",
+  "phone": "0341-1848731",
+  "policy_number": "PMC-2026-10009",
+  "vehicle": "Changan Alsvin",
+  "registration_number": "LE-79-341",
+  "incident_date": "2026-01-07",
+  "location": "Gulberg, Lahore",
+  "description": "Another car hit my vehicle, causing a serious dent on the front bumper.",
+  "amount_claimed": 148500.0
+ },
+ "estimate": {
+  "workshop": "Star Motors Body Shop",
+  "invoice_number": "INV-274389",
+  "estimate_date": "2026-01-10",
+  "customer_name": "Zainab Hussain",
+  "vehicle": "Changan Alsvin (LE-79-341)",
+  "registration_number": null,
+  "line_items": [
+   {
+    "item": "Front Bumper - replacement / repair parts",
+    "amount": 73800.0
+   },
+   {
+    "item": "Front Bumper - denting & painting",
+    "amount": 19600.0
+   },
+   {
+    "item": "Labour charges",
+    "amount": 55100.0
+   }
+  ],
+  "total": 148500.0
+ },
+ "photo": {
+  "is_vehicle_photo": true,
+  "all_damages": [
+   {
+    "part": "front bumper",
     "damage_type": "crack",
-    "severity": "severe",
-    "description": "The front bumper is torn/split and the front left fender and front left door are heavily dented. Scratches are visible on the front bumper.",
-    "image_quality_ok": true
-  },
-  "issues": [],
-  "missing_fields": [],
-  "ready_for_review": true
+    "severity": "severe"
+   },
+   {
+    "part": "front left fender",
+    "damage_type": "dent",
+    "severity": "severe"
+   },
+   {
+    "part": "front left door",
+    "damage_type": "dent",
+    "severity": "severe"
+   }
+  ],
+  "damaged_part": "front bumper",
+  "damage_type": "crack",
+  "severity": "severe",
+  "description": "The front bumper is torn/split and displaced. The front left fender and front left door are heavily dented and creased; there is also pre-existing wear and dirt on lower body panels.",
+  "image_quality_ok": true
+ },
+ "issues": [],
+ "missing_fields": [],
+ "ready_for_review": true
 }

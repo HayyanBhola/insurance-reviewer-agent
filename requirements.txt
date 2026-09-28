@@ -6,6 +6,8 @@ langchain-google-genai
 langsmith
 python-dotenv
 pydantic>=2
+langgraph>=1.0
+langgraph-checkpoint-sqlite
 
 # Documents, images, search
 pypdf

@@ -1,63 +1,63 @@
 {
-  "claim_id": "C052",
-  "claim_form": {
-    "claim_number": "C052",
-    "date_submitted": "2026-05-28",
-    "claimant_name": "Ahmed Malik",
-    "cnic": "57453-9610704-2",
-    "phone": "0338-4716988",
-    "policy_number": "PMC-2026-10052",
-    "vehicle": "Toyota Fortuner",
-    "registration_number": "ICT-15-8643",
-    "incident_date": "2026-05-24",
-    "location": "G-11, Islamabad",
-    "description": "While parking, another vehicle scraped the front bumper, leaving minor scratches on the paint.",
-    "amount_claimed": 13400.0
-  },
-  "estimate": {
-    "workshop": "Ittefaq Autos",
-    "invoice_number": "INV-774591",
-    "estimate_date": "2026-05-24",
-    "customer_name": "Ahmed Malik",
-    "vehicle": "Toyota Fortuner (ICT-15-8643)",
-    "registration_number": "ICT-15-8643",
-    "line_items": [
-      {
-        "item": "Front Bumper - replacement / repair parts",
-        "amount": 5500.0
-      },
-      {
-        "item": "Front Bumper - denting & painting",
-        "amount": 2300.0
-      },
-      {
-        "item": "Labour charges",
-        "amount": 5600.0
-      }
-    ],
-    "total": 13400.0
-  },
-  "photo": {
-    "is_vehicle_photo": true,
-    "all_damages": [
-      {
-        "part": "rear bumper",
-        "damage_type": "scratch",
-        "severity": "moderate"
-      },
-      {
-        "part": "rear bumper",
-        "damage_type": "crack",
-        "severity": "minor"
-      }
-    ],
-    "damaged_part": "rear bumper",
+ "claim_id": "C052",
+ "claim_form": {
+  "claim_number": "C052",
+  "date_submitted": "2026-05-28",
+  "claimant_name": "Ahmed Malik",
+  "cnic": "57453-9610704-2",
+  "phone": "0338-4716988",
+  "policy_number": "PMC-2026-10052",
+  "vehicle": "Toyota Fortuner",
+  "registration_number": "ICT-15-8643",
+  "incident_date": "2026-05-24",
+  "location": "G-11, Islamabad",
+  "description": "While parking, another vehicle scraped the front bumper, leaving minor scratches on the paint.",
+  "amount_claimed": 13400.0
+ },
+ "estimate": {
+  "workshop": "Ittefaq Autos",
+  "invoice_number": "INV-774591",
+  "estimate_date": "2026-05-24",
+  "customer_name": "Ahmed Malik",
+  "vehicle": "Toyota Fortuner (ICT-15-8643)",
+  "registration_number": "ICT-15-8643",
+  "line_items": [
+   {
+    "item": "Front Bumper - replacement / repair parts",
+    "amount": 5500.0
+   },
+   {
+    "item": "Front Bumper - denting & painting",
+    "amount": 2300.0
+   },
+   {
+    "item": "Labour charges",
+    "amount": 5600.0
+   }
+  ],
+  "total": 13400.0
+ },
+ "photo": {
+  "is_vehicle_photo": true,
+  "all_damages": [
+   {
+    "part": "front bumper",
+    "damage_type": "scratch",
+    "severity": "moderate"
+   },
+   {
+    "part": "front bumper",
     "damage_type": "crack",
-    "severity": "minor",
-    "description": "The rear bumper shows a long horizontal scratch with paint transfer. There is also a small crack/split near the right side of the bumper by the vent opening.",
-    "image_quality_ok": true
-  },
-  "issues": [],
-  "missing_fields": [],
-  "ready_for_review": true
+    "severity": "minor"
+   }
+  ],
+  "damaged_part": "front bumper",
+  "damage_type": "crack",
+  "severity": "minor",
+  "description": "The front bumper has a long pink/black scratch across it and a small torn/split area near the grille opening. Pre-existing wear: there are also a few small scuffs and marks on the bumper surface.",
+  "image_quality_ok": true
+ },
+ "issues": [],
+ "missing_fields": [],
+ "ready_for_review": true
 }

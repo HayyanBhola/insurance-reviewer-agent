@@ -1,64 +1,64 @@
 {
-  "claim_id": "C002",
-  "claim_form": {
-    "claim_number": "C002",
-    "date_submitted": "2026-09-08",
-    "claimant_name": "Bilal Javed",
-    "cnic": "83772-6097514-2",
-    "phone": "0311-7982241",
-    "policy_number": "PMC-2026-10032",
-    "vehicle": "Toyota Fortuner",
-    "registration_number": "RIR-86-3797",
-    "incident_date": "2026-09-07",
-    "location": "Chaklala, Rawalpindi",
-    "description": "A motorcycle collided with my car and broke the tail light. The damage is noticeable.",
-    "amount_claimed": 31800.0
-  },
-  "estimate": {
-    "workshop": "Ittefaq Autos",
-    "invoice_number": "INV-564226",
-    "estimate_date": "2026-09-09",
-    "customer_name": "Bilal Javed",
-    "vehicle": "Toyota Fortuner",
-    "registration_number": "RIR-86-3797",
-    "line_items": [
-      {
-        "item": "Tail Light - replacement / repair parts",
-        "amount": 18200.0
-      },
-      {
-        "item": "Labour charges",
-        "amount": 13600.0
-      }
-    ],
-    "total": 31800.0
-  },
-  "photo": {
-    "is_vehicle_photo": true,
-    "all_damages": [
-      {
-        "part": "rear left tail light",
-        "damage_type": "lamp broken",
-        "severity": "moderate"
-      },
-      {
-        "part": "rear left quarter panel",
-        "damage_type": "dent",
-        "severity": "moderate"
-      },
-      {
-        "part": "rear left quarter panel",
-        "damage_type": "scratch",
-        "severity": "moderate"
-      }
-    ],
-    "damaged_part": "rear left tail light",
+ "claim_id": "C002",
+ "claim_form": {
+  "claim_number": "C002",
+  "date_submitted": "2026-09-08",
+  "claimant_name": "Bilal Javed",
+  "cnic": "83772-6097514-2",
+  "phone": "0311-7982241",
+  "policy_number": "PMC-2026-10032",
+  "vehicle": "Toyota Fortuner",
+  "registration_number": "RIR-86-3797",
+  "incident_date": "2026-09-07",
+  "location": "Chaklala, Rawalpindi",
+  "description": "A motorcycle collided with my car and broke the tail light. The damage is noticeable.",
+  "amount_claimed": 31800.0
+ },
+ "estimate": {
+  "workshop": "Ittefaq Autos",
+  "invoice_number": "INV-564226",
+  "estimate_date": "2026-09-09",
+  "customer_name": "Bilal Javed",
+  "vehicle": "Toyota Fortuner",
+  "registration_number": "RIR-86-3797",
+  "line_items": [
+   {
+    "item": "Tail Light - replacement / repair parts",
+    "amount": 18200.0
+   },
+   {
+    "item": "Labour charges",
+    "amount": 13600.0
+   }
+  ],
+  "total": 31800.0
+ },
+ "photo": {
+  "is_vehicle_photo": true,
+  "all_damages": [
+   {
+    "part": "rear right taillight",
     "damage_type": "lamp broken",
-    "severity": "moderate",
-    "description": "The rear left tail light has a broken lower section. The rear left quarter panel shows a dent with visible scratches and scuff marks.",
-    "image_quality_ok": true
-  },
-  "issues": [],
-  "missing_fields": [],
-  "ready_for_review": true
+    "severity": "moderate"
+   },
+   {
+    "part": "rear right quarter panel",
+    "damage_type": "dent",
+    "severity": "moderate"
+   },
+   {
+    "part": "rear right quarter panel",
+    "damage_type": "scratch",
+    "severity": "moderate"
+   }
+  ],
+  "damaged_part": "rear right taillight",
+  "damage_type": "lamp broken",
+  "severity": "moderate",
+  "description": "The rear right taillight lens is broken. The rear right quarter panel is dented and has visible scratches/scuff marks.",
+  "image_quality_ok": true
+ },
+ "issues": [],
+ "missing_fields": [],
+ "ready_for_review": true
 }

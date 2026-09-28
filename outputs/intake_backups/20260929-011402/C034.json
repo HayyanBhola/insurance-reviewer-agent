@@ -1,0 +1,54 @@
+{
+  "claim_id": "C034",
+  "claim_form": {
+    "claim_number": "C034",
+    "date_submitted": "2026-06-18",
+    "claimant_name": "Sadia Raza",
+    "cnic": "73532-3037191-1",
+    "phone": "0343-3657144",
+    "policy_number": "PMC-2026-10038",
+    "vehicle": "Toyota Yaris",
+    "registration_number": "RIR-80-324",
+    "incident_date": "2026-06-15",
+    "location": "Chaklala, Rawalpindi",
+    "description": "A stone hit the car and the windshield shattered. The damage is\nserious.",
+    "amount_claimed": 103800.0
+  },
+  "estimate": {
+    "workshop": "Al-Madina Auto Works",
+    "invoice_number": "INV-335615",
+    "estimate_date": "2026-06-15",
+    "customer_name": "Sadia Raza",
+    "vehicle": "Toyota Yaris",
+    "registration_number": "RIR-80-324",
+    "line_items": [
+      {
+        "item": "Windshield - replacement / repair parts",
+        "amount": 51100.0
+      },
+      {
+        "item": "Labour charges",
+        "amount": 52700.0
+      }
+    ],
+    "total": 103800.0
+  },
+  "photo": {
+    "is_vehicle_photo": true,
+    "all_damages": [
+      {
+        "part": "windshield",
+        "damage_type": "glass shatter",
+        "severity": "severe"
+      }
+    ],
+    "damaged_part": "windshield",
+    "damage_type": "glass shatter",
+    "severity": "severe",
+    "description": "The windshield is heavily cracked and shattered, with a large impact point and spiderweb fractures spreading across the glass.",
+    "image_quality_ok": true
+  },
+  "issues": [],
+  "missing_fields": [],
+  "ready_for_review": true
+}

@@ -1,79 +1,79 @@
 {
-  "claim_id": "C003",
-  "claim_form": {
-    "claim_number": "C003",
-    "date_submitted": "2026-08-28",
-    "claimant_name": "Ahmed Malik",
-    "cnic": "82845-9164991-3",
-    "phone": "0314-4652414",
-    "policy_number": "PMC-2026-10010",
-    "vehicle": "Suzuki Alto",
-    "registration_number": "RIR-84-8983",
-    "incident_date": "2026-08-24",
-    "location": "Saddar, Rawalpindi",
-    "description": "A motorcycle collided with my car and broke the tail light. The damage\nis serious.",
-    "amount_claimed": 94200.0
-  },
-  "estimate": {
-    "workshop": "Khan Denting & Painting",
-    "invoice_number": "INV-428838",
-    "estimate_date": "2026-08-24",
-    "customer_name": "Ahmed Malik",
-    "vehicle": "Suzuki Alto (RIR-84-8983)",
-    "registration_number": "RIR-84-8983",
-    "line_items": [
-      {
-        "item": "Tail Light - replacement / repair parts",
-        "amount": 38600.0
-      },
-      {
-        "item": "Labour charges",
-        "amount": 55600.0
-      }
-    ],
-    "total": 94200.0
-  },
-  "photo": {
-    "is_vehicle_photo": true,
-    "all_damages": [
-      {
-        "part": "rear left tail light",
-        "damage_type": "lamp broken",
-        "severity": "severe"
-      },
-      {
-        "part": "rear left quarter panel",
-        "damage_type": "dent",
-        "severity": "severe"
-      },
-      {
-        "part": "rear left quarter panel",
-        "damage_type": "scratch",
-        "severity": "moderate"
-      },
-      {
-        "part": "rear bumper",
-        "damage_type": "scratch",
-        "severity": "moderate"
-      },
-      {
-        "part": "rear bumper",
-        "damage_type": "crack",
-        "severity": "moderate"
-      },
-      {
-        "part": "rear left tire",
-        "damage_type": "tire flat",
-        "severity": "moderate"
-      }
-    ],
-    "damaged_part": "rear left tail light",
+ "claim_id": "C003",
+ "claim_form": {
+  "claim_number": "C003",
+  "date_submitted": "2026-08-28",
+  "claimant_name": "Ahmed Malik",
+  "cnic": "82845-9164991-3",
+  "phone": "0314-4652414",
+  "policy_number": "PMC-2026-10010",
+  "vehicle": "Suzuki Alto",
+  "registration_number": "RIR-84-8983",
+  "incident_date": "2026-08-24",
+  "location": "Saddar, Rawalpindi",
+  "description": "A motorcycle collided with my car and broke the tail light. The damage\nis serious.",
+  "amount_claimed": 94200.0
+ },
+ "estimate": {
+  "workshop": "Khan Denting & Painting",
+  "invoice_number": "INV-428838",
+  "estimate_date": "2026-08-24",
+  "customer_name": "Ahmed Malik",
+  "vehicle": "Suzuki Alto (RIR-84-8983)",
+  "registration_number": "RIR-84-8983",
+  "line_items": [
+   {
+    "item": "Tail Light - replacement / repair parts",
+    "amount": 38600.0
+   },
+   {
+    "item": "Labour charges",
+    "amount": 55600.0
+   }
+  ],
+  "total": 94200.0
+ },
+ "photo": {
+  "is_vehicle_photo": true,
+  "all_damages": [
+   {
+    "part": "rear left taillight",
     "damage_type": "lamp broken",
-    "severity": "severe",
-    "description": "The rear left tail light is broken and the rear left quarter panel is heavily dented and scraped. The rear bumper shows damage, and the rear left tire appears deflated.",
-    "image_quality_ok": true
-  },
-  "issues": [],
-  "missing_fields": [],
-  "ready_for_review": true
+    "severity": "severe"
+   },
+   {
+    "part": "rear left quarter panel",
+    "damage_type": "dent",
+    "severity": "severe"
+   },
+   {
+    "part": "rear left quarter panel",
+    "damage_type": "scratch",
+    "severity": "moderate"
+   },
+   {
+    "part": "rear left bumper",
+    "damage_type": "dent",
+    "severity": "moderate"
+   },
+   {
+    "part": "rear left bumper",
+    "damage_type": "scratch",
+    "severity": "moderate"
+   },
+   {
+    "part": "rear left wheel",
+    "damage_type": "tire flat",
+    "severity": "moderate"
+   }
+  ],
+  "damaged_part": "rear left taillight",
+  "damage_type": "lamp broken",
+  "severity": "severe",
+  "description": "The rear left taillight is broken. The rear left quarter panel and rear left bumper are heavily dented and scraped, and the rear left tire appears flat.",
+  "image_quality_ok": true
+ },
+ "issues": [],
+ "missing_fields": [],
+ "ready_for_review": true
 }

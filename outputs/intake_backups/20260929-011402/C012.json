@@ -1,0 +1,69 @@
+{
+  "claim_id": "C012",
+  "claim_form": {
+    "claim_number": "C012",
+    "date_submitted": "2026-05-22",
+    "claimant_name": "Sadia Khan",
+    "cnic": "97747-2919136-4",
+    "phone": "0334-7189034",
+    "policy_number": "PMC-2026-10025",
+    "vehicle": "Suzuki Wagon R",
+    "registration_number": "LE-87-1976",
+    "incident_date": "2026-05-17",
+    "location": "DHA Phase 5, Lahore",
+    "description": "A motorcycle collided with my car and broke the headlight. The damage is noticeable.",
+    "amount_claimed": 188300.0
+  },
+  "estimate": {
+    "workshop": "City Car Care",
+    "invoice_number": "INV-213349",
+    "estimate_date": "2026-05-17",
+    "customer_name": "Sadia Khan",
+    "vehicle": "Suzuki Wagon R",
+    "registration_number": "LE-87-1976",
+    "line_items": [
+      {
+        "item": "Headlight - replacement / repair parts",
+        "amount": 110300.0
+      },
+      {
+        "item": "Labour charges",
+        "amount": 78000.0
+      }
+    ],
+    "total": 188300.0
+  },
+  "photo": {
+    "is_vehicle_photo": true,
+    "all_damages": [
+      {
+        "part": "front right headlight",
+        "damage_type": "lamp broken",
+        "severity": "severe"
+      },
+      {
+        "part": "front right fender",
+        "damage_type": "dent",
+        "severity": "severe"
+      },
+      {
+        "part": "front right fender",
+        "damage_type": "scratch",
+        "severity": "moderate"
+      },
+      {
+        "part": "front bumper",
+        "damage_type": "scratch",
+        "severity": "moderate"
+      }
+    ],
+    "damaged_part": "front right headlight",
+    "damage_type": "lamp broken",
+    "severity": "severe",
+    "description": "The front right headlight lens is broken. The front right fender is heavily dented with visible scratches, and there are additional scratches on the front bumper.",
+    "image_quality_ok": true
+  },
+  "issues": [],
+  "missing_fields": [],
+  "ready_for_review": true
+}

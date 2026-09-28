@@ -1,63 +1,63 @@
 {
-  "claim_id": "C036",
-  "claim_form": {
-    "claim_number": "C036",
-    "date_submitted": "2026-07-14",
-    "claimant_name": "Tariq Iqbal",
-    "cnic": "21114-5761145-9",
-    "phone": "0345-2566777",
-    "policy_number": "PMC-2026-10019",
-    "vehicle": "Toyota Corolla",
-    "registration_number": "FDA-96-5185",
-    "incident_date": "2026-07-12",
-    "location": "D Ground, Faisalabad",
-    "description": "The car rolled over on the motorway. The front bumper, roof and both\ndoors on that side are badly crushed and several windows are broken.",
-    "amount_claimed": 309400.0
-  },
-  "estimate": {
-    "workshop": "Star Motors Body Shop",
-    "invoice_number": "INV-254511",
-    "estimate_date": "2026-07-12",
-    "customer_name": "Tariq Iqbal",
-    "vehicle": "Toyota Corolla (FDA-96-5185)",
-    "registration_number": "FDA-96-5185",
-    "line_items": [
-      {
-        "item": "Front Bumper - replacement / repair parts",
-        "amount": 126600.0
-      },
-      {
-        "item": "Front Bumper - denting & painting",
-        "amount": 76600.0
-      },
-      {
-        "item": "Labour charges",
-        "amount": 106200.0
-      }
-    ],
-    "total": 309400.0
-  },
-  "photo": {
-    "is_vehicle_photo": true,
-    "all_damages": [
-      {
-        "part": "front bumper",
-        "damage_type": "scratch",
-        "severity": "moderate"
-      },
-      {
-        "part": "front left fender",
-        "damage_type": "scratch",
-        "severity": "minor"
-      }
-    ],
-    "damaged_part": "front bumper",
+ "claim_id": "C036",
+ "claim_form": {
+  "claim_number": "C036",
+  "date_submitted": "2026-07-14",
+  "claimant_name": "Tariq Iqbal",
+  "cnic": "21114-5761145-9",
+  "phone": "0345-2566777",
+  "policy_number": "PMC-2026-10019",
+  "vehicle": "Toyota Corolla",
+  "registration_number": "FDA-96-5185",
+  "incident_date": "2026-07-12",
+  "location": "D Ground, Faisalabad",
+  "description": "The car rolled over on the motorway. The front bumper, roof and both\ndoors on that side are badly crushed and several windows are broken.",
+  "amount_claimed": 309400.0
+ },
+ "estimate": {
+  "workshop": "Star Motors Body Shop",
+  "invoice_number": "INV-254511",
+  "estimate_date": "2026-07-12",
+  "customer_name": "Tariq Iqbal",
+  "vehicle": "Toyota Corolla (FDA-96-5185)",
+  "registration_number": "FDA-96-5185",
+  "line_items": [
+   {
+    "item": "Front Bumper - replacement / repair parts",
+    "amount": 126600.0
+   },
+   {
+    "item": "Front Bumper - denting & painting",
+    "amount": 76600.0
+   },
+   {
+    "item": "Labour charges",
+    "amount": 106200.0
+   }
+  ],
+  "total": 309400.0
+ },
+ "photo": {
+  "is_vehicle_photo": true,
+  "all_damages": [
+   {
+    "part": "front bumper",
     "damage_type": "scratch",
-    "severity": "moderate",
-    "description": "The front bumper shows several greenish scrape marks and the front left fender has light scratch marks. No cracks, dents, or broken lamps are visible.",
-    "image_quality_ok": true
-  },
-  "issues": [],
-  "missing_fields": [],
-  "ready_for_review": true
+    "severity": "moderate"
+   },
+   {
+    "part": "front left fender",
+    "damage_type": "scratch",
+    "severity": "minor"
+   }
+  ],
+  "damaged_part": "front bumper",
+  "damage_type": "scratch",
+  "severity": "moderate",
+  "description": "Visible scratch marks are present on the front bumper and extend onto the front left fender. The headlight, glass, and tire appear intact.",
+  "image_quality_ok": true
+ },
+ "issues": [],
+ "missing_fields": [],
+ "ready_for_review": true
 }

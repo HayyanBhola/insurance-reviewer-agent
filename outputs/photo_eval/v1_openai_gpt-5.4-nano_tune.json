@@ -1,0 +1,467 @@
+{
+ "car_006.jpg": {
+  "is_vehicle_photo": true,
+  "all_damages": [
+   {
+    "part": "front left bumper (lower area near wheel)",
+    "damage_type": "crack",
+    "severity": "moderate"
+   }
+  ],
+  "damaged_part": "front left bumper (lower area near wheel)",
+  "damage_type": "crack",
+  "severity": "moderate",
+  "description": "The front bumper lower section near the left wheel shows a visible split/crack. No clear deformation or damage to the wheel or tyre is visible in this photo.",
+  "image_quality_ok": true
+ },
+ "car_009.jpg": {
+  "is_vehicle_photo": true,
+  "all_damages": [
+   {
+    "part": "front right fender (wheel area)",
+    "damage_type": "dent",
+    "severity": "severe"
+   },
+   {
+    "part": "front right fender (wheel area)",
+    "damage_type": "crack",
+    "severity": "severe"
+   },
+   {
+    "part": "front right bumper/front edge",
+    "damage_type": "dent",
+    "severity": "severe"
+   }
+  ],
+  "damaged_part": "front right fender (wheel area)",
+  "damage_type": "crack",
+  "severity": "severe",
+  "description": "The front right fender area shows significant deformation with visible tearing/splitting along the panel near the wheel. The front bumper/front edge also appears deformed in the same area.",
+  "image_quality_ok": true
+ },
+ "car_010.jpg": {
+  "is_vehicle_photo": true,
+  "all_damages": [
+   {
+    "part": "front left fender/left front quarter panel area (near wheel)",
+    "damage_type": "dent",
+    "severity": "severe"
+   },
+   {
+    "part": "front left fender/left front quarter panel area (edge/paint)",
+    "damage_type": "scratch",
+    "severity": "severe"
+   }
+  ],
+  "damaged_part": "front left fender/left front quarter panel area (near wheel)",
+  "damage_type": "dent",
+  "severity": "severe",
+  "description": "The left front fender/quarter panel near the wheel has visible deformation and buckling. The panel edges and surrounding areas also show scraped/abraded paint consistent with scuffing.",
+  "image_quality_ok": true
+ },
+ "car_012.jpg": {
+  "is_vehicle_photo": true,
+  "all_damages": [
+   {
+    "part": "front right fender/quarter panel (wheel arch area)",
+    "damage_type": "dent",
+    "severity": "severe"
+   },
+   {
+    "part": "front right bumper (lower/edge section)",
+    "damage_type": "crack",
+    "severity": "moderate"
+   },
+   {
+    "part": "front right headlight/park lamp area",
+    "damage_type": "lamp broken",
+    "severity": "moderate"
+   }
+  ],
+  "damaged_part": "front right fender/quarter panel (wheel arch area)",
+  "damage_type": "dent",
+  "severity": "severe",
+  "description": "The front right wheel arch/fender area is deformed with noticeable crumpling. The front right bumper has a split/tearing at the edge, and the front right lamp area appears damaged with the lens/housing affected.",
+  "image_quality_ok": true
+ },
+ "car_022.jpg": {
+  "is_vehicle_photo": true,
+  "all_damages": [
+   {
+    "part": "front left fender/side panel (area behind the headlight)",
+    "damage_type": "scratch",
+    "severity": "moderate"
+   }
+  ],
+  "damaged_part": "front left fender/side panel (area behind the headlight)",
+  "damage_type": "scratch",
+  "severity": "moderate",
+  "description": "There are multiple visible scrape marks on the front left fender/side panel. The panel shape appears intact with no clear dents or cracks visible.",
+  "image_quality_ok": true
+ },
+ "car_025.jpg": {
+  "is_vehicle_photo": true,
+  "all_damages": [
+   {
+    "part": "front left bumper corner/lower bumper",
+    "damage_type": "scratch",
+    "severity": "moderate"
+   },
+   {
+    "part": "front left bumper corner/lower bumper",
+    "damage_type": "dent",
+    "severity": "moderate"
+   }
+  ],
+  "damaged_part": "front left bumper corner/lower bumper",
+  "damage_type": "dent",
+  "severity": "moderate",
+  "description": "The lower/front left bumper corner shows visible deformation with scuffed marks. There are also scratches/scrape marks across the same lower bumper area.",
+  "image_quality_ok": true
+ },
+ "car_028.jpg": {
+  "is_vehicle_photo": true,
+  "all_damages": [
+   {
+    "part": "windshield (front glass)",
+    "damage_type": "glass shatter",
+    "severity": "severe"
+   }
+  ],
+  "damaged_part": "windshield (front glass)",
+  "damage_type": "glass shatter",
+  "severity": "severe",
+  "description": "The front windshield is cracked with a spiderweb pattern radiating from an impact point. The glass surface shows widespread cracking across the windshield area.",
+  "image_quality_ok": true
+ },
+ "car_030.jpg": {
+  "is_vehicle_photo": true,
+  "all_damages": [
+   {
+    "part": "front left fender/quarter panel area (above the front left wheel)",
+    "damage_type": "dent",
+    "severity": "moderate"
+   },
+   {
+    "part": "front bumper/left lower bumper section",
+    "damage_type": "dent",
+    "severity": "moderate"
+   },
+   {
+    "part": "front left headlight (lens/housing area)",
+    "damage_type": "lamp broken",
+    "severity": "moderate"
+   },
+   {
+    "part": "front left fender/bumper area",
+    "damage_type": "scratch",
+    "severity": "minor"
+   }
+  ],
+  "damaged_part": "front left headlight (lens/housing area)",
+  "damage_type": "lamp broken",
+  "severity": "moderate",
+  "description": "The front left headlight appears damaged. The front left fender/quarter area and left lower bumper show visible deformation, with additional scuffing/scratches around the damaged area.",
+  "image_quality_ok": true
+ },
+ "car_031.jpg": {
+  "is_vehicle_photo": true,
+  "all_damages": [
+   {
+    "part": "front left fender/door area near side marker/vent",
+    "damage_type": "scratch",
+    "severity": "moderate"
+   },
+   {
+    "part": "front left fender/door area near side marker/vent",
+    "damage_type": "dent",
+    "severity": "moderate"
+   }
+  ],
+  "damaged_part": "front left fender/door area near side marker/vent",
+  "damage_type": "dent",
+  "severity": "moderate",
+  "description": "There is a dented area near the front left fender/side marker area, with visible paint scuffing/scratches around the dent. The adjacent panel surface also shows scratch marks consistent with contact.",
+  "image_quality_ok": true
+ },
+ "car_032.jpg": {
+  "is_vehicle_photo": true,
+  "all_damages": [
+   {
+    "part": "rear windshield",
+    "damage_type": "glass shatter",
+    "severity": "severe"
+   },
+   {
+    "part": "rear bumper/quarter panel area (right side of image)",
+    "damage_type": "scratch",
+    "severity": "minor"
+   }
+  ],
+  "damaged_part": "rear windshield",
+  "damage_type": "glass shatter",
+  "severity": "severe",
+  "description": "The rear windshield glass is cracked extensively with shattered areas. There is also some light surface scuffing/scratching visible on the surrounding bodywork near the damaged window.",
+  "image_quality_ok": true
+ },
+ "car_033.jpg": {
+  "is_vehicle_photo": true,
+  "all_damages": [
+   {
+    "part": "front left fender/inner fender area near wheel",
+    "damage_type": "dent",
+    "severity": "moderate"
+   },
+   {
+    "part": "front left fender/bumper area",
+    "damage_type": "scratch",
+    "severity": "moderate"
+   },
+   {
+    "part": "front bumper (front lower section)",
+    "damage_type": "crack",
+    "severity": "moderate"
+   },
+   {
+    "part": "front left headlight",
+    "damage_type": "scratch",
+    "severity": "minor"
+   }
+  ],
+  "damaged_part": "front bumper (front lower section)",
+  "damage_type": "crack",
+  "severity": "moderate",
+  "description": "The front bumper has visible cracking/splitting along the lower area near the wheel. The front left side (fender/bumper area) shows deformation and scuff/scratch marks, and the headlight has some surface scuffing visible.",
+  "image_quality_ok": true
+ },
+ "car_036.jpg": {
+  "is_vehicle_photo": true,
+  "all_damages": [
+   {
+    "part": "front left bumper (corner/edge near wheel)",
+    "damage_type": "dent",
+    "severity": "moderate"
+   },
+   {
+    "part": "front left bumper (corner/edge near wheel)",
+    "damage_type": "scratch",
+    "severity": "moderate"
+   },
+   {
+    "part": "front left headlight housing",
+    "damage_type": "lamp broken",
+    "severity": "moderate"
+   }
+  ],
+  "damaged_part": "front left headlight housing",
+  "damage_type": "lamp broken",
+  "severity": "moderate",
+  "description": "The front left headlight lens/housing appears damaged with the lens area broken/partially displaced. The front left bumper near the corner shows a dent and visible scuffs/scratches around the damaged area.",
+  "image_quality_ok": true
+ },
+ "car_038.jpg": {
+  "is_vehicle_photo": true,
+  "all_damages": [
+   {
+    "part": "front left wheel/tire",
+    "damage_type": "tire flat",
+    "severity": "severe"
+   },
+   {
+    "part": "front left side skirt / lower body panel",
+    "damage_type": "crack",
+    "severity": "moderate"
+   },
+   {
+    "part": "front left bumper/fascia area",
+    "damage_type": "dent",
+    "severity": "moderate"
+   }
+  ],
+  "damaged_part": "front left side skirt / lower body panel",
+  "damage_type": "crack",
+  "severity": "moderate",
+  "description": "The front left tire appears deflated/collapsed. The front left lower body area shows a torn/split section (crack). The front left bumper/fascia area is visibly pushed in/out (dent).",
+  "image_quality_ok": true
+ },
+ "car_043.jpg": {
+  "is_vehicle_photo": true,
+  "all_damages": [
+   {
+    "part": "front left door/side sill area",
+    "damage_type": "dent",
+    "severity": "moderate"
+   },
+   {
+    "part": "front left door/side sill area",
+    "damage_type": "scratch",
+    "severity": "minor"
+   }
+  ],
+  "damaged_part": "front left door/side sill area",
+  "damage_type": "dent",
+  "severity": "moderate",
+  "description": "There is a dented area on the front left lower door/side sill with visible paint scuffing and scratches along the same region. No lamp or glass damage is visible in this photo.",
+  "image_quality_ok": true
+ },
+ "car_044.jpg": {
+  "is_vehicle_photo": true,
+  "all_damages": [
+   {
+    "part": "front left rocker panel / lower door area (near front wheel)",
+    "damage_type": "dent",
+    "severity": "moderate"
+   },
+   {
+    "part": "front left rocker panel / lower door area (near front wheel)",
+    "damage_type": "scratch",
+    "severity": "moderate"
+   }
+  ],
+  "damaged_part": "front left rocker panel / lower door area (near front wheel)",
+  "damage_type": "dent",
+  "severity": "moderate",
+  "description": "There is a visible dent on the lower rocker panel area near the front wheel. The dented area also shows scraped/scuffed marks and paint damage along the lower edge.",
+  "image_quality_ok": true
+ },
+ "car_045.jpg": {
+  "is_vehicle_photo": true,
+  "all_damages": [
+   {
+    "part": "front left bumper/left front corner panel",
+    "damage_type": "dent",
+    "severity": "moderate"
+   },
+   {
+    "part": "front left bumper/left front corner panel",
+    "damage_type": "scratch",
+    "severity": "moderate"
+   }
+  ],
+  "damaged_part": "front left bumper/left front corner panel",
+  "damage_type": "dent",
+  "severity": "moderate",
+  "description": "The front left bumper area is visibly deformed inward near the corner and around the headlight opening area. There are also multiple surface scuffs/scratches across the red bumper panel area.",
+  "image_quality_ok": true
+ },
+ "car_046.jpg": {
+  "is_vehicle_photo": true,
+  "all_damages": [
+   {
+    "part": "rear left quarter panel",
+    "damage_type": "dent",
+    "severity": "moderate"
+   },
+   {
+    "part": "rear left quarter panel",
+    "damage_type": "scratch",
+    "severity": "moderate"
+   }
+  ],
+  "damaged_part": "rear left quarter panel",
+  "damage_type": "dent",
+  "severity": "moderate",
+  "description": "The rear left quarter panel shows a dent near the fuel-filler/lamp opening area. There are multiple visible scrape/scratch marks on the same panel area extending outward from the dent.",
+  "image_quality_ok": true
+ },
+ "car_048.jpg": {
+  "is_vehicle_photo": true,
+  "all_damages": [
+   {
+    "part": "rear right tail light",
+    "damage_type": "lamp broken",
+    "severity": "moderate"
+   },
+   {
+    "part": "rear right quarter panel / bumper area below the tail light",
+    "damage_type": "dent",
+    "severity": "moderate"
+   },
+   {
+    "part": "rear right quarter panel / bumper area below the tail light",
+    "damage_type": "scratch",
+    "severity": "minor"
+   }
+  ],
+  "damaged_part": "rear right tail light",
+  "damage_type": "lamp broken",
+  "severity": "moderate",
+  "description": "The rear right tail light lens/housing area appears damaged with broken/missing parts around the light. The surrounding rear quarter panel/bumper area shows deformation and visible scrape marks below the light.",
+  "image_quality_ok": true
+ },
+ "car_050.jpg": {
+  "is_vehicle_photo": true,
+  "all_damages": [
+   {
+    "part": "front right headlight/upper lens area",
+    "damage_type": "lamp broken",
+    "severity": "severe"
+   },
+   {
+    "part": "front bumper cover",
+    "damage_type": "crack",
+    "severity": "moderate"
+   },
+   {
+    "part": "front bumper cover",
+    "damage_type": "dent",
+    "severity": "moderate"
+   },
+   {
+    "part": "front right fender area",
+    "damage_type": "dent",
+    "severity": "moderate"
+   },
+   {
+    "part": "front bumper/bumper edge",
+    "damage_type": "scratch",
+    "severity": "minor"
+   }
+  ],
+  "damaged_part": "front right headlight/upper lens area",
+  "damage_type": "lamp broken",
+  "severity": "severe",
+  "description": "The front right headlight lens/housing area is broken, with visible separation/impact damage. The front bumper cover is deformed and appears cracked, and the adjacent front fender area also shows deformation; there are minor scrape marks on the bumper area.",
+  "image_quality_ok": true
+ },
+ "car_057.jpg": {
+  "is_vehicle_photo": true,
+  "all_damages": [
+   {
+    "part": "rear left taillight/cluster",
+    "damage_type": "lamp broken",
+    "severity": "moderate"
+   },
+   {
+    "part": "rear left quarter panel",
+    "damage_type": "dent",
+    "severity": "moderate"
+   }
+  ],
+  "damaged_part": "rear left quarter panel",
+  "damage_type": "dent",
+  "severity": "moderate",
+  "description": "The rear left taillight assembly is damaged/broken, with the lens/housing area affected. The rear left quarter panel below the lamp shows a deformed dent around the impact area.",
+  "image_quality_ok": true
+ },
+ "car_058.jpg": {
+  "is_vehicle_photo": true,
+  "all_damages": [
+   {
+    "part": "rear bumper (front/center area around the lower section)",
+    "damage_type": "dent",
+    "severity": "severe"
+   },
+   {
+    "part": "rear bumper (lower edge/crease area)",
+    "damage_type": "crack",
+    "severity": "moderate"
+   }
+  ],
+  "damaged_part": "rear bumper (front/center area around the lower section)",
+  "damage_type": "dent",
+  "severity": "severe",
+  "description": "The rear bumper is noticeably deformed with a large pushed-in area toward the center. The lower bumper area also shows a split/tear-like opening along the crease line.",
+  "image_quality_ok": true
+ }
+}

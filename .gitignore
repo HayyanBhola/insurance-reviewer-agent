@@ -4,3 +4,4 @@ __pycache__/
 data/photos/
 data/policies/
 data/raw/
+data/policy_index.json

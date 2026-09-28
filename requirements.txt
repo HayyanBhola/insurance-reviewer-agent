@@ -1,0 +1,22 @@
+# Core
+langchain>=1.0
+langchain-core>=1.0
+langchain-openai
+langchain-google-genai
+langsmith
+python-dotenv
+pydantic>=2
+
+# Documents, images, search
+pypdf
+pillow
+imagehash
+rank-bm25
+numpy
+
+# Synthetic data
+reportlab
+datasets
+
+# Tests
+pytest

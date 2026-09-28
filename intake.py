@@ -21,7 +21,7 @@ from langchain_core.messages import HumanMessage, SystemMessage
 from PIL import Image
 from pypdf import PdfReader
 
-from llm import get_structured_llm
+from llm import structured_call
 from schemas import (ClaimForm, IntakeResult, PhotoAssessment, RepairEstimate,
                      ValidationIssue)
 
@@ -102,8 +102,7 @@ def image_to_base64(path: Path, max_side: int = 1024) -> str:
 # Step 2 and 3: LLM extraction and photo assessment
 # ---------------------------------------------------------------------------
 def extract(schema, document_text: str, what: str):
-    llm = get_structured_llm(schema)
-    return llm.invoke([
+    return structured_call(schema, [
         SystemMessage(EXTRACT_SYSTEM),
         HumanMessage(f"Extract the {what} fields.\n<document>\n{document_text}\n</document>"),
     ])
@@ -111,9 +110,8 @@ def extract(schema, document_text: str, what: str):
 
 def assess_photo(photo_path: Path) -> PhotoAssessment:
     # OPENAI_VISION_MODEL in .env lets you try a stronger model just for photos
-    llm = get_structured_llm(PhotoAssessment, openai_model=os.getenv("OPENAI_VISION_MODEL"))
     b64 = image_to_base64(photo_path)
-    return llm.invoke([
+    return structured_call(PhotoAssessment, openai_model=os.getenv("OPENAI_VISION_MODEL"), messages=[
         SystemMessage(PHOTO_SYSTEM),
         HumanMessage(content=[
             {"type": "text", "text": "Assess the vehicle damage in this photo."},

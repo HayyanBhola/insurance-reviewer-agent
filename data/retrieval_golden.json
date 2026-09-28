@@ -1,0 +1,216 @@
+[
+  {
+    "id": "Q01",
+    "policy_file": "icici_private_car.pdf",
+    "question": "Is damage from a car accident or collision covered?",
+    "expected_phrases": [
+      "accidental external means"
+    ]
+  },
+  {
+    "id": "Q02",
+    "policy_file": "icici_private_car.pdf",
+    "question": "Does the policy pay if the car catches fire?",
+    "expected_phrases": [
+      "fire explosion self ignition",
+      "fire, explosion, self ignition"
+    ]
+  },
+  {
+    "id": "Q03",
+    "policy_file": "icici_private_car.pdf",
+    "question": "Is the car covered if it is stolen?",
+    "expected_phrases": [
+      "burglary housebreaking or theft",
+      "burglary, housebreaking or theft"
+    ]
+  },
+  {
+    "id": "Q04",
+    "policy_file": "icici_private_car.pdf",
+    "question": "What happens if my car is damaged during a riot?",
+    "expected_phrases": [
+      "riot and strike"
+    ]
+  },
+  {
+    "id": "Q05",
+    "policy_file": "icici_private_car.pdf",
+    "question": "Is flood damage covered?",
+    "expected_phrases": [
+      "inundation"
+    ]
+  },
+  {
+    "id": "Q06",
+    "policy_file": "icici_private_car.pdf",
+    "question": "Will the insurer pay for loss of value or wear and tear?",
+    "expected_phrases": [
+      "wear and tear"
+    ]
+  },
+  {
+    "id": "Q07",
+    "policy_file": "icici_private_car.pdf",
+    "question": "Is engine or electrical failure covered?",
+    "expected_phrases": [
+      "electrical breakdown"
+    ]
+  },
+  {
+    "id": "Q08",
+    "policy_file": "icici_private_car.pdf",
+    "question": "Are flat or burst tyres covered?",
+    "expected_phrases": [
+      "tyres and tubes"
+    ]
+  },
+  {
+    "id": "Q09",
+    "policy_file": "icici_private_car.pdf",
+    "question": "What if the driver was drunk at the time of the accident?",
+    "expected_phrases": [
+      "intoxicating liquor"
+    ]
+  },
+  {
+    "id": "Q10",
+    "policy_file": "icici_private_car.pdf",
+    "question": "Is an accident outside the covered area paid?",
+    "expected_phrases": [
+      "geographical area"
+    ]
+  },
+  {
+    "id": "Q11",
+    "policy_file": "icici_private_car.pdf",
+    "question": "How much of each claim do I have to pay myself (deductible)?",
+    "expected_phrases": [
+      "deductible"
+    ]
+  },
+  {
+    "id": "Q12",
+    "policy_file": "icici_private_car.pdf",
+    "question": "Is injury to other people covered?",
+    "expected_phrases": [
+      "bodily injury"
+    ]
+  },
+  {
+    "id": "Q13",
+    "policy_file": "etiqa_private_car.pdf",
+    "question": "Is damage from a car accident covered?",
+    "expected_phrases": [
+      "accidental collision or overturning"
+    ]
+  },
+  {
+    "id": "Q14",
+    "policy_file": "etiqa_private_car.pdf",
+    "question": "Does the policy pay if the car catches fire?",
+    "expected_phrases": [
+      "fire, explosion or lightning",
+      "fire explosion or lightning"
+    ]
+  },
+  {
+    "id": "Q15",
+    "policy_file": "etiqa_private_car.pdf",
+    "question": "Is the car covered if it is stolen?",
+    "expected_phrases": [
+      "housebreaking or theft"
+    ]
+  },
+  {
+    "id": "Q16",
+    "policy_file": "etiqa_private_car.pdf",
+    "question": "Is damage from a riot covered?",
+    "expected_phrases": [
+      "civil commotion"
+    ]
+  },
+  {
+    "id": "Q17",
+    "policy_file": "etiqa_private_car.pdf",
+    "question": "Is flood damage covered?",
+    "expected_phrases": [
+      "flood"
+    ]
+  },
+  {
+    "id": "Q18",
+    "policy_file": "etiqa_private_car.pdf",
+    "question": "Is engine or electrical failure covered?",
+    "expected_phrases": [
+      "electronic breakdown",
+      "electrical breakdown"
+    ]
+  },
+  {
+    "id": "Q19",
+    "policy_file": "etiqa_private_car.pdf",
+    "question": "Are flat or burst tyres covered?",
+    "expected_phrases": [
+      "tyre(s) of your car",
+      "damage to the tyre"
+    ]
+  },
+  {
+    "id": "Q20",
+    "policy_file": "etiqa_private_car.pdf",
+    "question": "What if the driver was drunk?",
+    "expected_phrases": [
+      "intoxicating liquor"
+    ]
+  },
+  {
+    "id": "Q21",
+    "policy_file": "etiqa_private_car.pdf",
+    "question": "What if the driver has no licence?",
+    "expected_phrases": [
+      "valid driving licence"
+    ]
+  },
+  {
+    "id": "Q22",
+    "policy_file": "etiqa_private_car.pdf",
+    "question": "Which countries does the policy cover?",
+    "expected_phrases": [
+      "singapore"
+    ]
+  },
+  {
+    "id": "Q23",
+    "policy_file": "etiqa_private_car.pdf",
+    "question": "What is the excess I must pay?",
+    "expected_phrases": [
+      "bear yourself",
+      "excess"
+    ]
+  },
+  {
+    "id": "Q24",
+    "policy_file": "etiqa_private_car.pdf",
+    "question": "Is injury to other people covered?",
+    "expected_phrases": [
+      "bodily injury"
+    ]
+  },
+  {
+    "id": "Q25",
+    "policy_file": "etiqa_private_car.pdf",
+    "question": "Is a broken windscreen covered?",
+    "expected_phrases": [
+      "windscreen"
+    ]
+  },
+  {
+    "id": "Q26",
+    "policy_file": "etiqa_private_car.pdf",
+    "question": "Is loss of value after an accident paid?",
+    "expected_phrases": [
+      "loss of value"
+    ]
+  }
+]

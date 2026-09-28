@@ -1,0 +1,11 @@
+{
+  "retrieval_recall_at_3_min": 0.90,
+  "retrieval_mrr_min": 0.75,
+  "rules_accuracy_min": 0.85,
+  "ai_accuracy_min": 0.85,
+  "ai_faithfulness_min": 0.90,
+  "ai_cost_per_claim_max_usd": 0.02,
+  "ai_p95_latency_max_s": 20,
+  "alert_drop": 0.05,
+  "alert_cost_increase": 0.5
+}

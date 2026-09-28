@@ -1,0 +1,68 @@
+{
+  "claim_id": "C043",
+  "claim_form": {
+    "claim_number": "C043",
+    "date_submitted": "2026-02-21",
+    "claimant_name": "Bilal Iqbal",
+    "cnic": "26011-8628891-2",
+    "phone": "0319-1358318",
+    "policy_number": "PMC-2026-10050",
+    "vehicle": "Suzuki Alto",
+    "registration_number": "ICT-52-4090",
+    "incident_date": "2026-02-17",
+    "location": "Blue Area, Islamabad",
+    "description": "While parking, another vehicle scraped the rear door, leaving minor scratches on the paint.",
+    "amount_claimed": 11300.0
+  },
+  "estimate": {
+    "workshop": "Prime Auto Garage",
+    "invoice_number": "INV-315173",
+    "estimate_date": "2026-02-17",
+    "customer_name": "Bilal Iqbal",
+    "vehicle": "Suzuki Alto (ICT-52-4090)",
+    "registration_number": "ICT-52-4090",
+    "line_items": [
+      {
+        "item": "Rear Door - replacement / repair parts",
+        "amount": 6400.0
+      },
+      {
+        "item": "Rear Door - denting & painting",
+        "amount": 2100.0
+      },
+      {
+        "item": "Labour charges",
+        "amount": 2800.0
+      }
+    ],
+    "total": 11300.0
+  },
+  "photo": {
+    "is_vehicle_photo": true,
+    "all_damages": [
+      {
+        "part": "front left door",
+        "damage_type": "scratch",
+        "severity": "moderate"
+      },
+      {
+        "part": "front left door",
+        "damage_type": "dent",
+        "severity": "minor"
+      },
+      {
+        "part": "front left door",
+        "damage_type": "scratch",
+        "severity": "minor"
+      }
+    ],
+    "damaged_part": "front left door",
+    "damage_type": "dent",
+    "severity": "minor",
+    "description": "The front left door shows several visible scratches and a small dent near the lower area. No broken lamp, cracked glass, or flat tire is visible.",
+    "image_quality_ok": true
+  },
+  "issues": [],
+  "missing_fields": [],
+  "ready_for_review": true
+}

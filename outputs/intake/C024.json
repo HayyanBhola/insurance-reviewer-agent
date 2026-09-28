@@ -1,0 +1,73 @@
+{
+  "claim_id": "C024",
+  "claim_form": {
+    "claim_number": "C024",
+    "date_submitted": "2026-08-19",
+    "claimant_name": "Fatima Hussain",
+    "cnic": "43681-9084065-5",
+    "phone": "0321-8857296",
+    "policy_number": "PMC-2026-10047",
+    "vehicle": "Suzuki Cultus",
+    "registration_number": "RIR-28-3796",
+    "incident_date": "2026-08-16",
+    "location": "Chaklala, Rawalpindi",
+    "description": "Another car hit my vehicle, causing a noticeable dent on the front bumper.",
+    "amount_claimed": 71500.0
+  },
+  "estimate": {
+    "workshop": "Prime Auto Garage",
+    "invoice_number": "INV-483542",
+    "estimate_date": "2026-08-16",
+    "customer_name": "Fatima Hussain",
+    "vehicle": "Suzuki Cultus (RIR-28-3796)",
+    "registration_number": null,
+    "line_items": [
+      {
+        "item": "Front Bumper - replacement / repair parts",
+        "amount": 39900.0
+      },
+      {
+        "item": "Front Bumper - denting & painting",
+        "amount": 7300.0
+      },
+      {
+        "item": "Labour charges",
+        "amount": 24300.0
+      }
+    ],
+    "total": 71500.0
+  },
+  "photo": {
+    "is_vehicle_photo": true,
+    "all_damages": [
+      {
+        "part": "front right fender",
+        "damage_type": "dent",
+        "severity": "moderate"
+      },
+      {
+        "part": "front right fender",
+        "damage_type": "scratch",
+        "severity": "moderate"
+      },
+      {
+        "part": "front bumper",
+        "damage_type": "scratch",
+        "severity": "minor"
+      },
+      {
+        "part": "front bumper",
+        "damage_type": "dent",
+        "severity": "moderate"
+      }
+    ],
+    "damaged_part": "front right fender",
+    "damage_type": "dent",
+    "severity": "moderate",
+    "description": "The front right fender is visibly dented and scraped. The front bumper also shows scratches and a small deformed area.",
+    "image_quality_ok": true
+  },
+  "issues": [],
+  "missing_fields": [],
+  "ready_for_review": true
+}

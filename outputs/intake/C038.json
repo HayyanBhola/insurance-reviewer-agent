@@ -1,0 +1,58 @@
+{
+  "claim_id": "C038",
+  "claim_form": {
+    "claim_number": "C038",
+    "date_submitted": "2026-07-23",
+    "claimant_name": "Ahmed Qureshi",
+    "cnic": "58629-8031780-3",
+    "phone": "0331-9209880",
+    "policy_number": "PMC-2026-10049",
+    "vehicle": "Toyota Fortuner",
+    "registration_number": "LE-62-4683",
+    "incident_date": "2026-07-21",
+    "location": "Gulberg, Lahore",
+    "description": "My car struck a raised divider, and the front bumper cracked. The damage is noticeable.",
+    "amount_claimed": 45500.0
+  },
+  "estimate": {
+    "workshop": "Khan Denting & Painting",
+    "invoice_number": "INV-488528",
+    "estimate_date": "2026-07-22",
+    "customer_name": "Ahmed Qureshi",
+    "vehicle": "Toyota Fortuner (LE-62-4683)",
+    "registration_number": "LE-62-4683",
+    "line_items": [
+      {
+        "item": "Front Bumper - replacement / repair parts",
+        "amount": 22200.0
+      },
+      {
+        "item": "Front Bumper - denting & painting",
+        "amount": 11000.0
+      },
+      {
+        "item": "Labour charges",
+        "amount": 12300.0
+      }
+    ],
+    "total": 45500.0
+  },
+  "photo": {
+    "is_vehicle_photo": true,
+    "all_damages": [
+      {
+        "part": "front bumper",
+        "damage_type": "crack",
+        "severity": "moderate"
+      }
+    ],
+    "damaged_part": "front bumper",
+    "damage_type": "crack",
+    "severity": "moderate",
+    "description": "The front bumper has a visible split and torn section at the lower corner. The rest of the visible body panel looks intact.",
+    "image_quality_ok": true
+  },
+  "issues": [],
+  "missing_fields": [],
+  "ready_for_review": true
+}

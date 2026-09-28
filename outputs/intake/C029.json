@@ -1,0 +1,63 @@
+{
+  "claim_id": "C029",
+  "claim_form": {
+    "claim_number": "C029",
+    "date_submitted": "2026-08-15",
+    "claimant_name": "Usman Raza",
+    "cnic": "10726-2788238-7",
+    "phone": "0312-9689889",
+    "policy_number": "PMC-2026-10020",
+    "vehicle": "Kia Sportage",
+    "registration_number": "FDA-16-9232",
+    "incident_date": "2026-08-11",
+    "location": "D Ground, Faisalabad",
+    "description": "A truck hit my car at high speed. The front bumper is completely destroyed, both headlights are smashed, the bonnet is crushed and the radiator is leaking.",
+    "amount_claimed": 301600.0
+  },
+  "estimate": {
+    "workshop": "Al-Madina Auto Works",
+    "invoice_number": "INV-578634",
+    "estimate_date": "2026-08-12",
+    "customer_name": "Usman Raza",
+    "vehicle": "Kia Sportage (FDA-16-9232)",
+    "registration_number": "FDA-16-9232",
+    "line_items": [
+      {
+        "item": "Front Bumper - replacement / repair parts",
+        "amount": 169000.0
+      },
+      {
+        "item": "Front Bumper - denting & painting",
+        "amount": 60400.0
+      },
+      {
+        "item": "Labour charges",
+        "amount": 72200.0
+      }
+    ],
+    "total": 301600.0
+  },
+  "photo": {
+    "is_vehicle_photo": true,
+    "all_damages": [
+      {
+        "part": "front bumper",
+        "damage_type": "scratch",
+        "severity": "moderate"
+      },
+      {
+        "part": "front bumper",
+        "damage_type": "dent",
+        "severity": "minor"
+      }
+    ],
+    "damaged_part": "front bumper",
+    "damage_type": "dent",
+    "severity": "minor",
+    "description": "The front bumper has visible scuffing/scratches and a small deformed area. The headlight and tire appear intact in this photo.",
+    "image_quality_ok": true
+  },
+  "issues": [],
+  "missing_fields": [],
+  "ready_for_review": true
+}

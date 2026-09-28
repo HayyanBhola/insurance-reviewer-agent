@@ -1,0 +1,54 @@
+{
+  "claim_id": "C045",
+  "claim_form": {
+    "claim_number": "C045",
+    "date_submitted": "2026-05-24",
+    "claimant_name": "Faisal Mirza",
+    "cnic": "52504-1938483-4",
+    "phone": "0305-7730428",
+    "policy_number": "PMC-2026-10002",
+    "vehicle": "Toyota Yaris",
+    "registration_number": "KHI-18-3556",
+    "incident_date": "2026-05-19",
+    "location": "Korangi, Karachi",
+    "description": "The front tire burst while driving and went completely flat.",
+    "amount_claimed": 28800.0
+  },
+  "estimate": {
+    "workshop": "Khan Denting & Painting",
+    "invoice_number": "INV-429963",
+    "estimate_date": "2026-05-20",
+    "customer_name": "Faisal Mirza",
+    "vehicle": "Toyota Yaris (KHI-18-3556)",
+    "registration_number": "KHI-18-3556",
+    "line_items": [
+      {
+        "item": "Front Tire - replacement / repair parts",
+        "amount": 15300.0
+      },
+      {
+        "item": "Labour charges",
+        "amount": 13500.0
+      }
+    ],
+    "total": 28800.0
+  },
+  "photo": {
+    "is_vehicle_photo": true,
+    "all_damages": [
+      {
+        "part": "front tire",
+        "damage_type": "tire flat",
+        "severity": "severe"
+      }
+    ],
+    "damaged_part": "front tire",
+    "damage_type": "tire flat",
+    "severity": "severe",
+    "description": "The front tire is fully deflated and flattened against the ground. No other clear damage is visible in the photo.",
+    "image_quality_ok": true
+  },
+  "issues": [],
+  "missing_fields": [],
+  "ready_for_review": true
+}

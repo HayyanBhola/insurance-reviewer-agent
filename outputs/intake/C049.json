@@ -1,0 +1,63 @@
+{
+  "claim_id": "C049",
+  "claim_form": {
+    "claim_number": "C049",
+    "date_submitted": "2026-02-28",
+    "claimant_name": "Junaid Aslam",
+    "cnic": "92213-5074336-2",
+    "phone": "0329-3030966",
+    "policy_number": "PMC-2026-10026",
+    "vehicle": "Toyota Fortuner",
+    "registration_number": "FDA-15-5788",
+    "incident_date": "2026-02-23",
+    "location": "Jaranwala Road, Faisalabad",
+    "description": "While parking, another vehicle scraped the front bumper, leaving\nnoticeable scratches on the paint.",
+    "amount_claimed": 36600.0
+  },
+  "estimate": {
+    "workshop": "Ittefaq Autos",
+    "invoice_number": "INV-793655",
+    "estimate_date": "2026-02-25",
+    "customer_name": "Junaid Aslam",
+    "vehicle": "Toyota Fortuner (FDA-15-5788)",
+    "registration_number": "FDA-15-5788",
+    "line_items": [
+      {
+        "item": "Front Bumper - replacement / repair parts",
+        "amount": 15100.0
+      },
+      {
+        "item": "Front Bumper - denting & painting",
+        "amount": 7200.0
+      },
+      {
+        "item": "Labour charges",
+        "amount": 14300.0
+      }
+    ],
+    "total": 36600.0
+  },
+  "photo": {
+    "is_vehicle_photo": true,
+    "all_damages": [
+      {
+        "part": "front bumper",
+        "damage_type": "crack",
+        "severity": "moderate"
+      },
+      {
+        "part": "front bumper",
+        "damage_type": "scratch",
+        "severity": "moderate"
+      }
+    ],
+    "damaged_part": "front bumper",
+    "damage_type": "crack",
+    "severity": "moderate",
+    "description": "The front bumper shows a visible split/crack near the corner, with several scuff and scrape marks on the bumper surface. The front lamp lens appears intact.",
+    "image_quality_ok": true
+  },
+  "issues": [],
+  "missing_fields": [],
+  "ready_for_review": true
+}

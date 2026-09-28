@@ -1,0 +1,78 @@
+{
+  "claim_id": "C027",
+  "claim_form": {
+    "claim_number": "C027",
+    "date_submitted": "2026-08-29",
+    "claimant_name": "Sadia Javed",
+    "cnic": "73242-8922533-4",
+    "phone": "0338-3426689",
+    "policy_number": "PMC-2026-10039",
+    "vehicle": "Honda Civic",
+    "registration_number": "LE-34-9920",
+    "incident_date": "2026-08-26",
+    "location": "Mall Road, Lahore",
+    "description": "Another car hit my vehicle, causing a serious dent on the rear bumper.",
+    "amount_claimed": 177300.0
+  },
+  "estimate": {
+    "workshop": "Khan Denting & Painting",
+    "invoice_number": "INV-243139",
+    "estimate_date": "2026-08-26",
+    "customer_name": "Sadia Javed",
+    "vehicle": "Honda Civic (LE-34-9920)",
+    "registration_number": "LE-34-9920",
+    "line_items": [
+      {
+        "item": "Rear Bumper - replacement / repair parts",
+        "amount": 80700.0
+      },
+      {
+        "item": "Rear Bumper - denting & painting",
+        "amount": 38700.0
+      },
+      {
+        "item": "Labour charges",
+        "amount": 57900.0
+      }
+    ],
+    "total": 177300.0
+  },
+  "photo": {
+    "is_vehicle_photo": true,
+    "all_damages": [
+      {
+        "part": "rear bumper",
+        "damage_type": "crack",
+        "severity": "severe"
+      },
+      {
+        "part": "rear bumper",
+        "damage_type": "dent",
+        "severity": "severe"
+      },
+      {
+        "part": "rear left tail light",
+        "damage_type": "lamp broken",
+        "severity": "moderate"
+      },
+      {
+        "part": "rear left quarter panel",
+        "damage_type": "dent",
+        "severity": "moderate"
+      },
+      {
+        "part": "rear trunk lid",
+        "damage_type": "dent",
+        "severity": "moderate"
+      }
+    ],
+    "damaged_part": "rear bumper",
+    "damage_type": "crack",
+    "severity": "severe",
+    "description": "The rear bumper is badly split and deformed, with a large section hanging down. The rear left tail light and the rear left side of the body show visible impact damage, and the trunk lid is also visibly dented.",
+    "image_quality_ok": true
+  },
+  "issues": [],
+  "missing_fields": [],
+  "ready_for_review": true
+}

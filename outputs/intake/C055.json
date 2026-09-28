@@ -1,0 +1,68 @@
+{
+  "claim_id": "C055",
+  "claim_form": {
+    "claim_number": "C055",
+    "date_submitted": "2026-05-04",
+    "claimant_name": "Omar Chaudhry",
+    "cnic": "44687-2362099-3",
+    "phone": "0312-2259379",
+    "policy_number": "PMC-2026-10033",
+    "vehicle": "Suzuki Wagon R",
+    "registration_number": "RIR-10-6793",
+    "incident_date": "2026-05-02",
+    "location": "Chaklala, Rawalpindi",
+    "description": "While parking, another vehicle scraped the side skirt, leaving minor scratches on the paint.",
+    "amount_claimed": 15500.0
+  },
+  "estimate": {
+    "workshop": "Khan Denting & Painting",
+    "invoice_number": "INV-722656",
+    "estimate_date": "2026-05-05",
+    "customer_name": "Omar Chaudhry",
+    "vehicle": "Suzuki Wagon R (RIR-10-6793)",
+    "registration_number": "RIR-10-6793",
+    "line_items": [
+      {
+        "item": "Side Skirt - replacement / repair parts",
+        "amount": 7100.0
+      },
+      {
+        "item": "Side Skirt - denting & painting",
+        "amount": 2100.0
+      },
+      {
+        "item": "Labour charges",
+        "amount": 6300.0
+      }
+    ],
+    "total": 15500.0
+  },
+  "photo": {
+    "is_vehicle_photo": true,
+    "all_damages": [
+      {
+        "part": "lower side skirt / rocker panel",
+        "damage_type": "scratch",
+        "severity": "moderate"
+      },
+      {
+        "part": "lower side skirt / rocker panel",
+        "damage_type": "dent",
+        "severity": "moderate"
+      },
+      {
+        "part": "front left door edge near rocker",
+        "damage_type": "scratch",
+        "severity": "minor"
+      }
+    ],
+    "damaged_part": "lower side skirt / rocker panel",
+    "damage_type": "dent",
+    "severity": "moderate",
+    "description": "Visible scraping and deformation along the lower side skirt/rocker panel near the front left wheel area. There are also smaller scratches at the door edge and along the damaged lower trim.",
+    "image_quality_ok": true
+  },
+  "issues": [],
+  "missing_fields": [],
+  "ready_for_review": true
+}

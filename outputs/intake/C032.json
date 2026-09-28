@@ -1,0 +1,54 @@
+{
+  "claim_id": "C032",
+  "claim_form": {
+    "claim_number": "C032",
+    "date_submitted": "2026-06-25",
+    "claimant_name": "Kashif Javed",
+    "cnic": "62098-2347467-6",
+    "phone": "0346-6312692",
+    "policy_number": "PMC-2026-10042",
+    "vehicle": "Changan Alsvin",
+    "registration_number": "KHI-72-8964",
+    "incident_date": "2026-06-22",
+    "location": "Clifton, Karachi",
+    "description": "A stone hit the car and the windshield shattered. The damage is\nserious.",
+    "amount_claimed": 122300.0
+  },
+  "estimate": {
+    "workshop": "Prime Auto Garage",
+    "invoice_number": "INV-171744",
+    "estimate_date": "2026-06-23",
+    "customer_name": "Kashif Javed",
+    "vehicle": "Changan Alsvin (KHI-72-8964)",
+    "registration_number": "KHI-72-8964",
+    "line_items": [
+      {
+        "item": "Windshield - replacement / repair parts",
+        "amount": 64400.0
+      },
+      {
+        "item": "Labour charges",
+        "amount": 57900.0
+      }
+    ],
+    "total": 122300.0
+  },
+  "photo": {
+    "is_vehicle_photo": true,
+    "all_damages": [
+      {
+        "part": "windshield",
+        "damage_type": "glass shatter",
+        "severity": "severe"
+      }
+    ],
+    "damaged_part": "windshield",
+    "damage_type": "glass shatter",
+    "severity": "severe",
+    "description": "The windshield is badly cracked and shattered with extensive spiderweb damage across a large area. No other damage is clearly visible.",
+    "image_quality_ok": true
+  },
+  "issues": [],
+  "missing_fields": [],
+  "ready_for_review": true
+}

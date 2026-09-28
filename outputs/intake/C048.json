@@ -1,0 +1,63 @@
+{
+  "claim_id": "C048",
+  "claim_form": {
+    "claim_number": "C048",
+    "date_submitted": "2026-09-03",
+    "claimant_name": "Bilal Raza",
+    "cnic": "40647-8910069-1",
+    "phone": "0348-6503032",
+    "policy_number": "PMC-2026-10048",
+    "vehicle": "Toyota Fortuner",
+    "registration_number": "FDA-38-1135",
+    "incident_date": "2026-08-31",
+    "location": "Jaranwala Road, Faisalabad",
+    "description": "My car struck a raised divider, and the front bumper cracked. The damage is noticeable.",
+    "amount_claimed": 34300.0
+  },
+  "estimate": {
+    "workshop": "Ittefaq Autos",
+    "invoice_number": "INV-835132",
+    "estimate_date": "2026-09-02",
+    "customer_name": "Bilal Raza",
+    "vehicle": "Toyota Fortuner (FDA-38-1135)",
+    "registration_number": "FDA-38-1135",
+    "line_items": [
+      {
+        "item": "Front Bumper - replacement / repair parts",
+        "amount": 18200.0
+      },
+      {
+        "item": "Front Bumper - denting & painting",
+        "amount": 4000.0
+      },
+      {
+        "item": "Labour charges",
+        "amount": 12100.0
+      }
+    ],
+    "total": 34300.0
+  },
+  "photo": {
+    "is_vehicle_photo": true,
+    "all_damages": [
+      {
+        "part": "front bumper",
+        "damage_type": "scratch",
+        "severity": "moderate"
+      },
+      {
+        "part": "front bumper",
+        "damage_type": "crack",
+        "severity": "moderate"
+      }
+    ],
+    "damaged_part": "front bumper",
+    "damage_type": "crack",
+    "severity": "moderate",
+    "description": "The front bumper shows visible scratches and a split/open area near the lower edge. The headlight and tire appear intact in this photo.",
+    "image_quality_ok": true
+  },
+  "issues": [],
+  "missing_fields": [],
+  "ready_for_review": true
+}

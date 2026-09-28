@@ -1,0 +1,63 @@
+{
+  "claim_id": "C056",
+  "claim_form": {
+    "claim_number": "C056",
+    "date_submitted": "2025-10-16",
+    "claimant_name": "Kashif Malik",
+    "cnic": "97416-2724590-6",
+    "phone": "0346-3592974",
+    "policy_number": "PMC-2026-10015",
+    "vehicle": "Toyota Corolla",
+    "registration_number": "KHI-30-3000",
+    "incident_date": "2025-10-14",
+    "location": "PECHS, Karachi",
+    "description": "While parking, another vehicle scraped the rear bumper, leaving\nnoticeable scratches on the paint.",
+    "amount_claimed": 36400.0
+  },
+  "estimate": {
+    "workshop": "Al-Madina Auto Works",
+    "invoice_number": "INV-288073",
+    "estimate_date": "2025-10-16",
+    "customer_name": "Kashif Malik",
+    "vehicle": "Toyota Corolla (KHI-30-3000)",
+    "registration_number": null,
+    "line_items": [
+      {
+        "item": "Rear Bumper - replacement / repair parts",
+        "amount": 20300.0
+      },
+      {
+        "item": "Rear Bumper - denting & painting",
+        "amount": 5900.0
+      },
+      {
+        "item": "Labour charges",
+        "amount": 10200.0
+      }
+    ],
+    "total": 36400.0
+  },
+  "photo": {
+    "is_vehicle_photo": true,
+    "all_damages": [
+      {
+        "part": "rear bumper",
+        "damage_type": "scratch",
+        "severity": "moderate"
+      },
+      {
+        "part": "rear bumper",
+        "damage_type": "dent",
+        "severity": "moderate"
+      }
+    ],
+    "damaged_part": "rear bumper",
+    "damage_type": "dent",
+    "severity": "moderate",
+    "description": "The rear bumper shows visible scuff marks and a deformed area on the right side near the corner. No lamp or glass damage is visible.",
+    "image_quality_ok": true
+  },
+  "issues": [],
+  "missing_fields": [],
+  "ready_for_review": true
+}

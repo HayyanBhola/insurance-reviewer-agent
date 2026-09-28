@@ -1,0 +1,49 @@
+claim_id,label_type,label_sev,ai_type,ai_sev,ai_all,strict,found,sev_exact,sev_within_one
+C001,dent,severe,crack,severe,crack;dent;scratch,False,True,True,True
+C002,lamp broken,moderate,lamp broken,moderate,dent;lamp broken;scratch,True,True,True,True
+C003,lamp broken,severe,lamp broken,severe,crack;dent;lamp broken;scratch;tire flat,True,True,True,True
+C004,dent,severe,dent,severe,dent;scratch,True,True,True,True
+C005,dent,moderate,dent,moderate,dent;scratch,True,True,True,True
+C006,dent,moderate,dent,moderate,dent;scratch,True,True,True,True
+C008,scratch,minor,scratch,moderate,scratch,True,True,False,True
+C009,scratch,minor,scratch,moderate,scratch,True,True,False,True
+C011,dent,moderate,crack,severe,crack;dent;scratch,False,True,False,True
+C012,lamp broken,moderate,lamp broken,severe,dent;lamp broken;scratch,True,True,False,True
+C014,dent,severe,dent,severe,crack;dent;lamp broken;scratch,True,True,True,True
+C015,dent,minor,tire flat,severe,dent;scratch;tire flat,False,True,False,False
+C018,scratch,moderate,dent,moderate,dent;scratch,False,True,True,True
+C019,scratch,minor,dent,minor,dent;scratch,False,True,True,True
+C020,lamp broken,moderate,lamp broken,severe,dent;lamp broken;scratch,True,True,False,True
+C021,glass shatter,severe,glass shatter,severe,glass shatter,True,True,True,True
+C022,tire flat,moderate,dent,severe,crack;dent;scratch;tire flat,False,True,False,True
+C023,dent,moderate,dent,moderate,dent;scratch,True,True,True,True
+C024,dent,moderate,dent,moderate,dent;scratch,True,True,True,True
+C025,scratch,moderate,scratch,moderate,scratch,True,True,True,True
+C026,dent,severe,glass shatter,minor,crack;dent;glass shatter;scratch;tire flat,False,True,False,False
+C027,dent,severe,crack,severe,crack;dent;lamp broken,False,True,True,True
+C028,dent,moderate,dent,severe,dent;scratch,True,True,False,True
+C029,scratch,moderate,dent,minor,dent;scratch,False,True,False,True
+C030,glass shatter,severe,glass shatter,severe,glass shatter,True,True,True,True
+C031,tire flat,severe,tire flat,severe,scratch;tire flat,True,True,True,True
+C032,glass shatter,severe,glass shatter,severe,glass shatter,True,True,True,True
+C033,dent,severe,dent,severe,dent;lamp broken,True,True,True,True
+C034,glass shatter,severe,glass shatter,severe,glass shatter,True,True,True,True
+C035,glass shatter,severe,glass shatter,severe,glass shatter;scratch,True,True,True,True
+C036,scratch,minor,scratch,moderate,scratch,True,True,False,True
+C037,scratch,moderate,crack,moderate,crack;scratch,False,True,True,True
+C038,crack,moderate,crack,moderate,crack,True,True,True,True
+C039,tire flat,severe,crack,severe,crack;dent;tire flat,False,True,True,True
+C040,scratch,minor,scratch,moderate,scratch,True,True,False,True
+C041,crack,severe,crack,severe,crack;dent;lamp broken;scratch,True,True,True,True
+C043,scratch,minor,dent,minor,dent;scratch,False,True,True,True
+C044,dent,moderate,dent,moderate,dent;scratch,True,True,True,True
+C045,tire flat,severe,tire flat,severe,tire flat,True,True,True,True
+C046,scratch,minor,scratch,minor,scratch,True,True,True,True
+C048,crack,moderate,crack,moderate,crack;scratch,True,True,True,True
+C049,scratch,moderate,crack,moderate,crack;scratch,False,True,True,True
+C050,tire flat,severe,tire flat,severe,scratch;tire flat,True,True,True,True
+C051,lamp broken,severe,lamp broken,severe,crack;dent;lamp broken;scratch,True,True,True,True
+C052,scratch,minor,crack,minor,crack;scratch,False,True,True,True
+C055,scratch,minor,dent,moderate,dent;scratch,False,True,False,True
+C056,scratch,moderate,dent,moderate,dent;scratch,False,True,True,True
+C058,tire flat,moderate,tire flat,severe,scratch;tire flat,True,True,False,True

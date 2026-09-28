@@ -1,0 +1,54 @@
+{
+  "claim_id": "C021",
+  "claim_form": {
+    "claim_number": "C021",
+    "date_submitted": "2026-07-25",
+    "claimant_name": "Saad Siddiqui",
+    "cnic": "36794-6056977-4",
+    "phone": "0314-5856117",
+    "policy_number": "PMC-2026-10058",
+    "vehicle": "Honda City",
+    "registration_number": "FDA-25-226",
+    "incident_date": "2026-07-20",
+    "location": "Canal Road, Faisalabad",
+    "description": "A stone hit the car and the rear side window shattered. The damage is serious.",
+    "amount_claimed": 65500.0
+  },
+  "estimate": {
+    "workshop": "Ittefaq Autos",
+    "invoice_number": "INV-774591",
+    "estimate_date": "2026-07-21",
+    "customer_name": "Saad Siddiqui",
+    "vehicle": "Honda City (FDA-25-226)",
+    "registration_number": "FDA-25-226",
+    "line_items": [
+      {
+        "item": "Rear Side Window - replacement / repair parts",
+        "amount": 27900.0
+      },
+      {
+        "item": "Labour charges",
+        "amount": 37600.0
+      }
+    ],
+    "total": 65500.0
+  },
+  "photo": {
+    "is_vehicle_photo": true,
+    "all_damages": [
+      {
+        "part": "rear side window",
+        "damage_type": "glass shatter",
+        "severity": "severe"
+      }
+    ],
+    "damaged_part": "rear side window",
+    "damage_type": "glass shatter",
+    "severity": "severe",
+    "description": "The rear side window is shattered with a large missing hole and extensive टूटled glass around the opening. No other damage is clearly visible.",
+    "image_quality_ok": true
+  },
+  "issues": [],
+  "missing_fields": [],
+  "ready_for_review": true
+}

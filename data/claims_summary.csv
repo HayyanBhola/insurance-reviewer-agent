@@ -1,0 +1,59 @@
+claim_id,split,scenario,expected_decision,claimant,amount_claimed,photo_source,true_damage
+C001,dev,lapsed_policy,deny,Zainab Hussain,148500.0,car_030.jpg,severe dent on front bumper
+C002,dev,honest,approve,Bilal Javed,31800.0,car_057.jpg,moderate lamp broken on tail light
+C003,dev,third_party_only,deny,Ahmed Malik,94200.0,car_027.jpg,severe lamp broken on tail light
+C004,dev,reused_photo,investigate,Tariq Qureshi,122500.0,car_023.jpg,severe dent on side doors and rocker panel
+C005,dev,honest,approve,Sana Aslam,71900.0,car_054.jpg,moderate dent on rear door
+C006,dev,exaggerated_damage,investigate,Tariq Sheikh,390800.0,car_052.jpg,moderate dent on rear quarter panel
+C007,test,excluded_tyre,deny,Ayesha Mirza,22500.0,car_008.jpg,moderate tire flat on front tire
+C008,dev,exaggerated_damage,investigate,Hassan Malik,372400.0,car_031.jpg,minor scratch on rear door
+C009,dev,third_party_only,deny,Nida Aslam,8800.0,car_029.jpg,minor scratch on front bumper
+C010,test,inflated_estimate,investigate,Sana Aslam,1067900.0,car_020.jpg,severe dent on rear quarter panel
+C011,dev,honest,approve,Zainab Sheikh,43700.0,car_033.jpg,moderate dent on front bumper
+C012,dev,inflated_estimate,investigate,Sadia Khan,188300.0,car_042.jpg,moderate lamp broken on headlight
+C013,test,reused_photo,investigate,Nida Chaudhry,37500.0,car_017.jpg,moderate scratch on front bumper
+C014,dev,honest,approve,Faisal Abbasi,256500.0,car_021.jpg,severe dent on front fender
+C015,dev,lapsed_policy,deny,Mariam Ahmed,22000.0,car_026.jpg,minor dent on front fender
+C016,test,inflated_estimate,investigate,Rabia Iqbal,867100.0,car_059.jpg,severe dent on rear bumper
+C017,test,exaggerated_damage,investigate,Ali Ahmed,505000.0,car_034.jpg,minor scratch on rear quarter panel
+C018,dev,new_policy,investigate,Omar Malik,18200.0,car_044.jpg,moderate scratch on side skirt
+C019,dev,reused_photo,investigate,Junaid Aslam,13200.0,car_016.jpg,minor scratch on rear door
+C020,dev,honest,approve,Fatima Ahmed,66100.0,car_048.jpg,moderate lamp broken on tail light
+C021,dev,duplicate_invoice,investigate,Saad Siddiqui,65500.0,car_040.jpg,severe glass shatter on rear side window
+C022,dev,excluded_tyre,deny,Tariq Ahmed,24500.0,car_010.jpg,moderate tire flat on front tire
+C023,dev,new_policy,investigate,Nida Raza,32200.0,car_046.jpg,moderate dent on rear quarter panel
+C024,dev,honest,approve,Fatima Hussain,71500.0,car_045.jpg,moderate dent on front bumper
+C025,dev,third_party_only,deny,Zainab Qureshi,26500.0,car_022.jpg,moderate scratch on front fender
+C026,dev,honest,approve,Ayesha Javed,270300.0,car_012.jpg,severe dent on front fender
+C027,dev,honest,approve,Sadia Javed,177300.0,car_041.jpg,severe dent on rear bumper
+C028,dev,duplicate_invoice,investigate,Hassan Mirza,73500.0,car_055.jpg,moderate dent on rear door
+C029,dev,exaggerated_damage,investigate,Usman Raza,301600.0,car_014.jpg,moderate scratch on front bumper
+C030,dev,honest,approve,Amna Javed,126100.0,car_035.jpg,severe glass shatter on windshield
+C031,dev,excluded_tyre,deny,Usman Mirza,57900.0,car_007.jpg,severe tire flat on front tire
+C032,dev,honest,approve,Kashif Javed,122300.0,car_047.jpg,severe glass shatter on windshield
+C033,dev,honest,approve,Rabia Qureshi,131800.0,car_058.jpg,severe dent on rear bumper and tailgate
+C034,dev,honest,approve,Sadia Raza,103800.0,car_028.jpg,severe glass shatter on windshield
+C035,dev,lapsed_policy,deny,Waqas Aslam,79000.0,car_032.jpg,severe glass shatter on windshield
+C036,dev,exaggerated_damage,investigate,Tariq Iqbal,309400.0,car_049.jpg,minor scratch on front bumper
+C037,dev,honest,approve,Kashif Javed,37100.0,car_015.jpg,moderate scratch on front bumper
+C038,dev,honest,approve,Ahmed Qureshi,45500.0,car_024.jpg,moderate crack on front bumper
+C039,dev,honest,approve,Zainab Javed,35400.0,car_038.jpg,severe tire flat on front tire
+C040,dev,duplicate_invoice,investigate,Rabia Chaudhry,8600.0,car_019.jpg,minor scratch on rear bumper
+C041,dev,honest,approve,Kashif Mirza,63300.0,car_036.jpg,severe crack on front bumper
+C042,test,inflated_estimate,investigate,Tariq Sheikh,597900.0,car_053.jpg,severe lamp broken on tail light
+C043,dev,honest,approve,Bilal Iqbal,11300.0,car_016.jpg,minor scratch on rear door
+C044,dev,honest,approve,Hina Mirza,66100.0,car_055.jpg,moderate dent on rear door
+C045,dev,excluded_tyre,deny,Faisal Mirza,28800.0,car_006.jpg,severe tire flat on front tire
+C046,dev,honest,approve,Zainab Abbasi,8300.0,car_019.jpg,minor scratch on rear bumper
+C047,test,excluded_tyre,deny,Sadia Raza,12500.0,car_003.jpg,moderate tire flat on rear tire
+C048,dev,honest,approve,Bilal Raza,34300.0,car_025.jpg,moderate crack on front bumper
+C049,dev,honest,approve,Junaid Aslam,36600.0,car_017.jpg,moderate scratch on front bumper
+C050,dev,excluded_tyre,deny,Nida Aslam,35000.0,car_011.jpg,severe tire flat on front tire
+C051,dev,inflated_estimate,investigate,Saad Khan,692400.0,car_050.jpg,severe lamp broken on headlight
+C052,dev,honest,approve,Ahmed Malik,13400.0,car_013.jpg,minor scratch on front bumper
+C053,test,honest,approve,Zainab Mirza,124900.0,car_023.jpg,severe dent on side doors and rocker panel
+C054,test,honest,approve,Rabia Khan,111900.0,car_040.jpg,severe glass shatter on rear side window
+C055,dev,honest,approve,Omar Chaudhry,15500.0,car_043.jpg,minor scratch on side skirt
+C056,dev,new_policy,investigate,Kashif Malik,36400.0,car_018.jpg,moderate scratch on rear bumper
+C057,test,honest,approve,Tariq Mirza,223700.0,car_051.jpg,severe dent on hood
+C058,dev,honest,approve,Omar Raza,16500.0,car_009.jpg,moderate tire flat on front and rear tires

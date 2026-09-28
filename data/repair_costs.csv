@@ -1,0 +1,19 @@
+damage_type,severity,min_pkr,max_pkr
+scratch,minor,8000,20000
+scratch,moderate,18000,45000
+scratch,severe,40000,90000
+dent,minor,12000,30000
+dent,moderate,30000,80000
+dent,severe,90000,300000
+crack,minor,15000,35000
+crack,moderate,30000,70000
+crack,severe,60000,150000
+lamp broken,minor,10000,25000
+lamp broken,moderate,25000,70000
+lamp broken,severe,60000,180000
+glass shatter,minor,20000,45000
+glass shatter,moderate,40000,90000
+glass shatter,severe,60000,160000
+tire flat,minor,3000,8000
+tire flat,moderate,8000,25000
+tire flat,severe,20000,60000

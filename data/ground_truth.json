@@ -1,0 +1,1169 @@
+{
+  "C001": {
+    "split": "dev",
+    "scenario": "lapsed_policy",
+    "expected_decision": "deny",
+    "planted_issues": [
+      "policy_expired_before_incident"
+    ],
+    "reasons": [
+      "Incident 2026-01-07 is after policy end date 2025-12-06."
+    ],
+    "photo_source": "car_030.jpg",
+    "true_damage": {
+      "part": "front bumper",
+      "damage_type": "dent",
+      "severity": "severe",
+      "other_damage": "front door dented"
+    },
+    "policy_number": "PMC-2026-10009",
+    "invoice_number": "INV-274389",
+    "amount_claimed": 148500.0
+  },
+  "C002": {
+    "split": "dev",
+    "scenario": "honest",
+    "expected_decision": "approve",
+    "planted_issues": [],
+    "reasons": [
+      "Photo matches description (moderate lamp broken on tail light); policy active; amount within typical range."
+    ],
+    "photo_source": "car_057.jpg",
+    "true_damage": {
+      "part": "tail light",
+      "damage_type": "lamp broken",
+      "severity": "moderate",
+      "other_damage": "dent below lamp"
+    },
+    "policy_number": "PMC-2026-10032",
+    "invoice_number": "INV-564226",
+    "amount_claimed": 31800.0
+  },
+  "C003": {
+    "split": "dev",
+    "scenario": "third_party_only",
+    "expected_decision": "deny",
+    "planted_issues": [
+      "own_damage_not_covered_third_party_policy"
+    ],
+    "reasons": [
+      "Policy is third-party only; own-vehicle damage is not covered."
+    ],
+    "photo_source": "car_027.jpg",
+    "true_damage": {
+      "part": "tail light",
+      "damage_type": "lamp broken",
+      "severity": "severe",
+      "other_damage": "rear quarter dent; wheel damaged"
+    },
+    "policy_number": "PMC-2026-10010",
+    "invoice_number": "INV-428838",
+    "amount_claimed": 94200.0
+  },
+  "C004": {
+    "split": "dev",
+    "scenario": "reused_photo",
+    "expected_decision": "investigate",
+    "planted_issues": [
+      "photo_reused_from_C053"
+    ],
+    "reasons": [
+      "Photo is identical to the one in claim C053 from a different claimant."
+    ],
+    "photo_source": "car_023.jpg",
+    "true_damage": {
+      "part": "side doors and rocker panel",
+      "damage_type": "dent",
+      "severity": "severe",
+      "other_damage": "scratches along side"
+    },
+    "policy_number": "PMC-2026-10055",
+    "invoice_number": "INV-986209",
+    "amount_claimed": 122500.0
+  },
+  "C005": {
+    "split": "dev",
+    "scenario": "honest",
+    "expected_decision": "approve",
+    "planted_issues": [],
+    "reasons": [
+      "Photo matches description (moderate dent on rear door); policy active; amount within typical range."
+    ],
+    "photo_source": "car_054.jpg",
+    "true_damage": {
+      "part": "rear door",
+      "damage_type": "dent",
+      "severity": "moderate",
+      "other_damage": ""
+    },
+    "policy_number": "PMC-2026-10040",
+    "invoice_number": "INV-437408",
+    "amount_claimed": 71900.0
+  },
+  "C006": {
+    "split": "dev",
+    "scenario": "exaggerated_damage",
+    "expected_decision": "investigate",
+    "planted_issues": [
+      "description_exaggerates_photo_damage"
+    ],
+    "reasons": [
+      "Photo shows moderate dent on rear quarter panel; claim describes a major collision."
+    ],
+    "photo_source": "car_052.jpg",
+    "true_damage": {
+      "part": "rear quarter panel",
+      "damage_type": "dent",
+      "severity": "moderate",
+      "other_damage": "scratches"
+    },
+    "policy_number": "PMC-2026-10018",
+    "invoice_number": "INV-974224",
+    "amount_claimed": 390800.0
+  },
+  "C007": {
+    "split": "test",
+    "scenario": "excluded_tyre",
+    "expected_decision": "deny",
+    "planted_issues": [
+      "tyre_damage_only_excluded"
+    ],
+    "reasons": [
+      "Damage is to the tyre only, with no other vehicle damage. Standard private car wordings exclude tyre damage unless the vehicle is damaged at the same time (verify the exact clause in the policy PDF)."
+    ],
+    "photo_source": "car_008.jpg",
+    "true_damage": {
+      "part": "front tire",
+      "damage_type": "tire flat",
+      "severity": "moderate",
+      "other_damage": ""
+    },
+    "policy_number": "PMC-2026-10001",
+    "invoice_number": "INV-835911",
+    "amount_claimed": 22500.0
+  },
+  "C008": {
+    "split": "dev",
+    "scenario": "exaggerated_damage",
+    "expected_decision": "investigate",
+    "planted_issues": [
+      "description_exaggerates_photo_damage"
+    ],
+    "reasons": [
+      "Photo shows minor scratch on rear door; claim describes a major collision."
+    ],
+    "photo_source": "car_031.jpg",
+    "true_damage": {
+      "part": "rear door",
+      "damage_type": "scratch",
+      "severity": "minor",
+      "other_damage": ""
+    },
+    "policy_number": "PMC-2026-10016",
+    "invoice_number": "INV-634150",
+    "amount_claimed": 372400.0
+  },
+  "C009": {
+    "split": "dev",
+    "scenario": "third_party_only",
+    "expected_decision": "deny",
+    "planted_issues": [
+      "own_damage_not_covered_third_party_policy"
+    ],
+    "reasons": [
+      "Policy is third-party only; own-vehicle damage is not covered."
+    ],
+    "photo_source": "car_029.jpg",
+    "true_damage": {
+      "part": "front bumper",
+      "damage_type": "scratch",
+      "severity": "minor",
+      "other_damage": ""
+    },
+    "policy_number": "PMC-2026-10011",
+    "invoice_number": "INV-789305",
+    "amount_claimed": 8800.0
+  },
+  "C010": {
+    "split": "test",
+    "scenario": "inflated_estimate",
+    "expected_decision": "investigate",
+    "planted_issues": [
+      "estimate_far_above_typical_cost"
+    ],
+    "reasons": [
+      "Estimate PKR 1,067,900 vs typical PKR 90,000-PKR 300,000 for severe dent."
+    ],
+    "photo_source": "car_020.jpg",
+    "true_damage": {
+      "part": "rear quarter panel",
+      "damage_type": "dent",
+      "severity": "severe",
+      "other_damage": "tail light area damaged"
+    },
+    "policy_number": "PMC-2026-10022",
+    "invoice_number": "INV-907189",
+    "amount_claimed": 1067900.0
+  },
+  "C011": {
+    "split": "dev",
+    "scenario": "honest",
+    "expected_decision": "approve",
+    "planted_issues": [],
+    "reasons": [
+      "Photo matches description (moderate dent on front bumper); policy active; amount within typical range."
+    ],
+    "photo_source": "car_033.jpg",
+    "true_damage": {
+      "part": "front bumper",
+      "damage_type": "dent",
+      "severity": "moderate",
+      "other_damage": "scratches"
+    },
+    "policy_number": "PMC-2026-10031",
+    "invoice_number": "INV-457256",
+    "amount_claimed": 43700.0
+  },
+  "C012": {
+    "split": "dev",
+    "scenario": "inflated_estimate",
+    "expected_decision": "investigate",
+    "planted_issues": [
+      "estimate_far_above_typical_cost"
+    ],
+    "reasons": [
+      "Estimate PKR 188,300 vs typical PKR 25,000-PKR 70,000 for moderate lamp broken."
+    ],
+    "photo_source": "car_042.jpg",
+    "true_damage": {
+      "part": "headlight",
+      "damage_type": "lamp broken",
+      "severity": "moderate",
+      "other_damage": "front bumper cracked"
+    },
+    "policy_number": "PMC-2026-10025",
+    "invoice_number": "INV-213349",
+    "amount_claimed": 188300.0
+  },
+  "C013": {
+    "split": "test",
+    "scenario": "reused_photo",
+    "expected_decision": "investigate",
+    "planted_issues": [
+      "photo_reused_from_C049"
+    ],
+    "reasons": [
+      "Photo is identical to the one in claim C049 from a different claimant."
+    ],
+    "photo_source": "car_017.jpg",
+    "true_damage": {
+      "part": "front bumper",
+      "damage_type": "scratch",
+      "severity": "moderate",
+      "other_damage": ""
+    },
+    "policy_number": "PMC-2026-10053",
+    "invoice_number": "INV-547494",
+    "amount_claimed": 37500.0
+  },
+  "C014": {
+    "split": "dev",
+    "scenario": "honest",
+    "expected_decision": "approve",
+    "planted_issues": [],
+    "reasons": [
+      "Photo matches description (severe dent on front fender); policy active; amount within typical range."
+    ],
+    "photo_source": "car_021.jpg",
+    "true_damage": {
+      "part": "front fender",
+      "damage_type": "dent",
+      "severity": "severe",
+      "other_damage": "headlight damaged"
+    },
+    "policy_number": "PMC-2026-10029",
+    "invoice_number": "INV-656711",
+    "amount_claimed": 256500.0
+  },
+  "C015": {
+    "split": "dev",
+    "scenario": "lapsed_policy",
+    "expected_decision": "deny",
+    "planted_issues": [
+      "policy_expired_before_incident"
+    ],
+    "reasons": [
+      "Incident 2026-01-10 is after policy end date 2026-01-04."
+    ],
+    "photo_source": "car_026.jpg",
+    "true_damage": {
+      "part": "front fender",
+      "damage_type": "dent",
+      "severity": "minor",
+      "other_damage": "tire flat"
+    },
+    "policy_number": "PMC-2026-10007",
+    "invoice_number": "INV-349565",
+    "amount_claimed": 22000.0
+  },
+  "C016": {
+    "split": "test",
+    "scenario": "inflated_estimate",
+    "expected_decision": "investigate",
+    "planted_issues": [
+      "estimate_far_above_typical_cost"
+    ],
+    "reasons": [
+      "Estimate PKR 867,100 vs typical PKR 90,000-PKR 300,000 for severe dent."
+    ],
+    "photo_source": "car_059.jpg",
+    "true_damage": {
+      "part": "rear bumper",
+      "damage_type": "dent",
+      "severity": "severe",
+      "other_damage": "tail light area damaged"
+    },
+    "policy_number": "PMC-2026-10024",
+    "invoice_number": "INV-120324",
+    "amount_claimed": 867100.0
+  },
+  "C017": {
+    "split": "test",
+    "scenario": "exaggerated_damage",
+    "expected_decision": "investigate",
+    "planted_issues": [
+      "description_exaggerates_photo_damage"
+    ],
+    "reasons": [
+      "Photo shows minor scratch on rear quarter panel; claim describes a major collision."
+    ],
+    "photo_source": "car_034.jpg",
+    "true_damage": {
+      "part": "rear quarter panel",
+      "damage_type": "scratch",
+      "severity": "minor",
+      "other_damage": ""
+    },
+    "policy_number": "PMC-2026-10017",
+    "invoice_number": "INV-945687",
+    "amount_claimed": 505000.0
+  },
+  "C018": {
+    "split": "dev",
+    "scenario": "new_policy",
+    "expected_decision": "investigate",
+    "planted_issues": [
+      "incident_within_7_days_of_policy_start"
+    ],
+    "reasons": [
+      "Incident only 5 days after policy start."
+    ],
+    "photo_source": "car_044.jpg",
+    "true_damage": {
+      "part": "side skirt",
+      "damage_type": "scratch",
+      "severity": "moderate",
+      "other_damage": "small dent"
+    },
+    "policy_number": "PMC-2026-10013",
+    "invoice_number": "INV-734210",
+    "amount_claimed": 18200.0
+  },
+  "C019": {
+    "split": "dev",
+    "scenario": "reused_photo",
+    "expected_decision": "investigate",
+    "planted_issues": [
+      "photo_reused_from_C043"
+    ],
+    "reasons": [
+      "Photo is identical to the one in claim C043 from a different claimant."
+    ],
+    "photo_source": "car_016.jpg",
+    "true_damage": {
+      "part": "rear door",
+      "damage_type": "scratch",
+      "severity": "minor",
+      "other_damage": ""
+    },
+    "policy_number": "PMC-2026-10054",
+    "invoice_number": "INV-886730",
+    "amount_claimed": 13200.0
+  },
+  "C020": {
+    "split": "dev",
+    "scenario": "honest",
+    "expected_decision": "approve",
+    "planted_issues": [],
+    "reasons": [
+      "Photo matches description (moderate lamp broken on tail light); policy active; amount within typical range."
+    ],
+    "photo_source": "car_048.jpg",
+    "true_damage": {
+      "part": "tail light",
+      "damage_type": "lamp broken",
+      "severity": "moderate",
+      "other_damage": "dent and scratches beside lamp"
+    },
+    "policy_number": "PMC-2026-10044",
+    "invoice_number": "INV-673149",
+    "amount_claimed": 66100.0
+  },
+  "C021": {
+    "split": "dev",
+    "scenario": "duplicate_invoice",
+    "expected_decision": "investigate",
+    "planted_issues": [
+      "invoice_number_reused_from_C052",
+      "photo_reused_from_C054"
+    ],
+    "reasons": [
+      "Invoice INV-774591 was already used in claim C052."
+    ],
+    "photo_source": "car_040.jpg",
+    "true_damage": {
+      "part": "rear side window",
+      "damage_type": "glass shatter",
+      "severity": "severe",
+      "other_damage": ""
+    },
+    "policy_number": "PMC-2026-10058",
+    "invoice_number": "INV-774591",
+    "amount_claimed": 65500.0
+  },
+  "C022": {
+    "split": "dev",
+    "scenario": "excluded_tyre",
+    "expected_decision": "deny",
+    "planted_issues": [
+      "tyre_damage_only_excluded"
+    ],
+    "reasons": [
+      "Damage is to the tyre only, with no other vehicle damage. Standard private car wordings exclude tyre damage unless the vehicle is damaged at the same time (verify the exact clause in the policy PDF)."
+    ],
+    "photo_source": "car_010.jpg",
+    "true_damage": {
+      "part": "front tire",
+      "damage_type": "tire flat",
+      "severity": "moderate",
+      "other_damage": ""
+    },
+    "policy_number": "PMC-2026-10004",
+    "invoice_number": "INV-857168",
+    "amount_claimed": 24500.0
+  },
+  "C023": {
+    "split": "dev",
+    "scenario": "new_policy",
+    "expected_decision": "investigate",
+    "planted_issues": [
+      "incident_within_7_days_of_policy_start"
+    ],
+    "reasons": [
+      "Incident only 4 days after policy start."
+    ],
+    "photo_source": "car_046.jpg",
+    "true_damage": {
+      "part": "rear quarter panel",
+      "damage_type": "dent",
+      "severity": "moderate",
+      "other_damage": ""
+    },
+    "policy_number": "PMC-2026-10014",
+    "invoice_number": "INV-256294",
+    "amount_claimed": 32200.0
+  },
+  "C024": {
+    "split": "dev",
+    "scenario": "honest",
+    "expected_decision": "approve",
+    "planted_issues": [],
+    "reasons": [
+      "Photo matches description (moderate dent on front bumper); policy active; amount within typical range."
+    ],
+    "photo_source": "car_045.jpg",
+    "true_damage": {
+      "part": "front bumper",
+      "damage_type": "dent",
+      "severity": "moderate",
+      "other_damage": "scratches"
+    },
+    "policy_number": "PMC-2026-10047",
+    "invoice_number": "INV-483542",
+    "amount_claimed": 71500.0
+  },
+  "C025": {
+    "split": "dev",
+    "scenario": "third_party_only",
+    "expected_decision": "deny",
+    "planted_issues": [
+      "own_damage_not_covered_third_party_policy"
+    ],
+    "reasons": [
+      "Policy is third-party only; own-vehicle damage is not covered."
+    ],
+    "photo_source": "car_022.jpg",
+    "true_damage": {
+      "part": "front fender",
+      "damage_type": "scratch",
+      "severity": "moderate",
+      "other_damage": ""
+    },
+    "policy_number": "PMC-2026-10012",
+    "invoice_number": "INV-238890",
+    "amount_claimed": 26500.0
+  },
+  "C026": {
+    "split": "dev",
+    "scenario": "honest",
+    "expected_decision": "approve",
+    "planted_issues": [],
+    "reasons": [
+      "Photo matches description (severe dent on front fender); policy active; amount within typical range."
+    ],
+    "photo_source": "car_012.jpg",
+    "true_damage": {
+      "part": "front fender",
+      "damage_type": "dent",
+      "severity": "severe",
+      "other_damage": "front bumper crushed; tire flat"
+    },
+    "policy_number": "PMC-2026-10051",
+    "invoice_number": "INV-928358",
+    "amount_claimed": 270300.0
+  },
+  "C027": {
+    "split": "dev",
+    "scenario": "honest",
+    "expected_decision": "approve",
+    "planted_issues": [],
+    "reasons": [
+      "Photo matches description (severe dent on rear bumper); policy active; amount within typical range."
+    ],
+    "photo_source": "car_041.jpg",
+    "true_damage": {
+      "part": "rear bumper",
+      "damage_type": "dent",
+      "severity": "severe",
+      "other_damage": ""
+    },
+    "policy_number": "PMC-2026-10039",
+    "invoice_number": "INV-243139",
+    "amount_claimed": 177300.0
+  },
+  "C028": {
+    "split": "dev",
+    "scenario": "duplicate_invoice",
+    "expected_decision": "investigate",
+    "planted_issues": [
+      "invoice_number_reused_from_C034",
+      "photo_reused_from_C044"
+    ],
+    "reasons": [
+      "Invoice INV-335615 was already used in claim C034."
+    ],
+    "photo_source": "car_055.jpg",
+    "true_damage": {
+      "part": "rear door",
+      "damage_type": "dent",
+      "severity": "moderate",
+      "other_damage": ""
+    },
+    "policy_number": "PMC-2026-10056",
+    "invoice_number": "INV-335615",
+    "amount_claimed": 73500.0
+  },
+  "C029": {
+    "split": "dev",
+    "scenario": "exaggerated_damage",
+    "expected_decision": "investigate",
+    "planted_issues": [
+      "description_exaggerates_photo_damage"
+    ],
+    "reasons": [
+      "Photo shows moderate scratch on front bumper; claim describes a major collision."
+    ],
+    "photo_source": "car_014.jpg",
+    "true_damage": {
+      "part": "front bumper",
+      "damage_type": "scratch",
+      "severity": "moderate",
+      "other_damage": ""
+    },
+    "policy_number": "PMC-2026-10020",
+    "invoice_number": "INV-578634",
+    "amount_claimed": 301600.0
+  },
+  "C030": {
+    "split": "dev",
+    "scenario": "honest",
+    "expected_decision": "approve",
+    "planted_issues": [],
+    "reasons": [
+      "Photo matches description (severe glass shatter on windshield); policy active; amount within typical range."
+    ],
+    "photo_source": "car_035.jpg",
+    "true_damage": {
+      "part": "windshield",
+      "damage_type": "glass shatter",
+      "severity": "severe",
+      "other_damage": ""
+    },
+    "policy_number": "PMC-2026-10034",
+    "invoice_number": "INV-931131",
+    "amount_claimed": 126100.0
+  },
+  "C031": {
+    "split": "dev",
+    "scenario": "excluded_tyre",
+    "expected_decision": "deny",
+    "planted_issues": [
+      "tyre_damage_only_excluded"
+    ],
+    "reasons": [
+      "Damage is to the tyre only, with no other vehicle damage. Standard private car wordings exclude tyre damage unless the vehicle is damaged at the same time (verify the exact clause in the policy PDF)."
+    ],
+    "photo_source": "car_007.jpg",
+    "true_damage": {
+      "part": "front tire",
+      "damage_type": "tire flat",
+      "severity": "severe",
+      "other_damage": ""
+    },
+    "policy_number": "PMC-2026-10006",
+    "invoice_number": "INV-804314",
+    "amount_claimed": 57900.0
+  },
+  "C032": {
+    "split": "dev",
+    "scenario": "honest",
+    "expected_decision": "approve",
+    "planted_issues": [],
+    "reasons": [
+      "Photo matches description (severe glass shatter on windshield); policy active; amount within typical range."
+    ],
+    "photo_source": "car_047.jpg",
+    "true_damage": {
+      "part": "windshield",
+      "damage_type": "glass shatter",
+      "severity": "severe",
+      "other_damage": ""
+    },
+    "policy_number": "PMC-2026-10042",
+    "invoice_number": "INV-171744",
+    "amount_claimed": 122300.0
+  },
+  "C033": {
+    "split": "dev",
+    "scenario": "honest",
+    "expected_decision": "approve",
+    "planted_issues": [],
+    "reasons": [
+      "Photo matches description (severe dent on rear bumper and tailgate); policy active; amount within typical range."
+    ],
+    "photo_source": "car_058.jpg",
+    "true_damage": {
+      "part": "rear bumper and tailgate",
+      "damage_type": "dent",
+      "severity": "severe",
+      "other_damage": ""
+    },
+    "policy_number": "PMC-2026-10045",
+    "invoice_number": "INV-515032",
+    "amount_claimed": 131800.0
+  },
+  "C034": {
+    "split": "dev",
+    "scenario": "honest",
+    "expected_decision": "approve",
+    "planted_issues": [],
+    "reasons": [
+      "Photo matches description (severe glass shatter on windshield); policy active; amount within typical range."
+    ],
+    "photo_source": "car_028.jpg",
+    "true_damage": {
+      "part": "windshield",
+      "damage_type": "glass shatter",
+      "severity": "severe",
+      "other_damage": ""
+    },
+    "policy_number": "PMC-2026-10038",
+    "invoice_number": "INV-335615",
+    "amount_claimed": 103800.0
+  },
+  "C035": {
+    "split": "dev",
+    "scenario": "lapsed_policy",
+    "expected_decision": "deny",
+    "planted_issues": [
+      "policy_expired_before_incident"
+    ],
+    "reasons": [
+      "Incident 2026-07-24 is after policy end date 2026-06-19."
+    ],
+    "photo_source": "car_032.jpg",
+    "true_damage": {
+      "part": "windshield",
+      "damage_type": "glass shatter",
+      "severity": "severe",
+      "other_damage": ""
+    },
+    "policy_number": "PMC-2026-10008",
+    "invoice_number": "INV-863587",
+    "amount_claimed": 79000.0
+  },
+  "C036": {
+    "split": "dev",
+    "scenario": "exaggerated_damage",
+    "expected_decision": "investigate",
+    "planted_issues": [
+      "description_exaggerates_photo_damage"
+    ],
+    "reasons": [
+      "Photo shows minor scratch on front bumper; claim describes a major collision."
+    ],
+    "photo_source": "car_049.jpg",
+    "true_damage": {
+      "part": "front bumper",
+      "damage_type": "scratch",
+      "severity": "minor",
+      "other_damage": ""
+    },
+    "policy_number": "PMC-2026-10019",
+    "invoice_number": "INV-254511",
+    "amount_claimed": 309400.0
+  },
+  "C037": {
+    "split": "dev",
+    "scenario": "honest",
+    "expected_decision": "approve",
+    "planted_issues": [],
+    "reasons": [
+      "Photo matches description (moderate scratch on front bumper); policy active; amount within typical range."
+    ],
+    "photo_source": "car_015.jpg",
+    "true_damage": {
+      "part": "front bumper",
+      "damage_type": "scratch",
+      "severity": "moderate",
+      "other_damage": ""
+    },
+    "policy_number": "PMC-2026-10027",
+    "invoice_number": "INV-993085",
+    "amount_claimed": 37100.0
+  },
+  "C038": {
+    "split": "dev",
+    "scenario": "honest",
+    "expected_decision": "approve",
+    "planted_issues": [],
+    "reasons": [
+      "Photo matches description (moderate crack on front bumper); policy active; amount within typical range."
+    ],
+    "photo_source": "car_024.jpg",
+    "true_damage": {
+      "part": "front bumper",
+      "damage_type": "crack",
+      "severity": "moderate",
+      "other_damage": ""
+    },
+    "policy_number": "PMC-2026-10049",
+    "invoice_number": "INV-488528",
+    "amount_claimed": 45500.0
+  },
+  "C039": {
+    "split": "dev",
+    "scenario": "honest",
+    "expected_decision": "approve",
+    "planted_issues": [],
+    "reasons": [
+      "Photo matches description (severe tire flat on front tire); policy active; amount within typical range."
+    ],
+    "photo_source": "car_038.jpg",
+    "true_damage": {
+      "part": "front tire",
+      "damage_type": "tire flat",
+      "severity": "severe",
+      "other_damage": "front bumper and fender torn"
+    },
+    "policy_number": "PMC-2026-10041",
+    "invoice_number": "INV-651499",
+    "amount_claimed": 35400.0
+  },
+  "C040": {
+    "split": "dev",
+    "scenario": "duplicate_invoice",
+    "expected_decision": "investigate",
+    "planted_issues": [
+      "invoice_number_reused_from_C058",
+      "photo_reused_from_C046"
+    ],
+    "reasons": [
+      "Invoice INV-195763 was already used in claim C058."
+    ],
+    "photo_source": "car_019.jpg",
+    "true_damage": {
+      "part": "rear bumper",
+      "damage_type": "scratch",
+      "severity": "minor",
+      "other_damage": ""
+    },
+    "policy_number": "PMC-2026-10057",
+    "invoice_number": "INV-195763",
+    "amount_claimed": 8600.0
+  },
+  "C041": {
+    "split": "dev",
+    "scenario": "honest",
+    "expected_decision": "approve",
+    "planted_issues": [],
+    "reasons": [
+      "Photo matches description (severe crack on front bumper); policy active; amount within typical range."
+    ],
+    "photo_source": "car_036.jpg",
+    "true_damage": {
+      "part": "front bumper",
+      "damage_type": "crack",
+      "severity": "severe",
+      "other_damage": "scratches"
+    },
+    "policy_number": "PMC-2026-10037",
+    "invoice_number": "INV-156837",
+    "amount_claimed": 63300.0
+  },
+  "C042": {
+    "split": "test",
+    "scenario": "inflated_estimate",
+    "expected_decision": "investigate",
+    "planted_issues": [
+      "estimate_far_above_typical_cost"
+    ],
+    "reasons": [
+      "Estimate PKR 597,900 vs typical PKR 60,000-PKR 180,000 for severe lamp broken."
+    ],
+    "photo_source": "car_053.jpg",
+    "true_damage": {
+      "part": "tail light",
+      "damage_type": "lamp broken",
+      "severity": "severe",
+      "other_damage": "rear body crushed"
+    },
+    "policy_number": "PMC-2026-10021",
+    "invoice_number": "INV-181247",
+    "amount_claimed": 597900.0
+  },
+  "C043": {
+    "split": "dev",
+    "scenario": "honest",
+    "expected_decision": "approve",
+    "planted_issues": [],
+    "reasons": [
+      "Photo matches description (minor scratch on rear door); policy active; amount within typical range."
+    ],
+    "photo_source": "car_016.jpg",
+    "true_damage": {
+      "part": "rear door",
+      "damage_type": "scratch",
+      "severity": "minor",
+      "other_damage": ""
+    },
+    "policy_number": "PMC-2026-10050",
+    "invoice_number": "INV-315173",
+    "amount_claimed": 11300.0
+  },
+  "C044": {
+    "split": "dev",
+    "scenario": "honest",
+    "expected_decision": "approve",
+    "planted_issues": [],
+    "reasons": [
+      "Photo matches description (moderate dent on rear door); policy active; amount within typical range."
+    ],
+    "photo_source": "car_055.jpg",
+    "true_damage": {
+      "part": "rear door",
+      "damage_type": "dent",
+      "severity": "moderate",
+      "other_damage": ""
+    },
+    "policy_number": "PMC-2026-10030",
+    "invoice_number": "INV-725780",
+    "amount_claimed": 66100.0
+  },
+  "C045": {
+    "split": "dev",
+    "scenario": "excluded_tyre",
+    "expected_decision": "deny",
+    "planted_issues": [
+      "tyre_damage_only_excluded"
+    ],
+    "reasons": [
+      "Damage is to the tyre only, with no other vehicle damage. Standard private car wordings exclude tyre damage unless the vehicle is damaged at the same time (verify the exact clause in the policy PDF)."
+    ],
+    "photo_source": "car_006.jpg",
+    "true_damage": {
+      "part": "front tire",
+      "damage_type": "tire flat",
+      "severity": "severe",
+      "other_damage": ""
+    },
+    "policy_number": "PMC-2026-10002",
+    "invoice_number": "INV-429963",
+    "amount_claimed": 28800.0
+  },
+  "C046": {
+    "split": "dev",
+    "scenario": "honest",
+    "expected_decision": "approve",
+    "planted_issues": [],
+    "reasons": [
+      "Photo matches description (minor scratch on rear bumper); policy active; amount within typical range."
+    ],
+    "photo_source": "car_019.jpg",
+    "true_damage": {
+      "part": "rear bumper",
+      "damage_type": "scratch",
+      "severity": "minor",
+      "other_damage": ""
+    },
+    "policy_number": "PMC-2026-10028",
+    "invoice_number": "INV-110644",
+    "amount_claimed": 8300.0
+  },
+  "C047": {
+    "split": "test",
+    "scenario": "excluded_tyre",
+    "expected_decision": "deny",
+    "planted_issues": [
+      "tyre_damage_only_excluded"
+    ],
+    "reasons": [
+      "Damage is to the tyre only, with no other vehicle damage. Standard private car wordings exclude tyre damage unless the vehicle is damaged at the same time (verify the exact clause in the policy PDF)."
+    ],
+    "photo_source": "car_003.jpg",
+    "true_damage": {
+      "part": "rear tire",
+      "damage_type": "tire flat",
+      "severity": "moderate",
+      "other_damage": ""
+    },
+    "policy_number": "PMC-2026-10003",
+    "invoice_number": "INV-260265",
+    "amount_claimed": 12500.0
+  },
+  "C048": {
+    "split": "dev",
+    "scenario": "honest",
+    "expected_decision": "approve",
+    "planted_issues": [],
+    "reasons": [
+      "Photo matches description (moderate crack on front bumper); policy active; amount within typical range."
+    ],
+    "photo_source": "car_025.jpg",
+    "true_damage": {
+      "part": "front bumper",
+      "damage_type": "crack",
+      "severity": "moderate",
+      "other_damage": "scratch"
+    },
+    "policy_number": "PMC-2026-10048",
+    "invoice_number": "INV-835132",
+    "amount_claimed": 34300.0
+  },
+  "C049": {
+    "split": "dev",
+    "scenario": "honest",
+    "expected_decision": "approve",
+    "planted_issues": [],
+    "reasons": [
+      "Photo matches description (moderate scratch on front bumper); policy active; amount within typical range."
+    ],
+    "photo_source": "car_017.jpg",
+    "true_damage": {
+      "part": "front bumper",
+      "damage_type": "scratch",
+      "severity": "moderate",
+      "other_damage": ""
+    },
+    "policy_number": "PMC-2026-10026",
+    "invoice_number": "INV-793655",
+    "amount_claimed": 36600.0
+  },
+  "C050": {
+    "split": "dev",
+    "scenario": "excluded_tyre",
+    "expected_decision": "deny",
+    "planted_issues": [
+      "tyre_damage_only_excluded"
+    ],
+    "reasons": [
+      "Damage is to the tyre only, with no other vehicle damage. Standard private car wordings exclude tyre damage unless the vehicle is damaged at the same time (verify the exact clause in the policy PDF)."
+    ],
+    "photo_source": "car_011.jpg",
+    "true_damage": {
+      "part": "front tire",
+      "damage_type": "tire flat",
+      "severity": "severe",
+      "other_damage": ""
+    },
+    "policy_number": "PMC-2026-10005",
+    "invoice_number": "INV-160738",
+    "amount_claimed": 35000.0
+  },
+  "C051": {
+    "split": "dev",
+    "scenario": "inflated_estimate",
+    "expected_decision": "investigate",
+    "planted_issues": [
+      "estimate_far_above_typical_cost"
+    ],
+    "reasons": [
+      "Estimate PKR 692,400 vs typical PKR 60,000-PKR 180,000 for severe lamp broken."
+    ],
+    "photo_source": "car_050.jpg",
+    "true_damage": {
+      "part": "headlight",
+      "damage_type": "lamp broken",
+      "severity": "severe",
+      "other_damage": "front bumper crushed"
+    },
+    "policy_number": "PMC-2026-10023",
+    "invoice_number": "INV-233827",
+    "amount_claimed": 692400.0
+  },
+  "C052": {
+    "split": "dev",
+    "scenario": "honest",
+    "expected_decision": "approve",
+    "planted_issues": [],
+    "reasons": [
+      "Photo matches description (minor scratch on front bumper); policy active; amount within typical range."
+    ],
+    "photo_source": "car_013.jpg",
+    "true_damage": {
+      "part": "front bumper",
+      "damage_type": "scratch",
+      "severity": "minor",
+      "other_damage": ""
+    },
+    "policy_number": "PMC-2026-10052",
+    "invoice_number": "INV-774591",
+    "amount_claimed": 13400.0
+  },
+  "C053": {
+    "split": "test",
+    "scenario": "honest",
+    "expected_decision": "approve",
+    "planted_issues": [],
+    "reasons": [
+      "Photo matches description (severe dent on side doors and rocker panel); policy active; amount within typical range."
+    ],
+    "photo_source": "car_023.jpg",
+    "true_damage": {
+      "part": "side doors and rocker panel",
+      "damage_type": "dent",
+      "severity": "severe",
+      "other_damage": "scratches along side"
+    },
+    "policy_number": "PMC-2026-10043",
+    "invoice_number": "INV-656968",
+    "amount_claimed": 124900.0
+  },
+  "C054": {
+    "split": "test",
+    "scenario": "honest",
+    "expected_decision": "approve",
+    "planted_issues": [],
+    "reasons": [
+      "Photo matches description (severe glass shatter on rear side window); policy active; amount within typical range."
+    ],
+    "photo_source": "car_040.jpg",
+    "true_damage": {
+      "part": "rear side window",
+      "damage_type": "glass shatter",
+      "severity": "severe",
+      "other_damage": ""
+    },
+    "policy_number": "PMC-2026-10036",
+    "invoice_number": "INV-436653",
+    "amount_claimed": 111900.0
+  },
+  "C055": {
+    "split": "dev",
+    "scenario": "honest",
+    "expected_decision": "approve",
+    "planted_issues": [],
+    "reasons": [
+      "Photo matches description (minor scratch on side skirt); policy active; amount within typical range."
+    ],
+    "photo_source": "car_043.jpg",
+    "true_damage": {
+      "part": "side skirt",
+      "damage_type": "scratch",
+      "severity": "minor",
+      "other_damage": ""
+    },
+    "policy_number": "PMC-2026-10033",
+    "invoice_number": "INV-722656",
+    "amount_claimed": 15500.0
+  },
+  "C056": {
+    "split": "dev",
+    "scenario": "new_policy",
+    "expected_decision": "investigate",
+    "planted_issues": [
+      "incident_within_7_days_of_policy_start"
+    ],
+    "reasons": [
+      "Incident only 3 days after policy start."
+    ],
+    "photo_source": "car_018.jpg",
+    "true_damage": {
+      "part": "rear bumper",
+      "damage_type": "scratch",
+      "severity": "moderate",
+      "other_damage": ""
+    },
+    "policy_number": "PMC-2026-10015",
+    "invoice_number": "INV-288073",
+    "amount_claimed": 36400.0
+  },
+  "C057": {
+    "split": "test",
+    "scenario": "honest",
+    "expected_decision": "approve",
+    "planted_issues": [],
+    "reasons": [
+      "Photo matches description (severe dent on hood); policy active; amount within typical range."
+    ],
+    "photo_source": "car_051.jpg",
+    "true_damage": {
+      "part": "hood",
+      "damage_type": "dent",
+      "severity": "severe",
+      "other_damage": "front end damaged"
+    },
+    "policy_number": "PMC-2026-10046",
+    "invoice_number": "INV-237795",
+    "amount_claimed": 223700.0
+  },
+  "C058": {
+    "split": "dev",
+    "scenario": "honest",
+    "expected_decision": "approve",
+    "planted_issues": [],
+    "reasons": [
+      "Photo matches description (moderate tire flat on front and rear tires); policy active; amount within typical range."
+    ],
+    "photo_source": "car_009.jpg",
+    "true_damage": {
+      "part": "front and rear tires",
+      "damage_type": "tire flat",
+      "severity": "moderate",
+      "other_damage": "scratch on front fender"
+    },
+    "policy_number": "PMC-2026-10035",
+    "invoice_number": "INV-195763",
+    "amount_claimed": 16500.0
+  }
+}

@@ -1,0 +1,59 @@
+photo,part,damage_type,severity,other_damage
+car_001.jpg,rear tire,tire flat,moderate,
+car_002.jpg,rear tire,tire flat,moderate,
+car_003.jpg,rear tire,tire flat,moderate,
+car_004.jpg,front tire,tire flat,moderate,
+car_005.jpg,front tire,tire flat,moderate,
+car_006.jpg,front tire,tire flat,severe,
+car_007.jpg,front tire,tire flat,severe,
+car_008.jpg,front tire,tire flat,moderate,
+car_009.jpg,front and rear tires,tire flat,moderate,scratch on front fender
+car_010.jpg,front tire,tire flat,moderate,
+car_011.jpg,front tire,tire flat,severe,
+car_012.jpg,front fender,dent,severe,front bumper crushed; tire flat
+car_013.jpg,front bumper,scratch,minor,
+car_014.jpg,front bumper,scratch,moderate,
+car_015.jpg,front bumper,scratch,moderate,
+car_016.jpg,rear door,scratch,minor,
+car_017.jpg,front bumper,scratch,moderate,
+car_018.jpg,rear bumper,scratch,moderate,
+car_019.jpg,rear bumper,scratch,minor,
+car_020.jpg,rear quarter panel,dent,severe,tail light area damaged
+car_021.jpg,front fender,dent,severe,headlight damaged
+car_022.jpg,front fender,scratch,moderate,
+car_023.jpg,side doors and rocker panel,dent,severe,scratches along side
+car_024.jpg,front bumper,crack,moderate,
+car_025.jpg,front bumper,crack,moderate,scratch
+car_026.jpg,front fender,dent,minor,tire flat
+car_027.jpg,tail light,lamp broken,severe,rear quarter dent; wheel damaged
+car_028.jpg,windshield,glass shatter,severe,
+car_029.jpg,front bumper,scratch,minor,
+car_030.jpg,front bumper,dent,severe,front door dented
+car_031.jpg,rear door,scratch,minor,
+car_032.jpg,windshield,glass shatter,severe,
+car_033.jpg,front bumper,dent,moderate,scratches
+car_034.jpg,rear quarter panel,scratch,minor,
+car_035.jpg,windshield,glass shatter,severe,
+car_036.jpg,front bumper,crack,severe,scratches
+car_037.jpg,front tire,tire flat,moderate,
+car_038.jpg,front tire,tire flat,severe,front bumper and fender torn
+car_039.jpg,rear tire,tire flat,moderate,
+car_040.jpg,rear side window,glass shatter,severe,
+car_041.jpg,rear bumper,dent,severe,
+car_042.jpg,headlight,lamp broken,moderate,front bumper cracked
+car_043.jpg,side skirt,scratch,minor,
+car_044.jpg,side skirt,scratch,moderate,small dent
+car_045.jpg,front bumper,dent,moderate,scratches
+car_046.jpg,rear quarter panel,dent,moderate,
+car_047.jpg,windshield,glass shatter,severe,
+car_048.jpg,tail light,lamp broken,moderate,dent and scratches beside lamp
+car_049.jpg,front bumper,scratch,minor,
+car_050.jpg,headlight,lamp broken,severe,front bumper crushed
+car_051.jpg,hood,dent,severe,front end damaged
+car_052.jpg,rear quarter panel,dent,moderate,scratches
+car_053.jpg,tail light,lamp broken,severe,rear body crushed
+car_054.jpg,rear door,dent,moderate,
+car_055.jpg,rear door,dent,moderate,
+car_057.jpg,tail light,lamp broken,moderate,dent below lamp
+car_058.jpg,rear bumper and tailgate,dent,severe,
+car_059.jpg,rear bumper,dent,severe,tail light area damaged

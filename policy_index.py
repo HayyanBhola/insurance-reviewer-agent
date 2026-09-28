@@ -20,16 +20,19 @@ How it works
 """
 
 import argparse
+import hashlib
 import json
 import math
 import re
 import sys
+import time
 from pathlib import Path
 
 from pypdf import PdfReader
 
 POLICY_DIR = Path("data/policies")
 INDEX_FILE = Path("data/policy_index.json")
+QUERY_CACHE_FILE = Path("outputs/query_embeddings.json")  # each question is embedded only once
 CHUNK_CHARS = 900
 OVERLAP_CHARS = 150
 MIN_CHARS_PER_PAGE = 200  # less than this on average = probably a scanned PDF
@@ -119,6 +122,22 @@ def _is_heading(line):
     return len(letters) >= 4 and sum(c.isupper() for c in letters) / len(letters) > 0.8
 
 
+def _overlap(buf, limit=OVERLAP_CHARS):
+    """The last whole lines of a chunk (up to `limit` characters), so the next chunk
+    starts at a line boundary instead of in the middle of a word."""
+    lines = [l for l in buf.rstrip("\n").split("\n") if l.strip()]
+    kept, size = [], 0
+    for line in reversed(lines):
+        if size + len(line) > limit and kept:
+            break
+        if len(line) > limit:  # one very long line: keep its end, starting at a word
+            tail = line[-limit:]
+            line = tail[tail.find(" ") + 1:] if " " in tail else tail
+        kept.insert(0, line)
+        size += len(line)
+    return "\n".join(kept) + "\n" if kept else ""
+
+
 def chunk_pdf(path):
     """Return (chunks, info). Each chunk: id, policy_file, page, section, text."""
     reader = PdfReader(str(path))
@@ -144,7 +163,7 @@ def chunk_pdf(path):
                 chunks.append({"id": f"{stem}:p{page_no}:c{n}", "policy_file": path.name,
                                "page": page_no, "section": section, "text": buf.strip()})
                 n += 1
-                buf = buf[-OVERLAP_CHARS:]  # keep a little overlap for context
+                buf = _overlap(buf)  # carry the last whole line(s) into the next chunk
             buf += line + "\n"
         if buf.strip():
             chunks.append({"id": f"{stem}:p{page_no}:c{n}", "policy_file": path.name,
@@ -155,6 +174,33 @@ def chunk_pdf(path):
 # ---------------------------------------------------------------------------
 # Build
 # ---------------------------------------------------------------------------
+EMBED_BATCH = 32        # small batches stay under free-tier request limits
+EMBED_RETRIES = 6       # on rate-limit (429) or busy (503) errors, wait and retry
+
+
+def _retryable(exc):
+    text = str(exc).lower()
+    return any(w in text for w in ("429", "rate", "quota", "resource_exhausted", "503",
+                                   "unavailable", "overloaded", "timeout", "temporarily"))
+
+
+def embed_in_batches(emb, texts, batch=EMBED_BATCH, retries=EMBED_RETRIES, sleep=time.sleep):
+    """Embed many texts in small batches; wait and retry when the API says 'slow down'."""
+    vectors = []
+    for start in range(0, len(texts), batch):
+        part = texts[start:start + batch]
+        for attempt in range(retries + 1):
+            try:
+                vectors += emb.embed_documents(part)
+                break
+            except Exception as exc:
+                if attempt == retries or not _retryable(exc):
+                    raise
+                wait = min(60, 5 * 2 ** attempt)
+                print(f"    rate-limited or busy, waiting {wait}s and retrying ({attempt + 1}/{retries})...")
+                sleep(wait)
+        print(f"    {min(start + batch, len(texts))}/{len(texts)} chunks embedded")
+    return vectors
 def build_index(use_embeddings=True):
     pdfs = sorted(POLICY_DIR.glob("*.pdf"))
     if not pdfs:
@@ -178,13 +224,13 @@ def build_index(use_embeddings=True):
         from llm import embedding_model_name, get_embeddings
         emb = get_embeddings()
         if emb is not None:
+            print(f"  Embedding {len(chunks)} chunks with {embedding_model_name()} "
+                  f"in batches of {EMBED_BATCH} (done once, then saved)...")
             try:
-                print(f"  Embedding {len(chunks)} chunks with {embedding_model_name()} "
-                      f"(one-time cost, a fraction of a cent)...")
-                vectors = emb.embed_documents([c["text"] for c in chunks])
+                vectors = embed_in_batches(emb, [c["text"] for c in chunks])
                 emb_model = embedding_model_name()  # saved so searches can check they match
             except Exception as exc:
-                print(f"  ! Embedding failed ({str(exc)[:150]}). Continuing with keyword search only.")
+                print(f"  ! Embedding failed ({str(exc)[:200]}). Continuing with keyword search only.")
 
     INDEX_FILE.write_text(json.dumps({
         "files": files, "chunks": chunks, "vectors": vectors, "embedding_model": emb_model,
@@ -272,10 +318,13 @@ class PolicyIndex:
         self.embedding_model = data.get("embedding_model")
         self._emb = None
         self._warned = False
+        self._qcache = (json.loads(QUERY_CACHE_FILE.read_text(encoding="utf-8"))
+                        if QUERY_CACHE_FILE.exists() else {})
         self.mode = "hybrid" if self.vectors else "keywords"
         from rank_bm25 import BM25Okapi
         self.bm25 = BM25Okapi([tokenize(c["text"], bigrams=True) for c in self.chunks]) if self.chunks else None
         self.addon = [is_addon(c) for c in self.chunks]
+        self._pos = {c["id"]: i for i, c in enumerate(self.chunks)}
 
     def searchable_files(self):
         return {f["file"] for f in self.files if not f["scanned"]}
@@ -300,8 +349,15 @@ class PolicyIndex:
             self._emb = get_embeddings() or False
         if not self._emb:
             return None
+        key = hashlib.sha256(f"{self.embedding_model}|{query}".encode()).hexdigest()
+        if key in self._qcache:
+            return self._qcache[key]
         try:
-            return self._emb.embed_query(query)
+            vec = self._emb.embed_query(query)
+            self._qcache[key] = vec
+            QUERY_CACHE_FILE.parent.mkdir(parents=True, exist_ok=True)
+            QUERY_CACHE_FILE.write_text(json.dumps(self._qcache), encoding="utf-8")
+            return vec
         except Exception as exc:
             if not self._warned:
                 print(f"[policy search] Query embedding failed ({str(exc)[:100]}); keyword search only.")
@@ -309,8 +365,10 @@ class PolicyIndex:
             self.mode = "keywords (query embedding failed)"
             return None
 
-    def search(self, query, k=5, files=None):
-        """Hybrid search. files: optional set of policy file names to search within."""
+    def search(self, query, k=5, files=None, mode="hybrid"):
+        """mode: "hybrid" (keywords + embeddings), "keywords" or "embeddings".
+        Falls back to keywords if embeddings are not available.
+        files: optional set of policy file names to search within."""
         if not self.chunks:
             return []
         allowed = [i for i, c in enumerate(self.chunks) if not files or c["policy_file"] in files]
@@ -320,13 +378,26 @@ class PolicyIndex:
         kw_scores = self.bm25.get_scores(tokenize(expand_query(query), bigrams=True))
         kw_scores = [s * ADDON_PENALTY if self.addon[i] else s for i, s in enumerate(kw_scores)]
         kw_rank = [self.chunks[i]["id"] for i in sorted(allowed, key=lambda i: -kw_scores[i])][:30]
-        rankings = [kw_rank]
+        # only chunks that actually matched a keyword get a keyword rank; otherwise a list of
+        # zero-score ties would be fused in and drown out the embedding ranking
+        kw_matched = [cid for cid in kw_rank if kw_scores[self._pos[cid]] > 0]
+        if mode == "keywords":
+            rankings = [kw_rank]
+        elif mode == "hybrid" and kw_matched:
+            rankings = [kw_matched]
+        else:
+            rankings = []
 
         sims = {}
-        qv = self._embed_query(query)
+        qv = self._embed_query(query) if mode in ("hybrid", "embeddings") else None
         if qv is not None:
             sims = {self.chunks[i]["id"]: _cosine(qv, self.vectors[i]) for i in allowed}
-            rankings.append(sorted(sims, key=sims.get, reverse=True)[:30])
+            # same add-on rule as keyword search (same factor, no new setting)
+            ranked_sims = {cid: v * ADDON_PENALTY if self.addon[self._pos[cid]] else v
+                           for cid, v in sims.items()}
+            rankings.append(sorted(ranked_sims, key=ranked_sims.get, reverse=True)[:30])
+        if not rankings:  # embeddings-only requested but not available
+            rankings = [kw_rank]
 
         idx = {c["id"]: i for i, c in enumerate(self.chunks)}
         out = []
@@ -346,6 +417,7 @@ if __name__ == "__main__":
     sub = ap.add_subparsers(dest="cmd", required=True)
     b = sub.add_parser("build")
     b.add_argument("--no-embed", action="store_true", help="keyword search only, no API calls")
+    sub.add_parser("models", help="list Gemini embedding models your key can use")
     s = sub.add_parser("search")
     s.add_argument("query")
     s.add_argument("-k", type=int, default=3)
@@ -353,6 +425,17 @@ if __name__ == "__main__":
 
     if args.cmd == "build":
         build_index(use_embeddings=not args.no_embed)
+    elif args.cmd == "models":
+        from dotenv import load_dotenv
+        from google import genai
+        load_dotenv()
+        client = genai.Client()  # keep a reference, or the client closes while listing
+        names = [m.name.replace("models/", "") for m in client.models.list()
+                 if "embedContent" in (m.supported_actions or [])]
+        print("Gemini embedding models for your key:")
+        for n in names:
+            print(f"  google_genai:{n}")
+        print("Put one in .env, e.g.  EMBEDDING_MODEL=google_genai:" + (names[0] if names else "<name>"))
     else:
         index = PolicyIndex()
         for c in index.search(args.query, k=args.k):

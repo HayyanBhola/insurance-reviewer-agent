@@ -1,0 +1,1 @@
+{"time": "2026-09-28T22:08:08", "fingerprint": "37aefa3f3a4e", "questions": 23, "recall@1": 0.261, "recall@3": 0.391, "recall@5": 0.565, "mrr": 0.363, "mode": "keywords", "p95_search_ms": 2.5}

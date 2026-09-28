@@ -1,0 +1,186 @@
+[
+  {
+    "id": "H01",
+    "policy_file": "icici_private_car.pdf",
+    "question": "Is damage from an earthquake covered?",
+    "expected_phrases": [
+      "by earthquake"
+    ]
+  },
+  {
+    "id": "H02",
+    "policy_file": "icici_private_car.pdf",
+    "question": "Does the policy pay if someone deliberately vandalises my car?",
+    "expected_phrases": [
+      "malicious act"
+    ]
+  },
+  {
+    "id": "H03",
+    "policy_file": "icici_private_car.pdf",
+    "question": "Will the insurer pay to tow my damaged car to a workshop?",
+    "expected_phrases": [
+      "nearest repairer"
+    ]
+  },
+  {
+    "id": "H04",
+    "policy_file": "icici_private_car.pdf",
+    "question": "Do I get a discount for not making any claims?",
+    "expected_phrases": [
+      "no claim bonus"
+    ]
+  },
+  {
+    "id": "H05",
+    "policy_file": "icici_private_car.pdf",
+    "question": "What if the car is completely written off?",
+    "expected_phrases": [
+      "total loss"
+    ]
+  },
+  {
+    "id": "H06",
+    "policy_file": "icici_private_car.pdf",
+    "question": "What happens to my insurance if I sell the car?",
+    "expected_phrases": [
+      "ownership of the vehicle is transferred"
+    ]
+  },
+  {
+    "id": "H07",
+    "policy_file": "icici_private_car.pdf",
+    "question": "Can the insurance company cancel my policy?",
+    "expected_phrases": [
+      "may cancel the policy"
+    ]
+  },
+  {
+    "id": "H08",
+    "policy_file": "icici_private_car.pdf",
+    "question": "How are disagreements with the insurer settled?",
+    "expected_phrases": [
+      "arbitration"
+    ]
+  },
+  {
+    "id": "H09",
+    "policy_file": "icici_private_car.pdf",
+    "question": "How do I tell the insurer about an accident?",
+    "expected_phrases": [
+      "notice shall be given in writing"
+    ]
+  },
+  {
+    "id": "H10",
+    "policy_file": "icici_private_car.pdf",
+    "question": "Am I covered if I use the car in a race?",
+    "expected_phrases": [
+      "speed testing"
+    ]
+  },
+  {
+    "id": "H11",
+    "policy_file": "icici_private_car.pdf",
+    "question": "Is damage caused by war covered?",
+    "expected_phrases": [
+      "foreign enemies"
+    ]
+  },
+  {
+    "id": "H12",
+    "policy_file": "icici_private_car.pdf",
+    "question": "Is my car covered if I use it as a taxi?",
+    "expected_phrases": [
+      "hire or reward"
+    ]
+  },
+  {
+    "id": "H13",
+    "policy_file": "icici_private_car.pdf",
+    "question": "Is damage from a landslide covered?",
+    "expected_phrases": [
+      "landslide rockslide"
+    ]
+  },
+  {
+    "id": "H14",
+    "policy_file": "etiqa_private_car.pdf",
+    "question": "Do I get a discount at renewal if I made no claims?",
+    "expected_phrases": [
+      "no claim discount"
+    ]
+  },
+  {
+    "id": "H15",
+    "policy_file": "etiqa_private_car.pdf",
+    "question": "Can I cancel my policy?",
+    "expected_phrases": [
+      "cancel this policy"
+    ]
+  },
+  {
+    "id": "H16",
+    "policy_file": "etiqa_private_car.pdf",
+    "question": "Will you pay to tow my car after an accident?",
+    "expected_phrases": [
+      "nearest approved repairer"
+    ]
+  },
+  {
+    "id": "H17",
+    "policy_file": "etiqa_private_car.pdf",
+    "question": "What happens if my car is insured for less than it is worth?",
+    "expected_phrases": [
+      "less than the market value"
+    ]
+  },
+  {
+    "id": "H18",
+    "policy_file": "etiqa_private_car.pdf",
+    "question": "Am I covered while taking part in motor sport?",
+    "expected_phrases": [
+      "motor sport"
+    ]
+  },
+  {
+    "id": "H19",
+    "policy_file": "etiqa_private_car.pdf",
+    "question": "Is damage caused by war covered?",
+    "expected_phrases": [
+      "foreign enemies"
+    ]
+  },
+  {
+    "id": "H20",
+    "policy_file": "etiqa_private_car.pdf",
+    "question": "Do I have to pay extra when old parts are replaced with new ones?",
+    "expected_phrases": [
+      "better condition than it was before"
+    ]
+  },
+  {
+    "id": "H21",
+    "policy_file": "etiqa_private_car.pdf",
+    "question": "Who is allowed to drive my car under this policy?",
+    "expected_phrases": [
+      "consent or permission"
+    ]
+  },
+  {
+    "id": "H22",
+    "policy_file": "etiqa_private_car.pdf",
+    "question": "Is my car covered if the ground collapses under it?",
+    "expected_phrases": [
+      "landslip"
+    ]
+  },
+  {
+    "id": "H23",
+    "policy_file": "etiqa_private_car.pdf",
+    "question": "Is damage from a terrorist attack covered?",
+    "expected_phrases": [
+      "terrorism"
+    ]
+  }
+]

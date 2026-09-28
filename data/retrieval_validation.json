@@ -1,0 +1,154 @@
+[
+  {
+    "id": "V01",
+    "policy_file": "icici_private_car.pdf",
+    "question": "Are extras fitted to my car, like a music system, covered?",
+    "expected_phrases": [
+      "accessories if any fitted"
+    ]
+  },
+  {
+    "id": "V02",
+    "policy_file": "icici_private_car.pdf",
+    "question": "Is there compensation if I, the owner, am injured while driving?",
+    "expected_phrases": [
+      "owner-driver"
+    ]
+  },
+  {
+    "id": "V03",
+    "policy_file": "icici_private_car.pdf",
+    "question": "If I damage someone's house or wall, does the policy pay?",
+    "expected_phrases": [
+      "property other than property belonging to the insured"
+    ]
+  },
+  {
+    "id": "V04",
+    "policy_file": "icici_private_car.pdf",
+    "question": "Is my hired chauffeur covered?",
+    "expected_phrases": [
+      "paid driver"
+    ]
+  },
+  {
+    "id": "V05",
+    "policy_file": "icici_private_car.pdf",
+    "question": "What if I also have another insurance policy for the same car?",
+    "expected_phrases": [
+      "other insurance covering the same liability"
+    ]
+  },
+  {
+    "id": "V06",
+    "policy_file": "icici_private_car.pdf",
+    "question": "Do I have to look after my car to stay covered?",
+    "expected_phrases": [
+      "reasonable steps to safeguard"
+    ]
+  },
+  {
+    "id": "V07",
+    "policy_file": "icici_private_car.pdf",
+    "question": "Is a glass part reduced for age when it is replaced?",
+    "expected_phrases": [
+      "made of glass"
+    ]
+  },
+  {
+    "id": "V08",
+    "policy_file": "icici_private_car.pdf",
+    "question": "Can the insurer pay me in cash instead of fixing the car?",
+    "expected_phrases": [
+      "pay in cash"
+    ]
+  },
+  {
+    "id": "V09",
+    "policy_file": "icici_private_car.pdf",
+    "question": "Can the insurer choose to replace my car instead of paying?",
+    "expected_phrases": [
+      "repair reinstate or replace"
+    ]
+  },
+  {
+    "id": "V10",
+    "policy_file": "etiqa_private_car.pdf",
+    "question": "If I hit another person's car, are their repairs paid?",
+    "expected_phrases": [
+      "damage to property"
+    ]
+  },
+  {
+    "id": "V11",
+    "policy_file": "etiqa_private_car.pdf",
+    "question": "Are my passengers covered if they make a claim against me?",
+    "expected_phrases": [
+      "liability to passengers"
+    ]
+  },
+  {
+    "id": "V12",
+    "policy_file": "etiqa_private_car.pdf",
+    "question": "Are lawyer fees covered?",
+    "expected_phrases": [
+      "legal costs"
+    ]
+  },
+  {
+    "id": "V13",
+    "policy_file": "etiqa_private_car.pdf",
+    "question": "Can the insurer claim money back from the driver who hit me?",
+    "expected_phrases": [
+      "rights and remedies"
+    ]
+  },
+  {
+    "id": "V14",
+    "policy_file": "etiqa_private_car.pdf",
+    "question": "Do I need to tell the insurer if my details change?",
+    "expected_phrases": [
+      "inaccurate or has changed"
+    ]
+  },
+  {
+    "id": "V15",
+    "policy_file": "etiqa_private_car.pdf",
+    "question": "Can I send my car for repair before the insurer agrees?",
+    "expected_phrases": [
+      "consent in writing before you repair"
+    ]
+  },
+  {
+    "id": "V16",
+    "policy_file": "etiqa_private_car.pdf",
+    "question": "Do I need permission to modify my car?",
+    "expected_phrases": [
+      "make any modification"
+    ]
+  },
+  {
+    "id": "V17",
+    "policy_file": "etiqa_private_car.pdf",
+    "question": "Can I use my car for business?",
+    "expected_phrases": [
+      "domestic and pleasure purposes"
+    ]
+  },
+  {
+    "id": "V18",
+    "policy_file": "etiqa_private_car.pdf",
+    "question": "What if I keep driving a damaged, unsafe car?",
+    "expected_phrases": [
+      "unroadworthy"
+    ]
+  },
+  {
+    "id": "V19",
+    "policy_file": "etiqa_private_car.pdf",
+    "question": "What happens if part of my claim is exaggerated?",
+    "expected_phrases": [
+      "fraudulent or exaggerated"
+    ]
+  }
+]

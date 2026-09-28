@@ -42,7 +42,7 @@ def test_phantom_damage_cannot_raise_the_price_ceiling():
     from data_access import load_intake
     from evidence_agent import cost_check
     from schemas import GroundedPhotoAssessment
-    truth = json.loads(Path("data/ground_truth.json").read_text())
+    truth = json.loads(Path("data/ground_truth.json").read_text(encoding="utf-8"))
     cid, t = next((c, t) for c, t in truth.items()
                   if t["scenario"] == "inflated_estimate" and (ROOT / f"outputs/intake/{c}.json").exists())
     real = t["true_damage"]
@@ -139,7 +139,7 @@ def test_why_tyre_only_reading_matters_for_cover():
     from coverage_agent import check_coverage
     from data_access import load_intake
     from schemas import PhotoAssessment
-    truth = json.loads(Path("data/ground_truth.json").read_text())
+    truth = json.loads(Path("data/ground_truth.json").read_text(encoding="utf-8"))
     cid = next(c for c, t in truth.items() if t["scenario"] == "excluded_tyre" and t["split"] == "dev"
                and (ROOT / f"outputs/intake/{c}.json").exists())
     r = load_intake(cid)
@@ -153,6 +153,15 @@ def test_why_tyre_only_reading_matters_for_cover():
     assert check_coverage(with_photo(["tire flat", "dent"]), None, use_llm=False).status == "covered"
 
 
+def _add_non_ascii(folder):
+    """Real model output contains characters like '—' and 'é'; Windows' default encoding
+    (cp1252) can't read them. Put some in, so encoding bugs show up on every machine."""
+    for f in folder.glob("C*.json"):
+        d = json.loads(f.read_text(encoding="utf-8"))
+        d["photo"]["description"] += " — pre-existing wear (rusté)"
+        f.write_text(json.dumps(d, ensure_ascii=False), encoding="utf-8")
+
+
 # ---------------------------------------------------------------------------
 # refresh_photos.py: only photos change, with a backup, on a temporary copy
 # ---------------------------------------------------------------------------
@@ -163,6 +172,7 @@ def test_refresh_changes_only_photos_backs_up_and_restores(monkeypatch, tmp_path
 
     intake_dir = tmp_path / "intake"
     shutil.copytree(ROOT / "outputs/intake", intake_dir)
+    _add_non_ascii(intake_dir)
     monkeypatch.setattr(refresh_photos, "INTAKE", intake_dir)
     monkeypatch.setattr(refresh_photos, "BACKUPS", tmp_path / "backups")
     monkeypatch.setattr(refresh_photos, "MARKER", intake_dir / "_photo_prompt.json")
@@ -172,18 +182,18 @@ def test_refresh_changes_only_photos_backs_up_and_restores(monkeypatch, tmp_path
     monkeypatch.setattr(refresh_photos, "assess_photo", lambda path, version=None: tyre_only)
 
     cid = sorted(f.stem for f in intake_dir.glob("C*.json")
-                 if json.loads(Path("data/ground_truth.json").read_text())[f.stem]["split"] == "dev")[0]
-    before = IntakeResult.model_validate_json((intake_dir / f"{cid}.json").read_text())
+                 if json.loads(Path("data/ground_truth.json").read_text(encoding="utf-8"))[f.stem]["split"] == "dev")[0]
+    before = IntakeResult.model_validate_json((intake_dir / f"{cid}.json").read_text(encoding="utf-8"))
     refresh_photos.refresh("v3", dry_run=False)
-    after = IntakeResult.model_validate_json((intake_dir / f"{cid}.json").read_text())
+    after = IntakeResult.model_validate_json((intake_dir / f"{cid}.json").read_text(encoding="utf-8"))
 
     assert after.photo == tyre_only                                   # photo replaced
     assert after.claim_form == before.claim_form and after.estimate == before.estimate  # forms untouched
-    assert json.loads((intake_dir / "_photo_prompt.json").read_text())["photo_prompt"] == "v3"
+    assert json.loads((intake_dir / "_photo_prompt.json").read_text(encoding="utf-8"))["photo_prompt"] == "v3"
     assert any((tmp_path / "backups").iterdir())                      # backup made first
 
     refresh_photos.restore()
-    restored = IntakeResult.model_validate_json((intake_dir / f"{cid}.json").read_text())
+    restored = IntakeResult.model_validate_json((intake_dir / f"{cid}.json").read_text(encoding="utf-8"))
     assert restored.photo == before.photo                             # undo works
 
 
@@ -193,15 +203,16 @@ def test_refresh_dry_run_writes_nothing(monkeypatch, tmp_path):
     from schemas import PhotoAssessment
     intake_dir = tmp_path / "intake"
     shutil.copytree(ROOT / "outputs/intake", intake_dir)
+    _add_non_ascii(intake_dir)
     monkeypatch.setattr(refresh_photos, "INTAKE", intake_dir)
     monkeypatch.setattr(refresh_photos, "BACKUPS", tmp_path / "backups")
     monkeypatch.setattr(refresh_photos, "MARKER", intake_dir / "_photo_prompt.json")
     p = PhotoAssessment.model_validate({**_pred(["tire flat"]), "is_vehicle_photo": True,
                                         "description": "", "image_quality_ok": True})
     monkeypatch.setattr(refresh_photos, "assess_photo", lambda path, version=None: p)
-    snapshot = {f.name: f.read_text() for f in intake_dir.iterdir()}
+    snapshot = {f.name: f.read_bytes() for f in intake_dir.iterdir()}
     refresh_photos.refresh("v3", dry_run=True)
-    assert {f.name: f.read_text() for f in intake_dir.iterdir()} == snapshot
+    assert {f.name: f.read_bytes() for f in intake_dir.iterdir()} == snapshot
     assert not (tmp_path / "backups").exists()
 
 

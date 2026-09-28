@@ -68,7 +68,7 @@ def main():
     args = ap.parse_args()
 
     th = {**DEFAULT_THRESHOLDS,
-          **(json.loads(THRESHOLDS.read_text()) if THRESHOLDS.exists() else {})}
+          **(json.loads(THRESHOLDS.read_text(encoding="utf-8")) if THRESHOLDS.exists() else {})}
     results, checks, alerts = {}, [], []
 
     def check(name, value, ok, rule):

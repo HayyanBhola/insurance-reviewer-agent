@@ -77,16 +77,20 @@ def test_score_counts_over_and_under_reads():
 # ---------------------------------------------------------------------------
 # v3: wear-and-tear rule
 # ---------------------------------------------------------------------------
-def test_v3_is_exactly_v1_plus_the_wear_rule():
+def test_v3_is_exactly_v1_plus_the_wear_rule(tmp_path):
     import intake
+    from PIL import Image
     from schemas import PhotoAssessment
     assert intake.PHOTO_SYSTEM_V3 == intake.PHOTO_SYSTEM + intake.WEAR_RULE  # one change only
-    schema, msgs = intake.photo_request(ROOT / "data/photos/car_010.jpg", "v3")
+    # a tiny stand-in image: the real photos are not in the public repo (licence)
+    photo = tmp_path / "car.jpg"
+    Image.new("RGB", (32, 32), "gray").save(photo)
+    schema, msgs = intake.photo_request(photo, "v3")
     assert schema is PhotoAssessment and "PRE-EXISTING WEAR" in msgs[0].content
-    _, v1 = intake.photo_request(ROOT / "data/photos/car_010.jpg", "v1")
+    _, v1 = intake.photo_request(photo, "v1")
     assert "PRE-EXISTING WEAR" not in v1[0].content
     with pytest.raises(ValueError):
-        intake.photo_request(ROOT / "data/photos/car_010.jpg", "v9")
+        intake.photo_request(photo, "v9")
 
 
 def test_extra_photos_are_unused_tyre_photos_and_final_is_fresh():

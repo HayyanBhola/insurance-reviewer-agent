@@ -57,3 +57,23 @@ C055,dev,honest,approve,Omar Chaudhry,15500.0,car_043.jpg,minor scratch on side 
 C056,dev,new_policy,investigate,Kashif Malik,36400.0,car_018.jpg,moderate scratch on rear bumper
 C057,test,honest,approve,Tariq Mirza,223700.0,car_051.jpg,severe dent on hood
 C058,dev,honest,approve,Omar Raza,16500.0,car_009.jpg,moderate tire flat on front and rear tires
+C059,test2,excluded_tyre,deny,Fatima Khan,15200.0,car_071.jpg,moderate tire flat on front tire
+C060,test2,excluded_tyre,deny,Bilal Siddiqui,20300.0,car_085.jpg,moderate tire flat on rear tire
+C061,test2,excluded_tyre,deny,Amna Iqbal,56700.0,car_086.jpg,severe tire flat on front tire
+C062,test2,honest,approve,Ali Javed,231600.0,car_080.jpg,severe dent on front fender
+C063,test2,honest,approve,Hina Ahmed,188000.0,car_088.jpg,severe dent on front bumper
+C064,test2,honest,approve,Hina Qureshi,127300.0,car_069.jpg,severe crack on front bumper
+C065,test2,honest,approve,Ayesha Siddiqui,58700.0,car_067.jpg,moderate dent on trunk lid
+C066,test2,honest,approve,Hamza Chaudhry,12500.0,car_073.jpg,minor scratch on rear door
+C067,test2,honest,approve,Tariq Hussain,181100.0,car_093.jpg,severe dent on front fender
+C068,test2,honest,approve,Hamza Ahmed,130700.0,car_072.jpg,severe crack on front bumper
+C069,test2,inflated_estimate,investigate,Sana Raza,295600.0,car_062.jpg,moderate dent on front fender
+C070,test2,inflated_estimate,investigate,Waqas Ahmed,500100.0,car_066.jpg,severe crack on front bumper
+C071,test2,inflated_estimate,investigate,Imran Qureshi,411300.0,car_090.jpg,severe crack on front bumper
+C072,test2,exaggerated_damage,investigate,Sadia Ahmed,360600.0,car_095.jpg,moderate dent on front door
+C073,test2,exaggerated_damage,investigate,Hina Raza,584900.0,car_084.jpg,minor scratch on front fender
+C074,test2,new_policy,investigate,Saad Ahmed,78300.0,car_096.jpg,severe glass shatter on windshield
+C075,test2,lapsed_policy,deny,Faisal Siddiqui,161500.0,car_074.jpg,severe dent on front fender
+C076,test2,third_party_only,deny,Hina Iqbal,260400.0,car_065.jpg,severe dent on front bumper
+C077,test2,reused_photo,investigate,Mariam Aslam,154400.0,car_088.jpg,severe dent on front bumper
+C078,test2,duplicate_invoice,investigate,Rabia Sheikh,85700.0,car_061.jpg,severe crack on rear bumper

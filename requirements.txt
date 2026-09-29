@@ -20,5 +20,8 @@ numpy
 reportlab
 datasets
 
+# Phase 5: adjuster app
+streamlit>=1.50
+
 # Tests
 pytest

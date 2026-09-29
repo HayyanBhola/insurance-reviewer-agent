@@ -1,0 +1,6 @@
+# Claims Review Desk settings
+[browser]
+gatherUsageStats = false   # never send usage statistics anywhere
+
+[server]
+headless = false

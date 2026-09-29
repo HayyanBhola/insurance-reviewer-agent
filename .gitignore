@@ -11,3 +11,4 @@ outputs/llm_cache.sqlite
 outputs/checkpoints.sqlite*
 outputs/intake_backups/
 outputs/query_embeddings.json
+data/claims/*/photo_*.jpg

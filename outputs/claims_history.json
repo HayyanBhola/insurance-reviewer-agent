@@ -622,5 +622,165 @@
     "invoice_number": "INV-538072",
     "workshop": "Al-Madina Auto Works",
     "photo_hash": "aad59c4afc2b1478"
+  },
+  "C079": {
+    "claimant": "Nida Siddiqui",
+    "submitted": "2026-02-08",
+    "incident": "2026-02-04",
+    "invoice_number": "INV-367078",
+    "workshop": "Al-Madina Auto Works",
+    "photo_hash": "bde05897c1c731b1"
+  },
+  "C080": {
+    "claimant": "Saad Butt",
+    "submitted": "2026-05-25",
+    "incident": "2026-05-21",
+    "invoice_number": "INV-202984",
+    "workshop": "Prime Auto Garage",
+    "photo_hash": "e55d9e4f9160d894"
+  },
+  "C081": {
+    "claimant": "Ahmed Aslam",
+    "submitted": "2026-06-01",
+    "incident": "2026-05-31",
+    "invoice_number": "INV-760845",
+    "workshop": "Prime Auto Garage",
+    "photo_hash": "f2c0e3390e83fa17"
+  },
+  "C082": {
+    "claimant": "Omar Ahmed",
+    "submitted": "2026-02-02",
+    "incident": "2026-02-01",
+    "invoice_number": "INV-294578",
+    "workshop": "Ittefaq Autos",
+    "photo_hash": "b3aa4c9b2b491765"
+  },
+  "C083": {
+    "claimant": "Hina Aslam",
+    "submitted": "2026-04-27",
+    "incident": "2026-04-24",
+    "invoice_number": "INV-241837",
+    "workshop": "Khan Denting & Painting",
+    "photo_hash": "e815455a8ccdcfa5"
+  },
+  "C084": {
+    "claimant": "Saad Raza",
+    "submitted": "2026-09-24",
+    "incident": "2026-09-23",
+    "invoice_number": "INV-711548",
+    "workshop": "City Car Care",
+    "photo_hash": "cff0bebc8fa12042"
+  },
+  "C085": {
+    "claimant": "Zainab Aslam",
+    "submitted": "2026-06-25",
+    "incident": "2026-06-24",
+    "invoice_number": "INV-230728",
+    "workshop": "Ittefaq Autos",
+    "photo_hash": "a592c9c4463f3dcc"
+  },
+  "C086": {
+    "claimant": "Waqas Raza",
+    "submitted": "2026-07-24",
+    "incident": "2026-07-22",
+    "invoice_number": "INV-562018",
+    "workshop": "Prime Auto Garage",
+    "photo_hash": "e9c4868bdc34b5a3"
+  },
+  "C087": {
+    "claimant": "Rabia Butt",
+    "submitted": "2026-03-27",
+    "incident": "2026-03-26",
+    "invoice_number": "INV-963492",
+    "workshop": "Al-Madina Auto Works",
+    "photo_hash": "cfd06f19c0f988e1"
+  },
+  "C088": {
+    "claimant": "Rabia Aslam",
+    "submitted": "2026-04-28",
+    "incident": "2026-04-23",
+    "invoice_number": "INV-268769",
+    "workshop": "Khan Denting & Painting",
+    "photo_hash": "f2d3eaca91c45592"
+  },
+  "C089": {
+    "claimant": "Imran Sheikh",
+    "submitted": "2026-07-08",
+    "incident": "2026-07-04",
+    "invoice_number": "INV-621485",
+    "workshop": "City Car Care",
+    "photo_hash": "a453db2b64c92d66"
+  },
+  "C090": {
+    "claimant": "Amna Chaudhry",
+    "submitted": "2026-03-27",
+    "incident": "2026-03-24",
+    "invoice_number": "INV-273407",
+    "workshop": "Khan Denting & Painting",
+    "photo_hash": "9f86738971cf7088"
+  },
+  "C091": {
+    "claimant": "Faisal Butt",
+    "submitted": "2026-04-27",
+    "incident": "2026-04-24",
+    "invoice_number": "INV-898119",
+    "workshop": "Ittefaq Autos",
+    "photo_hash": "e3bce8819dda4307"
+  },
+  "C092": {
+    "claimant": "Usman Butt",
+    "submitted": "2026-05-02",
+    "incident": "2026-04-29",
+    "invoice_number": "INV-702609",
+    "workshop": "Khan Denting & Painting",
+    "photo_hash": "eb0a92727fc6c119"
+  },
+  "C093": {
+    "claimant": "Fatima Siddiqui",
+    "submitted": "2026-08-09",
+    "incident": "2026-08-08",
+    "invoice_number": "INV-842504",
+    "workshop": "Prime Auto Garage",
+    "photo_hash": "d8eb653c16d6d610"
+  },
+  "C094": {
+    "claimant": "Rabia Mirza",
+    "submitted": "2026-05-02",
+    "incident": "2026-04-27",
+    "invoice_number": "INV-851791",
+    "workshop": "Khan Denting & Painting",
+    "photo_hash": "991bc376b44966b4"
+  },
+  "C095": {
+    "claimant": "Imran Hussain",
+    "submitted": "2026-05-24",
+    "incident": "2026-05-19",
+    "invoice_number": "INV-876690",
+    "workshop": "Ittefaq Autos",
+    "photo_hash": "cde890ed494d19b6"
+  },
+  "C096": {
+    "claimant": "Junaid Khan",
+    "submitted": "2026-06-30",
+    "incident": "2026-06-25",
+    "invoice_number": "INV-258268",
+    "workshop": "City Car Care",
+    "photo_hash": "fd708f3271cc3231"
+  },
+  "C097": {
+    "claimant": "Sana Khan",
+    "submitted": "2026-04-22",
+    "incident": "2026-04-19",
+    "invoice_number": "INV-864840",
+    "workshop": "Ittefaq Autos",
+    "photo_hash": "cfd06f19c0f988e1"
+  },
+  "C098": {
+    "claimant": "Usman Ahmed",
+    "submitted": "2026-07-15",
+    "incident": "2026-07-13",
+    "invoice_number": "INV-230728",
+    "workshop": "Ittefaq Autos",
+    "photo_hash": "938e63d404f925fa"
   }
 }

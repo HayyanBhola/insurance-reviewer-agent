@@ -77,3 +77,23 @@ C075,test2,lapsed_policy,deny,Faisal Siddiqui,161500.0,car_074.jpg,severe dent o
 C076,test2,third_party_only,deny,Hina Iqbal,260400.0,car_065.jpg,severe dent on front bumper
 C077,test2,reused_photo,investigate,Mariam Aslam,154400.0,car_088.jpg,severe dent on front bumper
 C078,test2,duplicate_invoice,investigate,Rabia Sheikh,85700.0,car_061.jpg,severe crack on rear bumper
+C079,test3,honest,approve,Nida Siddiqui,33100.0,car_099.jpg,moderate lamp broken on tail light
+C080,test3,honest,approve,Saad Butt,124400.0,car_094.jpg,severe dent on front fender
+C081,test3,honest,approve,Ahmed Aslam,39700.0,car_091.jpg,moderate scratch on rear quarter panel
+C082,test3,honest,approve,Omar Ahmed,221900.0,car_079.jpg,severe dent on side doors
+C083,test3,honest,approve,Hina Aslam,149600.0,car_064.jpg,severe lamp broken on headlight
+C084,test3,honest,approve,Saad Raza,38000.0,car_075.jpg,moderate scratch on front door
+C085,test3,honest,approve,Zainab Aslam,30800.0,car_078.jpg,moderate dent on front fender
+C086,test3,honest,approve,Waqas Raza,120600.0,car_081.jpg,severe dent on front fender
+C087,test3,honest,approve,Rabia Butt,23000.0,car_083.jpg,moderate scratch on rear quarter panel
+C088,test3,inflated_estimate,investigate,Rabia Aslam,453900.0,car_097.jpg,severe glass shatter on windshield
+C089,test3,inflated_estimate,investigate,Imran Sheikh,439200.0,car_098.jpg,severe glass shatter on rear side window
+C090,test3,inflated_estimate,investigate,Amna Chaudhry,71500.0,car_077.jpg,minor scratch on front fender
+C091,test3,inflated_estimate,investigate,Faisal Butt,803100.0,car_089.jpg,severe dent on hood
+C092,test3,exaggerated_damage,investigate,Usman Butt,274500.0,car_076.jpg,minor scratch on front bumper
+C093,test3,exaggerated_damage,investigate,Fatima Siddiqui,311700.0,car_082.jpg,moderate crack on front bumper
+C094,test3,new_policy,investigate,Rabia Mirza,55600.0,car_060.jpg,moderate dent on rear bumper
+C095,test3,lapsed_policy,deny,Imran Hussain,32000.0,car_068.jpg,moderate dent on rear quarter panel
+C096,test3,third_party_only,deny,Junaid Khan,18800.0,car_092.jpg,moderate scratch on rear quarter panel
+C097,test3,reused_photo,investigate,Sana Khan,26600.0,car_083.jpg,moderate scratch on rear quarter panel
+C098,test3,duplicate_invoice,investigate,Usman Ahmed,63600.0,car_070.jpg,moderate dent on hood

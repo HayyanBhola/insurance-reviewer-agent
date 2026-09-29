@@ -1,0 +1,63 @@
+{
+  "claim_id": "C098",
+  "claim_form": {
+    "claim_number": "C098",
+    "date_submitted": "2026-07-15",
+    "claimant_name": "Usman Ahmed",
+    "cnic": "49578-4441507-2",
+    "phone": "0302-5107997",
+    "policy_number": "PMC-2026-20098",
+    "vehicle": "Honda City",
+    "registration_number": "KHI-25-634",
+    "incident_date": "2026-07-13",
+    "location": "PECHS, Karachi",
+    "description": "Another car hit my vehicle, causing a noticeable dent on the hood.",
+    "amount_claimed": 63600.0
+  },
+  "estimate": {
+    "workshop": "Ittefaq Autos",
+    "invoice_number": "INV-230728",
+    "estimate_date": "2026-07-14",
+    "customer_name": "Usman Ahmed",
+    "vehicle": "Honda City",
+    "registration_number": "KHI-25-634",
+    "line_items": [
+      {
+        "item": "Hood - replacement / repair parts",
+        "amount": 35000.0
+      },
+      {
+        "item": "Hood - denting & painting",
+        "amount": 10100.0
+      },
+      {
+        "item": "Labour charges",
+        "amount": 18500.0
+      }
+    ],
+    "total": 63600.0
+  },
+  "photo": {
+    "is_vehicle_photo": true,
+    "all_damages": [
+      {
+        "part": "hood",
+        "damage_type": "dent",
+        "severity": "moderate"
+      },
+      {
+        "part": "hood",
+        "damage_type": "scratch",
+        "severity": "moderate"
+      }
+    ],
+    "damaged_part": "hood",
+    "damage_type": "dent",
+    "severity": "moderate",
+    "description": "The hood shows a large dent with visible crease deformation and scrape marks. The front lights and other visible parts appear intact.",
+    "image_quality_ok": true
+  },
+  "issues": [],
+  "missing_fields": [],
+  "ready_for_review": true
+}

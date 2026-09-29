@@ -1,0 +1,63 @@
+{
+  "claim_id": "C096",
+  "claim_form": {
+    "claim_number": "C096",
+    "date_submitted": "2026-06-30",
+    "claimant_name": "Junaid Khan",
+    "cnic": "10715-7487856-2",
+    "phone": "0341-5801912",
+    "policy_number": "PMC-2026-20096",
+    "vehicle": "Hyundai Tucson",
+    "registration_number": "FDA-26-5495",
+    "incident_date": "2026-06-25",
+    "location": "D Ground, Faisalabad",
+    "description": "While parking, another vehicle scraped the rear quarter panel, leaving noticeable scratches on the paint.",
+    "amount_claimed": 18800.0
+  },
+  "estimate": {
+    "workshop": "City Car Care",
+    "invoice_number": "INV-258268",
+    "estimate_date": "2026-06-26",
+    "customer_name": "Junaid Khan",
+    "vehicle": "Hyundai Tucson (FDA-26-5495)",
+    "registration_number": "FDA-26-5495",
+    "line_items": [
+      {
+        "item": "Rear Quarter Panel - replacement / repair parts",
+        "amount": 9200.0
+      },
+      {
+        "item": "Rear Quarter Panel - denting & painting",
+        "amount": 3500.0
+      },
+      {
+        "item": "Labour charges",
+        "amount": 6100.0
+      }
+    ],
+    "total": 18800.0
+  },
+  "photo": {
+    "is_vehicle_photo": true,
+    "all_damages": [
+      {
+        "part": "rear left quarter panel",
+        "damage_type": "dent",
+        "severity": "moderate"
+      },
+      {
+        "part": "rear left quarter panel",
+        "damage_type": "scratch",
+        "severity": "moderate"
+      }
+    ],
+    "damaged_part": "rear left quarter panel",
+    "damage_type": "dent",
+    "severity": "moderate",
+    "description": "The rear left quarter panel is visibly dented near the wheel arch with multiple scratches/scuff marks. The tire and lamp are not visibly damaged.",
+    "image_quality_ok": true
+  },
+  "issues": [],
+  "missing_fields": [],
+  "ready_for_review": true
+}

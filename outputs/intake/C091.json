@@ -1,0 +1,78 @@
+{
+  "claim_id": "C091",
+  "claim_form": {
+    "claim_number": "C091",
+    "date_submitted": "2026-04-27",
+    "claimant_name": "Faisal Butt",
+    "cnic": "21444-1637895-2",
+    "phone": "0307-8472725",
+    "policy_number": "PMC-2026-20091",
+    "vehicle": "Suzuki Cultus",
+    "registration_number": "FDA-94-8633",
+    "incident_date": "2026-04-24",
+    "location": "D Ground, Faisalabad",
+    "description": "Another car hit my vehicle, causing a serious dent on the hood.",
+    "amount_claimed": 803100.0
+  },
+  "estimate": {
+    "workshop": "Ittefaq Autos",
+    "invoice_number": "INV-898119",
+    "estimate_date": "2026-04-27",
+    "customer_name": "Faisal Butt",
+    "vehicle": "Suzuki Cultus (FDA-94-8633)",
+    "registration_number": "FDA-94-8633",
+    "line_items": [
+      {
+        "item": "Hood - replacement / repair parts",
+        "amount": 476100.0
+      },
+      {
+        "item": "Hood - denting & painting",
+        "amount": 81300.0
+      },
+      {
+        "item": "Labour charges",
+        "amount": 245700.0
+      }
+    ],
+    "total": 803100.0
+  },
+  "photo": {
+    "is_vehicle_photo": true,
+    "all_damages": [
+      {
+        "part": "front bumper",
+        "damage_type": "crack",
+        "severity": "severe"
+      },
+      {
+        "part": "front left headlight",
+        "damage_type": "lamp broken",
+        "severity": "severe"
+      },
+      {
+        "part": "front hood",
+        "damage_type": "dent",
+        "severity": "moderate"
+      },
+      {
+        "part": "front left fender",
+        "damage_type": "dent",
+        "severity": "severe"
+      },
+      {
+        "part": "front bumper",
+        "damage_type": "scratch",
+        "severity": "moderate"
+      }
+    ],
+    "damaged_part": "front bumper",
+    "damage_type": "crack",
+    "severity": "severe",
+    "description": "The front left side is heavily damaged, with the bumper torn open and the front left headlight broken. The hood and front left fender are also visibly deformed, with additional scratches on the bumper.",
+    "image_quality_ok": true
+  },
+  "issues": [],
+  "missing_fields": [],
+  "ready_for_review": true
+}

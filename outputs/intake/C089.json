@@ -1,0 +1,54 @@
+{
+  "claim_id": "C089",
+  "claim_form": {
+    "claim_number": "C089",
+    "date_submitted": "2026-07-08",
+    "claimant_name": "Imran Sheikh",
+    "cnic": "96374-1322112-1",
+    "phone": "0302-9622307",
+    "policy_number": "PMC-2026-20089",
+    "vehicle": "Changan Alsvin",
+    "registration_number": "ICT-22-8758",
+    "incident_date": "2026-07-04",
+    "location": "Blue Area, Islamabad",
+    "description": "A stone hit the car and the rear side window shattered. The damage is serious.",
+    "amount_claimed": 439200.0
+  },
+  "estimate": {
+    "workshop": "City Car Care",
+    "invoice_number": "INV-621485",
+    "estimate_date": "2026-07-05",
+    "customer_name": "Imran Sheikh",
+    "vehicle": "Changan Alsvin (ICT-22-8758)",
+    "registration_number": "ICT-22-8758",
+    "line_items": [
+      {
+        "item": "Rear Side Window - replacement / repair parts",
+        "amount": 232100.0
+      },
+      {
+        "item": "Labour charges",
+        "amount": 207100.0
+      }
+    ],
+    "total": 439200.0
+  },
+  "photo": {
+    "is_vehicle_photo": true,
+    "all_damages": [
+      {
+        "part": "rear left side window",
+        "damage_type": "glass shatter",
+        "severity": "severe"
+      }
+    ],
+    "damaged_part": "rear left side window",
+    "damage_type": "glass shatter",
+    "severity": "severe",
+    "description": "The rear left side window is shattered with a large missing section of glass. No other clear damage is visible.",
+    "image_quality_ok": true
+  },
+  "issues": [],
+  "missing_fields": [],
+  "ready_for_review": true
+}

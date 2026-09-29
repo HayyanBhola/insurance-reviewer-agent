@@ -1,0 +1,73 @@
+{
+  "claim_id": "C086",
+  "claim_form": {
+    "claim_number": "C086",
+    "date_submitted": "2026-07-24",
+    "claimant_name": "Waqas Raza",
+    "cnic": "90677-3856673-6",
+    "phone": "0336-3251166",
+    "policy_number": "PMC-2026-20086",
+    "vehicle": "MG HS",
+    "registration_number": "LE-16-3078",
+    "incident_date": "2026-07-22",
+    "location": "Gulberg, Lahore",
+    "description": "Another car hit my vehicle, causing a serious dent on the front fender.",
+    "amount_claimed": 120600.0
+  },
+  "estimate": {
+    "workshop": "Prime Auto Garage",
+    "invoice_number": "INV-562018",
+    "estimate_date": "2026-07-24",
+    "customer_name": "Waqas Raza",
+    "vehicle": "MG HS (LE-16-3078)",
+    "registration_number": "LE-16-3078",
+    "line_items": [
+      {
+        "item": "Front Fender - replacement / repair parts",
+        "amount": 53000.0
+      },
+      {
+        "item": "Front Fender - denting & painting",
+        "amount": 25900.0
+      },
+      {
+        "item": "Labour charges",
+        "amount": 41700.0
+      }
+    ],
+    "total": 120600.0
+  },
+  "photo": {
+    "is_vehicle_photo": true,
+    "all_damages": [
+      {
+        "part": "front left fender",
+        "damage_type": "dent",
+        "severity": "severe"
+      },
+      {
+        "part": "front left fender",
+        "damage_type": "scratch",
+        "severity": "moderate"
+      },
+      {
+        "part": "front bumper",
+        "damage_type": "scratch",
+        "severity": "minor"
+      },
+      {
+        "part": "front left wheel cover",
+        "damage_type": "crack",
+        "severity": "severe"
+      }
+    ],
+    "damaged_part": "front left fender",
+    "damage_type": "dent",
+    "severity": "severe",
+    "description": "Severe deformation is visible on the front left fender with scratches on the damaged area. The front bumper has visible scuff/scratch marks, and the front left wheel cover is cracked.",
+    "image_quality_ok": true
+  },
+  "issues": [],
+  "missing_fields": [],
+  "ready_for_review": true
+}

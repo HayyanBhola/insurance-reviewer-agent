@@ -1,0 +1,73 @@
+{
+  "claim_id": "C085",
+  "claim_form": {
+    "claim_number": "C085",
+    "date_submitted": "2026-06-25",
+    "claimant_name": "Zainab Aslam",
+    "cnic": "15270-3335407-1",
+    "phone": "0339-4571546",
+    "policy_number": "PMC-2026-20085",
+    "vehicle": "Toyota Yaris",
+    "registration_number": "ICT-83-4545",
+    "incident_date": "2026-06-24",
+    "location": "I-8, Islamabad",
+    "description": "Another car hit my vehicle, causing a noticeable dent on the front fender.",
+    "amount_claimed": 30800.0
+  },
+  "estimate": {
+    "workshop": "Ittefaq Autos",
+    "invoice_number": "INV-230728",
+    "estimate_date": "2026-06-24",
+    "customer_name": "Zainab Aslam",
+    "vehicle": "Toyota Yaris (ICT-83-4545)",
+    "registration_number": "ICT-83-4545",
+    "line_items": [
+      {
+        "item": "Front Fender - replacement / repair parts",
+        "amount": 15700.0
+      },
+      {
+        "item": "Front Fender - denting & painting",
+        "amount": 5000.0
+      },
+      {
+        "item": "Labour charges",
+        "amount": 10100.0
+      }
+    ],
+    "total": 30800.0
+  },
+  "photo": {
+    "is_vehicle_photo": true,
+    "all_damages": [
+      {
+        "part": "front left fender",
+        "damage_type": "dent",
+        "severity": "severe"
+      },
+      {
+        "part": "front left fender",
+        "damage_type": "scratch",
+        "severity": "moderate"
+      },
+      {
+        "part": "front left wheel arch area",
+        "damage_type": "crack",
+        "severity": "moderate"
+      },
+      {
+        "part": "front bumper left corner",
+        "damage_type": "scratch",
+        "severity": "minor"
+      }
+    ],
+    "damaged_part": "front left fender",
+    "damage_type": "dent",
+    "severity": "severe",
+    "description": "The front left fender is heavily dented and creased above the wheel arch, with visible scratches and deformation around the wheel opening. There is also a cracked/separated area at the front left wheel arch edge and light scuffing on the left bumper corner.",
+    "image_quality_ok": true
+  },
+  "issues": [],
+  "missing_fields": [],
+  "ready_for_review": true
+}

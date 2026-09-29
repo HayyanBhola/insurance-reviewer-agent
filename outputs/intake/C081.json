@@ -1,0 +1,58 @@
+{
+  "claim_id": "C081",
+  "claim_form": {
+    "claim_number": "C081",
+    "date_submitted": "2026-06-01",
+    "claimant_name": "Ahmed Aslam",
+    "cnic": "90248-9435347-7",
+    "phone": "0307-4856056",
+    "policy_number": "PMC-2026-20081",
+    "vehicle": "Toyota Corolla",
+    "registration_number": "RIR-14-2002",
+    "incident_date": "2026-05-31",
+    "location": "Bahria Town, Rawalpindi",
+    "description": "While parking, another vehicle scraped the rear quarter panel, leaving noticeable scratches on the paint.",
+    "amount_claimed": 39700.0
+  },
+  "estimate": {
+    "workshop": "Prime Auto Garage",
+    "invoice_number": "INV-760845",
+    "estimate_date": "2026-05-31",
+    "customer_name": "Ahmed Aslam",
+    "vehicle": "Toyota Corolla (RIR-14-2002)",
+    "registration_number": null,
+    "line_items": [
+      {
+        "item": "Rear Quarter Panel - replacement / repair parts",
+        "amount": 20200.0
+      },
+      {
+        "item": "Rear Quarter Panel - denting & painting",
+        "amount": 7500.0
+      },
+      {
+        "item": "Labour charges",
+        "amount": 12000.0
+      }
+    ],
+    "total": 39700.0
+  },
+  "photo": {
+    "is_vehicle_photo": true,
+    "all_damages": [
+      {
+        "part": "front left quarter panel",
+        "damage_type": "scratch",
+        "severity": "moderate"
+      }
+    ],
+    "damaged_part": "front left quarter panel",
+    "damage_type": "scratch",
+    "severity": "moderate",
+    "description": "Visible long white scrape marks across the front left quarter panel above the wheel arch. No dent, crack, lamp damage, or glass damage is visible.",
+    "image_quality_ok": true
+  },
+  "issues": [],
+  "missing_fields": [],
+  "ready_for_review": true
+}

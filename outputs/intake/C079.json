@@ -1,0 +1,59 @@
+{
+  "claim_id": "C079",
+  "claim_form": {
+    "claim_number": "C079",
+    "date_submitted": "2026-02-08",
+    "claimant_name": "Nida Siddiqui",
+    "cnic": "88031-4004402-5",
+    "phone": "0329-2285492",
+    "policy_number": "PMC-2026-20079",
+    "vehicle": "Changan Alsvin",
+    "registration_number": "LE-94-5697",
+    "incident_date": "2026-02-04",
+    "location": "Model Town, Lahore",
+    "description": "A motorcycle collided with my car and broke the tail light. The damage\nis noticeable.",
+    "amount_claimed": 33100.0
+  },
+  "estimate": {
+    "workshop": "Al-Madina Auto Works",
+    "invoice_number": "INV-367078",
+    "estimate_date": "2026-02-06",
+    "customer_name": "Nida Siddiqui",
+    "vehicle": "Changan Alsvin (LE-94-5697)",
+    "registration_number": "LE-94-5697",
+    "line_items": [
+      {
+        "item": "Tail Light - replacement / repair parts",
+        "amount": 16100.0
+      },
+      {
+        "item": "Labour charges",
+        "amount": 17000.0
+      }
+    ],
+    "total": 33100.0
+  },
+  "photo": {
+    "is_vehicle_photo": true,
+    "all_damages": [
+      {
+        "part": "tail light",
+        "damage_type": "lamp broken",
+        "severity": "moderate"
+      },
+      {
+        "part": "rear left side panel",
+        "damage_type": "scratch",
+        "severity": "minor"
+      }
+    ],
+    "damaged_part": "tail light",
+    "damage_type": "lamp broken",
+    "severity": "moderate",
+    "description": "The tail light lens appears broken with visible damage to the housing. There is also a small scratch on the rear left side panel.",
+    "image_quality_ok": true
+  },
+  "issues": [],
+  "missing_fields": [],
+  "ready_for_review": true
+}

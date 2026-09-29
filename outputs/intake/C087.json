@@ -1,0 +1,58 @@
+{
+  "claim_id": "C087",
+  "claim_form": {
+    "claim_number": "C087",
+    "date_submitted": "2026-03-27",
+    "claimant_name": "Rabia Butt",
+    "cnic": "84445-3443764-9",
+    "phone": "0317-2302759",
+    "policy_number": "PMC-2026-20087",
+    "vehicle": "Honda Civic",
+    "registration_number": "LE-41-8334",
+    "incident_date": "2026-03-26",
+    "location": "Mall Road, Lahore",
+    "description": "While parking, another vehicle scraped the rear quarter panel, leaving noticeable scratches on the paint.",
+    "amount_claimed": 23000.0
+  },
+  "estimate": {
+    "workshop": "Al-Madina Auto Works",
+    "invoice_number": "INV-963492",
+    "estimate_date": "2026-03-29",
+    "customer_name": "Rabia Butt",
+    "vehicle": "Honda Civic (LE-41-8334)",
+    "registration_number": "LE-41-8334",
+    "line_items": [
+      {
+        "item": "Rear Quarter Panel - replacement / repair parts",
+        "amount": 13500.0
+      },
+      {
+        "item": "Rear Quarter Panel - denting & painting",
+        "amount": 2900.0
+      },
+      {
+        "item": "Labour charges",
+        "amount": 6600.0
+      }
+    ],
+    "total": 23000.0
+  },
+  "photo": {
+    "is_vehicle_photo": true,
+    "all_damages": [
+      {
+        "part": "rear bumper",
+        "damage_type": "scratch",
+        "severity": "moderate"
+      }
+    ],
+    "damaged_part": "rear bumper",
+    "damage_type": "scratch",
+    "severity": "moderate",
+    "description": "Visible scuffing and scratches on the rear bumper. No other clear damage is visible in the photo.",
+    "image_quality_ok": true
+  },
+  "issues": [],
+  "missing_fields": [],
+  "ready_for_review": true
+}

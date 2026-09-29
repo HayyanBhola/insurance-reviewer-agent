@@ -1,0 +1,78 @@
+{
+  "claim_id": "C080",
+  "claim_form": {
+    "claim_number": "C080",
+    "date_submitted": "2026-05-25",
+    "claimant_name": "Saad Butt",
+    "cnic": "71361-7272504-6",
+    "phone": "0341-4212091",
+    "policy_number": "PMC-2026-20080",
+    "vehicle": "Suzuki Alto",
+    "registration_number": "KHI-51-7896",
+    "incident_date": "2026-05-21",
+    "location": "Gulshan-e-Iqbal, Karachi",
+    "description": "Another car hit my vehicle, causing a serious dent on the front fender.",
+    "amount_claimed": 124400.0
+  },
+  "estimate": {
+    "workshop": "Prime Auto Garage",
+    "invoice_number": "INV-202984",
+    "estimate_date": "2026-05-23",
+    "customer_name": "Saad Butt",
+    "vehicle": "Suzuki Alto (KHI-51-7896)",
+    "registration_number": "KHI-51-7896",
+    "line_items": [
+      {
+        "item": "Front Fender - replacement / repair parts",
+        "amount": 74300.0
+      },
+      {
+        "item": "Front Fender - denting & painting",
+        "amount": 26700.0
+      },
+      {
+        "item": "Labour charges",
+        "amount": 23400.0
+      }
+    ],
+    "total": 124400.0
+  },
+  "photo": {
+    "is_vehicle_photo": true,
+    "all_damages": [
+      {
+        "part": "front left fender",
+        "damage_type": "dent",
+        "severity": "severe"
+      },
+      {
+        "part": "front left fender",
+        "damage_type": "scratch",
+        "severity": "moderate"
+      },
+      {
+        "part": "front bumper",
+        "damage_type": "crack",
+        "severity": "severe"
+      },
+      {
+        "part": "front left headlight",
+        "damage_type": "lamp broken",
+        "severity": "severe"
+      },
+      {
+        "part": "front left door",
+        "damage_type": "scratch",
+        "severity": "moderate"
+      }
+    ],
+    "damaged_part": "front left fender",
+    "damage_type": "dent",
+    "severity": "severe",
+    "description": "Severe deformation is visible on the front left fender with scraping. The front bumper is torn/split and the front left headlight is broken; scratches are also visible on the front left door.",
+    "image_quality_ok": true
+  },
+  "issues": [],
+  "missing_fields": [],
+  "ready_for_review": true
+}

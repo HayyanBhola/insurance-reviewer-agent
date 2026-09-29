@@ -1,0 +1,63 @@
+{
+  "claim_id": "C094",
+  "claim_form": {
+    "claim_number": "C094",
+    "date_submitted": "2026-05-02",
+    "claimant_name": "Rabia Mirza",
+    "cnic": "73983-3900502-9",
+    "phone": "0346-2894984",
+    "policy_number": "PMC-2026-20094",
+    "vehicle": "Suzuki Alto",
+    "registration_number": "ICT-69-8595",
+    "incident_date": "2026-04-27",
+    "location": "Srinagar Highway, Islamabad",
+    "description": "Another car hit my vehicle, causing a noticeable dent on the rear bumper.",
+    "amount_claimed": 55600.0
+  },
+  "estimate": {
+    "workshop": "Khan Denting & Painting",
+    "invoice_number": "INV-851791",
+    "estimate_date": "2026-04-28",
+    "customer_name": "Rabia Mirza",
+    "vehicle": "Suzuki Alto (ICT-69-8595)",
+    "registration_number": "ICT-69-8595",
+    "line_items": [
+      {
+        "item": "Rear Bumper - replacement / repair parts",
+        "amount": 33200.0
+      },
+      {
+        "item": "Rear Bumper - denting & painting",
+        "amount": 12500.0
+      },
+      {
+        "item": "Labour charges",
+        "amount": 9900.0
+      }
+    ],
+    "total": 55600.0
+  },
+  "photo": {
+    "is_vehicle_photo": true,
+    "all_damages": [
+      {
+        "part": "rear left quarter panel",
+        "damage_type": "dent",
+        "severity": "moderate"
+      },
+      {
+        "part": "rear left quarter panel",
+        "damage_type": "scratch",
+        "severity": "moderate"
+      }
+    ],
+    "damaged_part": "rear left quarter panel",
+    "damage_type": "dent",
+    "severity": "moderate",
+    "description": "The rear left quarter panel is visibly dented and scraped. The rear bumper area on that side also shows scuffing, and the left rear lamp appears intact.",
+    "image_quality_ok": true
+  },
+  "issues": [],
+  "missing_fields": [],
+  "ready_for_review": true
+}

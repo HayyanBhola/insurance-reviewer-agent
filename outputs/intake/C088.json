@@ -1,0 +1,54 @@
+{
+  "claim_id": "C088",
+  "claim_form": {
+    "claim_number": "C088",
+    "date_submitted": "2026-04-28",
+    "claimant_name": "Rabia Aslam",
+    "cnic": "37346-8736250-1",
+    "phone": "0316-5896129",
+    "policy_number": "PMC-2026-20088",
+    "vehicle": "Kia Sportage",
+    "registration_number": "RIR-16-3272",
+    "incident_date": "2026-04-23",
+    "location": "Chaklala, Rawalpindi",
+    "description": "A stone hit the car and the windshield shattered. The damage is\nserious.",
+    "amount_claimed": 453900.0
+  },
+  "estimate": {
+    "workshop": "Khan Denting & Painting",
+    "invoice_number": "INV-268769",
+    "estimate_date": "2026-04-24",
+    "customer_name": "Rabia Aslam",
+    "vehicle": "Kia Sportage (RIR-16-3272)",
+    "registration_number": "RIR-16-3272",
+    "line_items": [
+      {
+        "item": "Windshield - replacement / repair parts",
+        "amount": 205600.0
+      },
+      {
+        "item": "Labour charges",
+        "amount": 248300.0
+      }
+    ],
+    "total": 453900.0
+  },
+  "photo": {
+    "is_vehicle_photo": true,
+    "all_damages": [
+      {
+        "part": "windshield",
+        "damage_type": "glass shatter",
+        "severity": "severe"
+      }
+    ],
+    "damaged_part": "windshield",
+    "damage_type": "glass shatter",
+    "severity": "severe",
+    "description": "The windshield is heavily cracked with spidering cracks across a large area. No other clear damage is visible in this photo.",
+    "image_quality_ok": true
+  },
+  "issues": [],
+  "missing_fields": [],
+  "ready_for_review": true
+}

@@ -1,0 +1,68 @@
+{
+  "claim_id": "C095",
+  "claim_form": {
+    "claim_number": "C095",
+    "date_submitted": "2026-05-24",
+    "claimant_name": "Imran Hussain",
+    "cnic": "31228-9800592-7",
+    "phone": "0313-1908726",
+    "policy_number": "PMC-2026-20095",
+    "vehicle": "Honda Civic",
+    "registration_number": "RIR-94-9813",
+    "incident_date": "2026-05-19",
+    "location": "Chaklala, Rawalpindi",
+    "description": "Another car hit my vehicle, causing a noticeable dent on the rear quarter panel.",
+    "amount_claimed": 32000.0
+  },
+  "estimate": {
+    "workshop": "Ittefaq Autos",
+    "invoice_number": "INV-876690",
+    "estimate_date": "2026-05-22",
+    "customer_name": "Imran Hussain",
+    "vehicle": "Honda Civic (RIR-94-9813)",
+    "registration_number": "RIR-94-9813",
+    "line_items": [
+      {
+        "item": "Rear Quarter Panel - replacement / repair parts",
+        "amount": 15300.0
+      },
+      {
+        "item": "Rear Quarter Panel - denting & painting",
+        "amount": 5700.0
+      },
+      {
+        "item": "Labour charges",
+        "amount": 11000.0
+      }
+    ],
+    "total": 32000.0
+  },
+  "photo": {
+    "is_vehicle_photo": true,
+    "all_damages": [
+      {
+        "part": "rear quarter panel",
+        "damage_type": "dent",
+        "severity": "moderate"
+      },
+      {
+        "part": "rear quarter panel",
+        "damage_type": "scratch",
+        "severity": "minor"
+      },
+      {
+        "part": "rear bumper",
+        "damage_type": "dent",
+        "severity": "moderate"
+      }
+    ],
+    "damaged_part": "rear quarter panel",
+    "damage_type": "dent",
+    "severity": "moderate",
+    "description": "Visible deformation on the rear quarter panel next to the tail lamp, with a smaller dent in the rear bumper. There are also light scrape marks; the tail lamp lens appears intact.",
+    "image_quality_ok": true
+  },
+  "issues": [],
+  "missing_fields": [],
+  "ready_for_review": true
+}

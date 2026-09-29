@@ -1,0 +1,63 @@
+{
+  "claim_id": "C093",
+  "claim_form": {
+    "claim_number": "C093",
+    "date_submitted": "2026-08-09",
+    "claimant_name": "Fatima Siddiqui",
+    "cnic": "41899-9311575-2",
+    "phone": "0339-2698431",
+    "policy_number": "PMC-2026-20093",
+    "vehicle": "Honda City",
+    "registration_number": "LE-86-520",
+    "incident_date": "2026-08-08",
+    "location": "Johar Town, Lahore",
+    "description": "A truck hit my car at high speed. The front bumper is completely destroyed, both headlights are smashed, the bonnet is crushed and the radiator is leaking.",
+    "amount_claimed": 311700.0
+  },
+  "estimate": {
+    "workshop": "Prime Auto Garage",
+    "invoice_number": "INV-842504",
+    "estimate_date": "2026-08-08",
+    "customer_name": "Fatima Siddiqui",
+    "vehicle": "Honda City (LE-86-520)",
+    "registration_number": "LE-86-520",
+    "line_items": [
+      {
+        "item": "Front Bumper - replacement / repair parts",
+        "amount": 170800.0
+      },
+      {
+        "item": "Front Bumper - denting & painting",
+        "amount": 38900.0
+      },
+      {
+        "item": "Labour charges",
+        "amount": 102000.0
+      }
+    ],
+    "total": 311700.0
+  },
+  "photo": {
+    "is_vehicle_photo": true,
+    "all_damages": [
+      {
+        "part": "front bumper",
+        "damage_type": "scratch",
+        "severity": "moderate"
+      },
+      {
+        "part": "front bumper",
+        "damage_type": "crack",
+        "severity": "moderate"
+      }
+    ],
+    "damaged_part": "front bumper",
+    "damage_type": "crack",
+    "severity": "moderate",
+    "description": "The front bumper shows visible scratches and a torn/open area near the upper right side. The nearby lamp appears intact.",
+    "image_quality_ok": true
+  },
+  "issues": [],
+  "missing_fields": [],
+  "ready_for_review": true
+}

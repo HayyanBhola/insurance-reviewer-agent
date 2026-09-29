@@ -1,0 +1,69 @@
+{
+  "claim_id": "C083",
+  "claim_form": {
+    "claim_number": "C083",
+    "date_submitted": "2026-04-27",
+    "claimant_name": "Hina Aslam",
+    "cnic": "96708-4873464-2",
+    "phone": "0304-9325242",
+    "policy_number": "PMC-2026-20083",
+    "vehicle": "Honda Civic",
+    "registration_number": "RIR-27-4280",
+    "incident_date": "2026-04-24",
+    "location": "Chaklala, Rawalpindi",
+    "description": "A motorcycle collided with my car and broke the headlight. The damage\nis serious.",
+    "amount_claimed": 149600.0
+  },
+  "estimate": {
+    "workshop": "Khan Denting & Painting",
+    "invoice_number": "INV-241837",
+    "estimate_date": "2026-04-26",
+    "customer_name": "Hina Aslam",
+    "vehicle": "Honda Civic",
+    "registration_number": "RIR-27-4280",
+    "line_items": [
+      {
+        "item": "Headlight - replacement / repair parts",
+        "amount": 81100.0
+      },
+      {
+        "item": "Labour charges",
+        "amount": 68500.0
+      }
+    ],
+    "total": 149600.0
+  },
+  "photo": {
+    "is_vehicle_photo": true,
+    "all_damages": [
+      {
+        "part": "front left headlight",
+        "damage_type": "lamp broken",
+        "severity": "severe"
+      },
+      {
+        "part": "front left fender",
+        "damage_type": "dent",
+        "severity": "severe"
+      },
+      {
+        "part": "front left fender",
+        "damage_type": "scratch",
+        "severity": "moderate"
+      },
+      {
+        "part": "hood",
+        "damage_type": "dent",
+        "severity": "moderate"
+      }
+    ],
+    "damaged_part": "front left headlight",
+    "damage_type": "lamp broken",
+    "severity": "severe",
+    "description": "The front left headlight is broken and the front left fender is crumpled with visible scraping. The hood appears bent upward at the front edge.",
+    "image_quality_ok": true
+  },
+  "issues": [],
+  "missing_fields": [],
+  "ready_for_review": true
+}

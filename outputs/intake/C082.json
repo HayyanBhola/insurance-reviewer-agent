@@ -1,0 +1,68 @@
+{
+  "claim_id": "C082",
+  "claim_form": {
+    "claim_number": "C082",
+    "date_submitted": "2026-02-02",
+    "claimant_name": "Omar Ahmed",
+    "cnic": "93188-7235472-9",
+    "phone": "0328-7441198",
+    "policy_number": "PMC-2026-20082",
+    "vehicle": "Kia Sportage",
+    "registration_number": "LE-69-3464",
+    "incident_date": "2026-02-01",
+    "location": "Johar Town, Lahore",
+    "description": "Another car hit my vehicle, causing a serious dent on the side doors.",
+    "amount_claimed": 221900.0
+  },
+  "estimate": {
+    "workshop": "Ittefaq Autos",
+    "invoice_number": "INV-294578",
+    "estimate_date": "2026-02-04",
+    "customer_name": "Omar Ahmed",
+    "vehicle": "Kia Sportage (LE-69-3464)",
+    "registration_number": "LE-69-3464",
+    "line_items": [
+      {
+        "item": "Side Doors - replacement / repair parts",
+        "amount": 100700.0
+      },
+      {
+        "item": "Side Doors - denting & painting",
+        "amount": 42400.0
+      },
+      {
+        "item": "Labour charges",
+        "amount": 78800.0
+      }
+    ],
+    "total": 221900.0
+  },
+  "photo": {
+    "is_vehicle_photo": true,
+    "all_damages": [
+      {
+        "part": "side panel/door seam",
+        "damage_type": "dent",
+        "severity": "severe"
+      },
+      {
+        "part": "side panel/door seam",
+        "damage_type": "crack",
+        "severity": "severe"
+      },
+      {
+        "part": "side panel/door seam",
+        "damage_type": "scratch",
+        "severity": "moderate"
+      }
+    ],
+    "damaged_part": "side panel/door seam",
+    "damage_type": "crack",
+    "severity": "severe",
+    "description": "The side panel/door area is heavily deformed with a large open split along the seam. There are also visible scrape marks and creasing around the damaged area.",
+    "image_quality_ok": true
+  },
+  "issues": [],
+  "missing_fields": [],
+  "ready_for_review": true
+}

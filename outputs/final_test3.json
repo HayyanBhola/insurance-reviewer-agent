@@ -1,0 +1,212 @@
+{
+ "time": "2026-09-29T15:54:25",
+ "set": "test3",
+ "fingerprint": "fff332788e25",
+ "settings": {
+  "LLM_PROVIDER": "openai",
+  "AI_CHECKS": "v2",
+  "PHOTO_PROMPT": "v3",
+  "OPENAI_VISION_MODEL": "gpt-5.4-mini",
+  "AI_ESCALATION": "off",
+  "TYRE_REVIEW": "on",
+  "intake_model": "gpt-5.4-mini",
+  "graph_model": "gpt-5.4-nano"
+ },
+ "complete": true,
+ "rows": [
+  {
+   "cid": "C079",
+   "scenario": "honest",
+   "expected": "approve",
+   "got": "approve",
+   "why": "",
+   "photo_type_ok": true,
+   "photo_within_one": true
+  },
+  {
+   "cid": "C080",
+   "scenario": "honest",
+   "expected": "approve",
+   "got": "approve",
+   "why": "",
+   "photo_type_ok": true,
+   "photo_within_one": true
+  },
+  {
+   "cid": "C081",
+   "scenario": "honest",
+   "expected": "approve",
+   "got": "approve",
+   "why": "",
+   "photo_type_ok": true,
+   "photo_within_one": true
+  },
+  {
+   "cid": "C082",
+   "scenario": "honest",
+   "expected": "approve",
+   "got": "approve",
+   "why": "",
+   "photo_type_ok": false,
+   "photo_within_one": true
+  },
+  {
+   "cid": "C083",
+   "scenario": "honest",
+   "expected": "approve",
+   "got": "approve",
+   "why": "",
+   "photo_type_ok": true,
+   "photo_within_one": true
+  },
+  {
+   "cid": "C084",
+   "scenario": "honest",
+   "expected": "approve",
+   "got": "approve",
+   "why": "",
+   "photo_type_ok": false,
+   "photo_within_one": true
+  },
+  {
+   "cid": "C085",
+   "scenario": "honest",
+   "expected": "approve",
+   "got": "approve",
+   "why": "",
+   "photo_type_ok": true,
+   "photo_within_one": true
+  },
+  {
+   "cid": "C086",
+   "scenario": "honest",
+   "expected": "approve",
+   "got": "approve",
+   "why": "",
+   "photo_type_ok": true,
+   "photo_within_one": true
+  },
+  {
+   "cid": "C087",
+   "scenario": "honest",
+   "expected": "approve",
+   "got": "approve",
+   "why": "",
+   "photo_type_ok": true,
+   "photo_within_one": true
+  },
+  {
+   "cid": "C088",
+   "scenario": "inflated_estimate",
+   "expected": "investigate",
+   "got": "investigate",
+   "why": "",
+   "photo_type_ok": true,
+   "photo_within_one": true
+  },
+  {
+   "cid": "C089",
+   "scenario": "inflated_estimate",
+   "expected": "investigate",
+   "got": "investigate",
+   "why": "",
+   "photo_type_ok": true,
+   "photo_within_one": true
+  },
+  {
+   "cid": "C090",
+   "scenario": "inflated_estimate",
+   "expected": "investigate",
+   "got": "approve",
+   "why": "no flags (rules recommended approve)",
+   "photo_type_ok": true,
+   "photo_within_one": true
+  },
+  {
+   "cid": "C091",
+   "scenario": "inflated_estimate",
+   "expected": "investigate",
+   "got": "investigate",
+   "why": "",
+   "photo_type_ok": false,
+   "photo_within_one": true
+  },
+  {
+   "cid": "C092",
+   "scenario": "exaggerated_damage",
+   "expected": "investigate",
+   "got": "investigate",
+   "why": "",
+   "photo_type_ok": true,
+   "photo_within_one": true
+  },
+  {
+   "cid": "C093",
+   "scenario": "exaggerated_damage",
+   "expected": "investigate",
+   "got": "investigate",
+   "why": "",
+   "photo_type_ok": true,
+   "photo_within_one": true
+  },
+  {
+   "cid": "C094",
+   "scenario": "new_policy",
+   "expected": "investigate",
+   "got": "investigate",
+   "why": "",
+   "photo_type_ok": true,
+   "photo_within_one": true
+  },
+  {
+   "cid": "C095",
+   "scenario": "lapsed_policy",
+   "expected": "deny",
+   "got": "deny",
+   "why": "",
+   "photo_type_ok": true,
+   "photo_within_one": true
+  },
+  {
+   "cid": "C096",
+   "scenario": "third_party_only",
+   "expected": "deny",
+   "got": "deny",
+   "why": "",
+   "photo_type_ok": false,
+   "photo_within_one": true
+  },
+  {
+   "cid": "C097",
+   "scenario": "reused_photo",
+   "expected": "investigate",
+   "got": "investigate",
+   "why": "",
+   "photo_type_ok": true,
+   "photo_within_one": true
+  },
+  {
+   "cid": "C098",
+   "scenario": "duplicate_invoice",
+   "expected": "investigate",
+   "got": "investigate",
+   "why": "",
+   "photo_type_ok": true,
+   "photo_within_one": true
+  }
+ ],
+ "summary": {
+  "claims": 20,
+  "correct": 19,
+  "accuracy": 0.95,
+  "wrong_approvals": 1,
+  "wrong_denials": 0,
+  "honest_held_up": 0,
+  "photo_type_correct": 16,
+  "photo_severity_within_one": 20
+ },
+ "cost_usd": 0.1053,
+ "tokens_in": 128138,
+ "tokens_out": 17948,
+ "seconds": 217
+}

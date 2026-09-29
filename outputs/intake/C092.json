@@ -1,0 +1,58 @@
+{
+  "claim_id": "C092",
+  "claim_form": {
+    "claim_number": "C092",
+    "date_submitted": "2026-05-02",
+    "claimant_name": "Usman Butt",
+    "cnic": "80560-8246985-6",
+    "phone": "0336-5307820",
+    "policy_number": "PMC-2026-20092",
+    "vehicle": "Suzuki Alto",
+    "registration_number": "LE-26-8259",
+    "incident_date": "2026-04-29",
+    "location": "Model Town, Lahore",
+    "description": "My car was in a major collision. The front bumper was torn off, the\nwindshield shattered and the front suspension is damaged.",
+    "amount_claimed": 274500.0
+  },
+  "estimate": {
+    "workshop": "Khan Denting & Painting",
+    "invoice_number": "INV-702609",
+    "estimate_date": "2026-04-29",
+    "customer_name": "Usman Butt",
+    "vehicle": "Suzuki Alto (LE-26-8259)",
+    "registration_number": "LE-26-8259",
+    "line_items": [
+      {
+        "item": "Front Bumper - replacement / repair parts",
+        "amount": 163500.0
+      },
+      {
+        "item": "Front Bumper - denting & painting",
+        "amount": 51300.0
+      },
+      {
+        "item": "Labour charges",
+        "amount": 59700.0
+      }
+    ],
+    "total": 274500.0
+  },
+  "photo": {
+    "is_vehicle_photo": true,
+    "all_damages": [
+      {
+        "part": "front bumper",
+        "damage_type": "scratch",
+        "severity": "minor"
+      }
+    ],
+    "damaged_part": "front bumper",
+    "damage_type": "scratch",
+    "severity": "minor",
+    "description": "A small scuff/scratch is visible on the lower front bumper near the right side. No other clear damage is visible in this photo.",
+    "image_quality_ok": true
+  },
+  "issues": [],
+  "missing_fields": [],
+  "ready_for_review": true
+}

@@ -2,8 +2,9 @@
 Create the SECOND held-out test set (split "test2") from the 38 photos labelled on
 2026-09-29 (data/labels_test2.csv, frozen before any model saw them).
 
-  python generate_test2.py            -> creates C059 ... C078 and checks nothing old changed
-  python generate_test2.py --check    -> only re-runs the safety checks
+  python generate_test2.py                 -> creates test2: C059 ... C078
+  python generate_test2.py --set test3     -> creates test3: C079 ... C098 from the 19 photos test2 did not use
+  python generate_test2.py [--set test3] --check   -> only re-runs the safety checks
 
 It only ADDS. generate_claims.py deletes and recreates every claim, so it must not be run
 again; this script never touches existing claim folders, and it proves that:
@@ -32,14 +33,30 @@ from pathlib import Path
 
 import generate_claims as g
 
-SEED = 2026
-FIRST_ID = 59
 LABELS2 = g.DATA / "labels_test2.csv"
 FREEZE = g.DATA / "labels_test2_freeze.json"
-MIX = [("honest", 7), ("excluded_tyre", 3), ("inflated_estimate", 3), ("exaggerated_damage", 2),
-       ("new_policy", 1), ("lapsed_policy", 1), ("third_party_only", 1)]  # + 1 reused_photo + 1 duplicate_invoice
-FORCED_HONEST = ["car_080.jpg", "car_088.jpg"]
-SNAPSHOT = Path("outputs/test2_safety_snapshot.json")
+
+# Each set: decided BEFORE generating. Both add 1 reused_photo + 1 duplicate_invoice claim.
+SETS = {
+    "test2": {"seed": 2026, "first_id": 59, "tyre": 3, "forced_honest": ["car_080.jpg", "car_088.jpg"],
+              "mix": [("honest", 7), ("inflated_estimate", 3), ("exaggerated_damage", 2),
+                      ("new_policy", 1), ("lapsed_policy", 1), ("third_party_only", 1)]},
+    # test3 (decided 2026-09-29 15:36, before generating): the 19 photos test2 did not use,
+    # same frozen system. No tyre-only photos are left, so no tyre claims.
+    "test3": {"seed": 2027, "first_id": 79, "tyre": 0, "forced_honest": [],
+              "mix": [("honest", 9), ("inflated_estimate", 4), ("exaggerated_damage", 2),
+                      ("new_policy", 1), ("lapsed_policy", 1), ("third_party_only", 1)]},
+}
+SET = "test2"
+SEED, FIRST_ID, MIX, FORCED_HONEST = (SETS[SET][k] for k in ("seed", "first_id", "mix", "forced_honest"))
+SNAPSHOT = Path(f"outputs/{SET}_safety_snapshot.json")
+
+
+def use_set(name):
+    global SET, SEED, FIRST_ID, MIX, FORCED_HONEST, SNAPSHOT
+    SET = name
+    SEED, FIRST_ID, MIX, FORCED_HONEST = (SETS[name][k] for k in ("seed", "first_id", "mix", "forced_honest"))
+    SNAPSHOT = Path(f"outputs/{name}_safety_snapshot.json")
 
 
 def folder_digest(folder):
@@ -65,7 +82,7 @@ def fraud_signals_of_existing(history):
     truth = json.loads((g.DATA / "ground_truth.json").read_text(encoding="utf-8"))
     out = {}
     for cid, t in truth.items():
-        if t["split"] not in ("dev", "test"):
+        if t["split"] == SET:  # only claims that existed BEFORE this set
             continue
         try:
             r = load_intake(cid)
@@ -76,16 +93,15 @@ def fraud_signals_of_existing(history):
 
 
 def plan(labels):
+    """Which photo gets which scenario, for the current set. Deterministic (fixed seed)."""
     rnd = random.Random(SEED)
     tyre_only = [r for r in labels if r["damage_type"] == "tire flat" and not r["other_damage"]]
     forced = [r for r in labels if r["photo"] in FORCED_HONEST]
     pool = [r for r in labels if r not in tyre_only and r not in forced]
     rnd.shuffle(pool)
     out = [("excluded_tyre", r) for r in tyre_only]
-    assert len(out) == 3, "expected exactly 3 tyre-only photos"
+    assert len(out) == SETS[SET]["tyre"], f"expected {SETS[SET]['tyre']} tyre-only photos, found {len(out)}"
     for scenario, n in MIX:
-        if scenario in ("excluded_tyre",):
-            continue
         if scenario == "honest":
             picks = forced + pool[:n - len(forced)]
             pool = [r for r in pool if r not in picks]
@@ -94,23 +110,37 @@ def plan(labels):
             pool = [r for r in pool if r not in picks]
         else:
             picks, pool = pool[:n], pool[n:]
+        assert len(picks) == n, f"not enough photos for {scenario}"
         out += [(scenario, r) for r in picks]
+    assert pool, "no photo left for the duplicate-invoice claim"
     return out, pool  # pool: unused photos (one is used for the duplicate-invoice claim)
+
+
+def photos_for_set(labels, truth):
+    """test2 uses all 38 frozen photos; test3 only the ones no earlier claim has used."""
+    if SET == "test2":
+        return labels
+    used = {t["photo_source"] for t in truth.values()}
+    return [r for r in labels if r["photo"] not in used]
 
 
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--check", action="store_true")
+    ap.add_argument("--set", choices=sorted(SETS), default="test2")
     args = ap.parse_args()
+    use_set(args.set)
 
     truth_path = g.DATA / "ground_truth.json"
     truth = json.loads(truth_path.read_text(encoding="utf-8"))
     if args.check:
         sys.exit(0 if safety_check() else 1)
-    if any(t["split"] == "test2" for t in truth.values()):
-        sys.exit("The test2 claims already exist. Use  python generate_test2.py --check")
+    if any(t["split"] == SET for t in truth.values()):
+        sys.exit(f"The {SET} claims already exist. Use  python generate_test2.py --set {SET} --check")
+    if SET != "test2" and not any(t["split"] == "test2" for t in truth.values()):
+        sys.exit("Create test2 first (python generate_test2.py).")
 
-    labels = load_labels2()
+    labels = photos_for_set(load_labels2(), truth)
     old_names = {r["claimant"].lower() for r in csv.DictReader(open(g.DATA / "claims_summary.csv", encoding="utf-8"))}
     old_invoices = {t["invoice_number"] for t in truth.values()}
     old_policies = {r["policy_number"] for r in csv.DictReader(open(g.DATA / "policy_records.csv", encoding="utf-8"))}
@@ -151,7 +181,7 @@ def main():
     honest = [c for c in claims if c["scenario"] == "honest"
               and c["submitted_date"] <= (g.TODAY - timedelta(days=40)).isoformat()]
     g.random.shuffle(honest)
-    # reused photo: same photo as an earlier honest test2 claim, different claimant
+    # reused photo: same photo as an earlier honest claim of this set, different claimant
     orig = honest[0]
     lab = {"photo": orig["photo_source"], **orig["true_damage"]}
     c = g.build_claim(i, "honest", lab, policy_db, after=date.fromisoformat(orig["submitted_date"]))
@@ -160,7 +190,7 @@ def main():
              reasons=[f"Photo is identical to the one in claim {orig['claim_id']} from a different claimant."])
     claims.append(c)
     i += 1
-    # duplicate invoice: invoice of another earlier honest test2 claim, fresh unused photo
+    # duplicate invoice: invoice of another earlier honest claim of this set, fresh unused photo
     orig = honest[1]
     lab = dict(spare[0])
     c = g.build_claim(i, "honest", lab, policy_db, after=date.fromisoformat(orig["submitted_date"]))
@@ -186,7 +216,7 @@ def main():
 
     # --- write the new claims (existing files are only appended to) ----------------
     for c in claims:
-        c["split"] = "test2"
+        c["split"] = SET
         folder = g.CLAIMS / c["claim_id"]
         if folder.exists():
             sys.exit(f"{folder} already exists. Stopping without writing anything else.")
@@ -212,7 +242,7 @@ def main():
                         f"{td['severity']} {td['damage_type']} on {td['part']}"])
 
     from collections import Counter
-    print(f"Created {len(claims)} test2 claims: {claims[0]['claim_id']} ... {claims[-1]['claim_id']}")
+    print(f"Created {len(claims)} {SET} claims: {claims[0]['claim_id']} ... {claims[-1]['claim_id']}")
     print("Scenarios:", dict(Counter(c["scenario"] for c in claims)))
     print("Expected decisions:", dict(Counter(c["expected_decision"] for c in claims)))
     if not safety_check():
@@ -254,7 +284,7 @@ def safety_check():
         problems.append("existing summary rows changed")
 
     history = build_claims_history(force=True)  # rebuilt: now includes the new claims
-    new_ids = [c for c, t in truth.items() if t["split"] == "test2"]
+    new_ids = [c for c, t in truth.items() if t["split"] == SET]
     old_ids = [c for c in history if c not in new_ids]
     # look-alike photos between a new claim and any older claim (except the planted reuse)
     planted = {cid for cid in new_ids if truth[cid]["scenario"] == "reused_photo"}

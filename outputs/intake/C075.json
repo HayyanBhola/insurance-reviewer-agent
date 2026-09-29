@@ -1,0 +1,73 @@
+{
+  "claim_id": "C075",
+  "claim_form": {
+    "claim_number": "C075",
+    "date_submitted": "2026-01-09",
+    "claimant_name": "Faisal Siddiqui",
+    "cnic": "78216-6326731-1",
+    "phone": "0303-8894436",
+    "policy_number": "PMC-2026-20075",
+    "vehicle": "Suzuki Alto",
+    "registration_number": "FDA-38-8433",
+    "incident_date": "2026-01-06",
+    "location": "D Ground, Faisalabad",
+    "description": "Another car hit my vehicle, causing a serious dent on the front fender.",
+    "amount_claimed": 161500.0
+  },
+  "estimate": {
+    "workshop": "Khan Denting & Painting",
+    "invoice_number": "INV-518459",
+    "estimate_date": "2026-01-08",
+    "customer_name": "Faisal Siddiqui",
+    "vehicle": "Suzuki Alto (FDA-38-8433)",
+    "registration_number": "FDA-38-8433",
+    "line_items": [
+      {
+        "item": "Front Fender - replacement / repair parts",
+        "amount": 95300.0
+      },
+      {
+        "item": "Front Fender - denting & painting",
+        "amount": 21800.0
+      },
+      {
+        "item": "Labour charges",
+        "amount": 44400.0
+      }
+    ],
+    "total": 161500.0
+  },
+  "photo": {
+    "is_vehicle_photo": true,
+    "all_damages": [
+      {
+        "part": "rear left door",
+        "damage_type": "dent",
+        "severity": "severe"
+      },
+      {
+        "part": "rear left door",
+        "damage_type": "scratch",
+        "severity": "moderate"
+      },
+      {
+        "part": "rear left quarter panel",
+        "damage_type": "dent",
+        "severity": "severe"
+      },
+      {
+        "part": "rear left quarter panel",
+        "damage_type": "scratch",
+        "severity": "moderate"
+      }
+    ],
+    "damaged_part": "rear left quarter panel",
+    "damage_type": "dent",
+    "severity": "severe",
+    "description": "The rear left door and rear left quarter panel are heavily dented with visible scratches and scuff marks. Pre-existing wear: the tire sidewall shows dirt/mud buildup.",
+    "image_quality_ok": true
+  },
+  "issues": [],
+  "missing_fields": [],
+  "ready_for_review": true
+}

@@ -1,0 +1,68 @@
+{
+  "claim_id": "C076",
+  "claim_form": {
+    "claim_number": "C076",
+    "date_submitted": "2026-08-17",
+    "claimant_name": "Hina Iqbal",
+    "cnic": "98264-6237740-4",
+    "phone": "0316-3579994",
+    "policy_number": "PMC-2026-20076",
+    "vehicle": "Kia Sportage",
+    "registration_number": "ICT-10-5907",
+    "incident_date": "2026-08-12",
+    "location": "I-8, Islamabad",
+    "description": "Another car hit my vehicle, causing a serious dent on the front bumper.",
+    "amount_claimed": 260400.0
+  },
+  "estimate": {
+    "workshop": "Khan Denting & Painting",
+    "invoice_number": "INV-528161",
+    "estimate_date": "2026-08-12",
+    "customer_name": "Hina Iqbal",
+    "vehicle": "Kia Sportage (ICT-10-5907)",
+    "registration_number": null,
+    "line_items": [
+      {
+        "item": "Front Bumper - replacement / repair parts",
+        "amount": 137400.0
+      },
+      {
+        "item": "Front Bumper - denting & painting",
+        "amount": 29300.0
+      },
+      {
+        "item": "Labour charges",
+        "amount": 93700.0
+      }
+    ],
+    "total": 260400.0
+  },
+  "photo": {
+    "is_vehicle_photo": true,
+    "all_damages": [
+      {
+        "part": "front right fender",
+        "damage_type": "dent",
+        "severity": "severe"
+      },
+      {
+        "part": "front right fender",
+        "damage_type": "scratch",
+        "severity": "moderate"
+      },
+      {
+        "part": "front bumper",
+        "damage_type": "scratch",
+        "severity": "minor"
+      }
+    ],
+    "damaged_part": "front right fender",
+    "damage_type": "dent",
+    "severity": "severe",
+    "description": "The front right fender is heavily dented and creased with visible scratches/scuffs. The front bumper shows minor scuffing; the headlight and tire appear intact.",
+    "image_quality_ok": true
+  },
+  "issues": [],
+  "missing_fields": [],
+  "ready_for_review": true
+}

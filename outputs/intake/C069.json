@@ -1,0 +1,63 @@
+{
+  "claim_id": "C069",
+  "claim_form": {
+    "claim_number": "C069",
+    "date_submitted": "2026-07-04",
+    "claimant_name": "Sana Raza",
+    "cnic": "45891-2586554-4",
+    "phone": "0310-2562287",
+    "policy_number": "PMC-2026-20069",
+    "vehicle": "Kia Sportage",
+    "registration_number": "RIR-92-5513",
+    "incident_date": "2026-06-30",
+    "location": "Chaklala, Rawalpindi",
+    "description": "Another car hit my vehicle, causing a noticeable dent on the front fender.",
+    "amount_claimed": 295600.0
+  },
+  "estimate": {
+    "workshop": "Prime Auto Garage",
+    "invoice_number": "INV-921364",
+    "estimate_date": "2026-07-01",
+    "customer_name": "Sana Raza",
+    "vehicle": "Kia Sportage (RIR-92-5513)",
+    "registration_number": "RIR-92-5513",
+    "line_items": [
+      {
+        "item": "Front Fender - replacement / repair parts",
+        "amount": 175100.0
+      },
+      {
+        "item": "Front Fender - denting & painting",
+        "amount": 45200.0
+      },
+      {
+        "item": "Labour charges",
+        "amount": 75300.0
+      }
+    ],
+    "total": 295600.0
+  },
+  "photo": {
+    "is_vehicle_photo": true,
+    "all_damages": [
+      {
+        "part": "front left fender",
+        "damage_type": "dent",
+        "severity": "moderate"
+      },
+      {
+        "part": "front left fender",
+        "damage_type": "scratch",
+        "severity": "minor"
+      }
+    ],
+    "damaged_part": "front left fender",
+    "damage_type": "dent",
+    "severity": "moderate",
+    "description": "The front left fender is visibly dented near the hood line with a light scratch across the panel. No broken lamp, cracked glass, or flat tyre is visible.",
+    "image_quality_ok": true
+  },
+  "issues": [],
+  "missing_fields": [],
+  "ready_for_review": true
+}

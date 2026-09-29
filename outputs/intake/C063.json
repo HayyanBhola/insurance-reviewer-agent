@@ -1,0 +1,73 @@
+{
+  "claim_id": "C063",
+  "claim_form": {
+    "claim_number": "C063",
+    "date_submitted": "2026-05-22",
+    "claimant_name": "Hina Ahmed",
+    "cnic": "75163-8285161-9",
+    "phone": "0304-6312624",
+    "policy_number": "PMC-2026-20063",
+    "vehicle": "Kia Sportage",
+    "registration_number": "FDA-22-7283",
+    "incident_date": "2026-05-18",
+    "location": "Jaranwala Road, Faisalabad",
+    "description": "Another car hit my vehicle, causing a serious dent on the front bumper.",
+    "amount_claimed": 188000.0
+  },
+  "estimate": {
+    "workshop": "Khan Denting & Painting",
+    "invoice_number": "INV-923220",
+    "estimate_date": "2026-05-20",
+    "customer_name": "Hina Ahmed",
+    "vehicle": "Kia Sportage",
+    "registration_number": "FDA-22-7283",
+    "line_items": [
+      {
+        "item": "Front Bumper - replacement / repair parts",
+        "amount": 92200.0
+      },
+      {
+        "item": "Front Bumper - denting & painting",
+        "amount": 46000.0
+      },
+      {
+        "item": "Labour charges",
+        "amount": 49800.0
+      }
+    ],
+    "total": 188000.0
+  },
+  "photo": {
+    "is_vehicle_photo": true,
+    "all_damages": [
+      {
+        "part": "front left bumper",
+        "damage_type": "scratch",
+        "severity": "moderate"
+      },
+      {
+        "part": "front left bumper",
+        "damage_type": "crack",
+        "severity": "moderate"
+      },
+      {
+        "part": "front left fender",
+        "damage_type": "scratch",
+        "severity": "moderate"
+      },
+      {
+        "part": "front left tire",
+        "damage_type": "tire flat",
+        "severity": "severe"
+      }
+    ],
+    "damaged_part": "front left bumper",
+    "damage_type": "crack",
+    "severity": "moderate",
+    "description": "The front left bumper shows visible scraping and a split/open tear near the corner. The front left tire is visibly deflated, and there are scratches on the front left bumper and fender.",
+    "image_quality_ok": true
+  },
+  "issues": [],
+  "missing_fields": [],
+  "ready_for_review": true
+}

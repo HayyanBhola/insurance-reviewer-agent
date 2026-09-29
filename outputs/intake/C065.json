@@ -1,0 +1,73 @@
+{
+  "claim_id": "C065",
+  "claim_form": {
+    "claim_number": "C065",
+    "date_submitted": "2026-08-05",
+    "claimant_name": "Ayesha Siddiqui",
+    "cnic": "74485-3262652-9",
+    "phone": "0317-3201443",
+    "policy_number": "PMC-2026-20065",
+    "vehicle": "Toyota Fortuner",
+    "registration_number": "FDA-98-8369",
+    "incident_date": "2026-07-31",
+    "location": "Canal Road, Faisalabad",
+    "description": "Another car hit my vehicle, causing a noticeable dent on the trunk lid.",
+    "amount_claimed": 58700.0
+  },
+  "estimate": {
+    "workshop": "Al-Madina Auto Works",
+    "invoice_number": "INV-538072",
+    "estimate_date": "2026-08-01",
+    "customer_name": "Ayesha Siddiqui",
+    "vehicle": "Toyota Fortuner (FDA-98-8369)",
+    "registration_number": "FDA-98-8369",
+    "line_items": [
+      {
+        "item": "Trunk Lid - replacement / repair parts",
+        "amount": 34500.0
+      },
+      {
+        "item": "Trunk Lid - denting & painting",
+        "amount": 12800.0
+      },
+      {
+        "item": "Labour charges",
+        "amount": 11400.0
+      }
+    ],
+    "total": 58700.0
+  },
+  "photo": {
+    "is_vehicle_photo": true,
+    "all_damages": [
+      {
+        "part": "rear bumper",
+        "damage_type": "dent",
+        "severity": "moderate"
+      },
+      {
+        "part": "rear bumper",
+        "damage_type": "scratch",
+        "severity": "moderate"
+      },
+      {
+        "part": "rear left quarter panel",
+        "damage_type": "dent",
+        "severity": "moderate"
+      },
+      {
+        "part": "rear left taillight",
+        "damage_type": "lamp broken",
+        "severity": "minor"
+      }
+    ],
+    "damaged_part": "rear bumper",
+    "damage_type": "dent",
+    "severity": "moderate",
+    "description": "Visible damage on the rear left side includes a dented and scratched rear bumper, a dent on the rear left quarter panel, and damage to the rear left taillight lens/housing. Pre-existing wear: light dirt and scuffing on lower trim.",
+    "image_quality_ok": true
+  },
+  "issues": [],
+  "missing_fields": [],
+  "ready_for_review": true
+}

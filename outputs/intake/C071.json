@@ -1,0 +1,78 @@
+{
+  "claim_id": "C071",
+  "claim_form": {
+    "claim_number": "C071",
+    "date_submitted": "2026-01-01",
+    "claimant_name": "Imran Qureshi",
+    "cnic": "43570-2054935-1",
+    "phone": "0334-7954630",
+    "policy_number": "PMC-2026-20071",
+    "vehicle": "Suzuki Alto",
+    "registration_number": "KHI-17-1680",
+    "incident_date": "2025-12-29",
+    "location": "Shahrah-e-Faisal, Karachi",
+    "description": "My car struck a raised divider, and the front bumper cracked. The damage is serious.",
+    "amount_claimed": 411300.0
+  },
+  "estimate": {
+    "workshop": "Al-Madina Auto Works",
+    "invoice_number": "INV-424973",
+    "estimate_date": "2025-12-29",
+    "customer_name": "Imran Qureshi",
+    "vehicle": "Suzuki Alto (KHI-17-1680)",
+    "registration_number": "KHI-17-1680",
+    "line_items": [
+      {
+        "item": "Front Bumper - replacement / repair parts",
+        "amount": 172200.0
+      },
+      {
+        "item": "Front Bumper - denting & painting",
+        "amount": 75800.0
+      },
+      {
+        "item": "Labour charges",
+        "amount": 163300.0
+      }
+    ],
+    "total": 411300.0
+  },
+  "photo": {
+    "is_vehicle_photo": true,
+    "all_damages": [
+      {
+        "part": "front bumper",
+        "damage_type": "crack",
+        "severity": "severe"
+      },
+      {
+        "part": "front bumper",
+        "damage_type": "dent",
+        "severity": "severe"
+      },
+      {
+        "part": "front right fender",
+        "damage_type": "dent",
+        "severity": "severe"
+      },
+      {
+        "part": "hood",
+        "damage_type": "dent",
+        "severity": "severe"
+      },
+      {
+        "part": "front right fog lamp area",
+        "damage_type": "lamp broken",
+        "severity": "moderate"
+      }
+    ],
+    "damaged_part": "front bumper",
+    "damage_type": "crack",
+    "severity": "severe",
+    "description": "The front bumper is torn and split, with heavy deformation of the front right fender and hood. The front right fog lamp area is broken/open.",
+    "image_quality_ok": true
+  },
+  "issues": [],
+  "missing_fields": [],
+  "ready_for_review": true
+}

@@ -1,0 +1,64 @@
+{
+  "claim_id": "C059",
+  "claim_form": {
+    "claim_number": "C059",
+    "date_submitted": "2026-08-22",
+    "claimant_name": "Fatima Khan",
+    "cnic": "85047-9236009-8",
+    "phone": "0310-2354318",
+    "policy_number": "PMC-2026-20059",
+    "vehicle": "Suzuki Cultus",
+    "registration_number": "LE-46-1706",
+    "incident_date": "2026-08-17",
+    "location": "Johar Town, Lahore",
+    "description": "The front tire burst while driving and went completely flat.",
+    "amount_claimed": 15200.0
+  },
+  "estimate": {
+    "workshop": "Al-Madina Auto Works",
+    "invoice_number": "INV-954340",
+    "estimate_date": "2026-08-20",
+    "customer_name": "Fatima Khan",
+    "vehicle": "Suzuki Cultus",
+    "registration_number": "LE-46-1706",
+    "line_items": [
+      {
+        "item": "Front Tire - replacement / repair parts",
+        "amount": 8100.0
+      },
+      {
+        "item": "Labour charges",
+        "amount": 7100.0
+      }
+    ],
+    "total": 15200.0
+  },
+  "photo": {
+    "is_vehicle_photo": true,
+    "all_damages": [
+      {
+        "part": "front right tire",
+        "damage_type": "tire flat",
+        "severity": "moderate"
+      },
+      {
+        "part": "front right wheel arch / lower fender area",
+        "damage_type": "scratch",
+        "severity": "moderate"
+      },
+      {
+        "part": "front bumper",
+        "damage_type": "scratch",
+        "severity": "minor"
+      }
+    ],
+    "damaged_part": "front right tire",
+    "damage_type": "tire flat",
+    "severity": "moderate",
+    "description": "The front right tire appears deflated. There are visible scratches and dirt marks around the front right wheel arch/lower fender area and on the front bumper.",
+    "image_quality_ok": true
+  },
+  "issues": [],
+  "missing_fields": [],
+  "ready_for_review": true
+}

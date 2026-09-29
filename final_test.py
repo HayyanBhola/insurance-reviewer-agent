@@ -5,6 +5,8 @@ FINAL TEST: the whole system, once, on the 10 test claims nobody has looked at.
   python final_test.py --go             -> runs it: intake (forms + photos) then the full AI graph
   python final_test.py --show           -> shows the saved result again
   add  --set test2  for the second held-out set (20 claims, C059-C078)
+  add  --set test3  for the third (20 claims, C079-C098, same system as test2)
+  python final_test.py --combined test2 test3   -> one summary over both
 
 Why only once
   Every improvement so far was chosen by looking at the 48 dev claims, so their score (92%)
@@ -42,6 +44,11 @@ SETS = {
         "LLM_PROVIDER": "openai", "AI_CHECKS": "v2", "PHOTO_PROMPT": "v3",
         "OPENAI_VISION_MODEL": "gpt-5.4-mini", "AI_ESCALATION": "off", "TYRE_REVIEW": "on"},
         "labels": Path("data/labels_test2.csv")},
+    # test3: the SAME frozen system as test2 (same code fingerprint), on the 19 unused photos
+    "test3": {"result": Path("outputs/final_test3.json"), "required": {
+        "LLM_PROVIDER": "openai", "AI_CHECKS": "v2", "PHOTO_PROMPT": "v3",
+        "OPENAI_VISION_MODEL": "gpt-5.4-mini", "AI_ESCALATION": "off", "TYRE_REVIEW": "on"},
+        "labels": Path("data/labels_test2.csv"), "same_system_as": "test2"},
 }
 SET = "test"
 RESULT = SETS[SET]["result"]
@@ -157,6 +164,12 @@ def run():
         report(previous)
         return
     fp = fingerprint()
+    twin = SETS[SET].get("same_system_as")
+    if twin and SETS[twin]["result"].exists():
+        twin_fp = json.loads(SETS[twin]["result"].read_text(encoding="utf-8"))["fingerprint"]
+        if twin_fp != fp:
+            sys.exit(f"The code changed since {twin} ({twin_fp} -> {fp}). {SET} must test the SAME system, "
+                     "so it is refused.")
     if previous and previous["fingerprint"] != fp:
         sys.exit("The code changed since the half-finished final test started. That would mix two "
                  "versions in one result, so it is refused.")
@@ -221,13 +234,49 @@ def run():
         print(f"\nPartial result saved to {RESULT}. Run  python final_test.py --go  again to finish.")
 
 
+def combined(names):
+    """One summary over several finished sets that tested the same system."""
+    datas = []
+    for n in names:
+        p = SETS[n]["result"]
+        if not p.exists():
+            sys.exit(f"{n} has not been run yet.")
+        d = json.loads(p.read_text(encoding="utf-8"))
+        if not d.get("complete"):
+            sys.exit(f"{n} is not complete.")
+        datas.append(d)
+    fps = {d["fingerprint"] for d in datas}
+    if len(fps) > 1:
+        sys.exit(f"These sets tested different code ({fps}); they cannot be combined.")
+    rows = [r for d in datas for r in d["rows"]]
+    s = summarize(rows)
+    import math
+    n, k = s["claims"], s["correct"]
+    z = 1.96
+    centre = (k / n + z * z / (2 * n)) / (1 + z * z / n)
+    half = z * math.sqrt(k / n * (1 - k / n) / n + z * z / (4 * n * n)) / (1 + z * z / n)
+    print(f"COMBINED {' + '.join(names)} | same code fingerprint {fps.pop()}")
+    print(f"Accuracy:        {k}/{n} = {k / n:.0%}   (95% range {centre - half:.0%} - {centre + half:.0%})")
+    print(f"Wrong approvals: {s['wrong_approvals']} | wrong denials: {s['wrong_denials']} | "
+          f"honest held up: {s['honest_held_up']}")
+    by = {}
+    for r in rows:
+        by.setdefault(r["scenario"], []).append(r["got"] == r["expected"])
+    for sc, oks in sorted(by.items()):
+        print(f"  {sc:<20} {sum(oks)}/{len(oks)}")
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--go", action="store_true", help="run the final test")
     ap.add_argument("--show", action="store_true", help="show the saved result")
+    ap.add_argument("--combined", nargs="+", metavar="SET", help="e.g. --combined test2 test3")
     ap.add_argument("--set", choices=sorted(SETS), default="test",
                     help="which held-out set: test (first, already run) or test2 (new)")
     args = ap.parse_args()
+    if args.combined:
+        combined(args.combined)
+        return
     use_set(args.set)
 
     if args.show:

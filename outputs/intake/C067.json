@@ -1,0 +1,68 @@
+{
+  "claim_id": "C067",
+  "claim_form": {
+    "claim_number": "C067",
+    "date_submitted": "2026-08-20",
+    "claimant_name": "Tariq Hussain",
+    "cnic": "54095-8697676-4",
+    "phone": "0308-7696744",
+    "policy_number": "PMC-2026-20067",
+    "vehicle": "Suzuki Alto",
+    "registration_number": "RIR-35-2940",
+    "incident_date": "2026-08-18",
+    "location": "Saddar, Rawalpindi",
+    "description": "Another car hit my vehicle, causing a serious dent on the front fender.",
+    "amount_claimed": 181100.0
+  },
+  "estimate": {
+    "workshop": "Khan Denting & Painting",
+    "invoice_number": "INV-671229",
+    "estimate_date": "2026-08-18",
+    "customer_name": "Tariq Hussain",
+    "vehicle": "Suzuki Alto (RIR-35-2940)",
+    "registration_number": "RIR-35-2940",
+    "line_items": [
+      {
+        "item": "Front Fender - replacement / repair parts",
+        "amount": 88800.0
+      },
+      {
+        "item": "Front Fender - denting & painting",
+        "amount": 38600.0
+      },
+      {
+        "item": "Labour charges",
+        "amount": 53700.0
+      }
+    ],
+    "total": 181100.0
+  },
+  "photo": {
+    "is_vehicle_photo": true,
+    "all_damages": [
+      {
+        "part": "front left fender",
+        "damage_type": "dent",
+        "severity": "severe"
+      },
+      {
+        "part": "front left door",
+        "damage_type": "dent",
+        "severity": "severe"
+      },
+      {
+        "part": "front left door",
+        "damage_type": "scratch",
+        "severity": "moderate"
+      }
+    ],
+    "damaged_part": "front left fender",
+    "damage_type": "dent",
+    "severity": "severe",
+    "description": "The front left fender and front left door are heavily deformed with deep creasing. There are also visible scratches on the front left door.",
+    "image_quality_ok": true
+  },
+  "issues": [],
+  "missing_fields": [],
+  "ready_for_review": true
+}

@@ -1,0 +1,73 @@
+{
+  "claim_id": "C078",
+  "claim_form": {
+    "claim_number": "C078",
+    "date_submitted": "2026-08-26",
+    "claimant_name": "Rabia Sheikh",
+    "cnic": "27564-7519825-4",
+    "phone": "0309-9053266",
+    "policy_number": "PMC-2026-20078",
+    "vehicle": "Honda Civic",
+    "registration_number": "FDA-55-8904",
+    "incident_date": "2026-08-21",
+    "location": "D Ground, Faisalabad",
+    "description": "My car struck a raised divider, and the rear bumper cracked. The damage is serious.",
+    "amount_claimed": 85700.0
+  },
+  "estimate": {
+    "workshop": "Al-Madina Auto Works",
+    "invoice_number": "INV-538072",
+    "estimate_date": "2026-08-21",
+    "customer_name": "Rabia Sheikh",
+    "vehicle": "Honda Civic (FDA-55-8904)",
+    "registration_number": "FDA-55-8904",
+    "line_items": [
+      {
+        "item": "Rear Bumper - replacement / repair parts",
+        "amount": 37400.0
+      },
+      {
+        "item": "Rear Bumper - denting & painting",
+        "amount": 15500.0
+      },
+      {
+        "item": "Labour charges",
+        "amount": 32800.0
+      }
+    ],
+    "total": 85700.0
+  },
+  "photo": {
+    "is_vehicle_photo": true,
+    "all_damages": [
+      {
+        "part": "rear bumper",
+        "damage_type": "dent",
+        "severity": "severe"
+      },
+      {
+        "part": "rear bumper",
+        "damage_type": "scratch",
+        "severity": "moderate"
+      },
+      {
+        "part": "rear quarter panel",
+        "damage_type": "dent",
+        "severity": "severe"
+      },
+      {
+        "part": "rear light",
+        "damage_type": "none",
+        "severity": "none"
+      }
+    ],
+    "damaged_part": "rear bumper",
+    "damage_type": "dent",
+    "severity": "severe",
+    "description": "Severe deformation is visible on the rear bumper and rear quarter panel, with multiple creases and buckling. There are also visible scratches on the damaged bumper area.",
+    "image_quality_ok": true
+  },
+  "issues": [],
+  "missing_fields": [],
+  "ready_for_review": true
+}

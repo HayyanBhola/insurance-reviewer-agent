@@ -1,0 +1,78 @@
+{
+  "claim_id": "C070",
+  "claim_form": {
+    "claim_number": "C070",
+    "date_submitted": "2026-05-27",
+    "claimant_name": "Waqas Ahmed",
+    "cnic": "84454-4597623-5",
+    "phone": "0344-3224963",
+    "policy_number": "PMC-2026-20070",
+    "vehicle": "Suzuki Cultus",
+    "registration_number": "KHI-43-1679",
+    "incident_date": "2026-05-22",
+    "location": "PECHS, Karachi",
+    "description": "My car struck a raised divider, and the front bumper cracked. The\ndamage is serious.",
+    "amount_claimed": 500100.0
+  },
+  "estimate": {
+    "workshop": "Star Motors Body Shop",
+    "invoice_number": "INV-211186",
+    "estimate_date": "2026-05-22",
+    "customer_name": "Waqas Ahmed",
+    "vehicle": "Suzuki Cultus (KHI-43-1679)",
+    "registration_number": "KHI-43-1679",
+    "line_items": [
+      {
+        "item": "Front Bumper - replacement / repair parts",
+        "amount": 276000.0
+      },
+      {
+        "item": "Front Bumper - denting & painting",
+        "amount": 104200.0
+      },
+      {
+        "item": "Labour charges",
+        "amount": 119900.0
+      }
+    ],
+    "total": 500100.0
+  },
+  "photo": {
+    "is_vehicle_photo": true,
+    "all_damages": [
+      {
+        "part": "front left bumper",
+        "damage_type": "crack",
+        "severity": "severe"
+      },
+      {
+        "part": "front left bumper",
+        "damage_type": "dent",
+        "severity": "moderate"
+      },
+      {
+        "part": "front left fender",
+        "damage_type": "dent",
+        "severity": "moderate"
+      },
+      {
+        "part": "front left bumper",
+        "damage_type": "scratch",
+        "severity": "moderate"
+      },
+      {
+        "part": "front left fender",
+        "damage_type": "scratch",
+        "severity": "moderate"
+      }
+    ],
+    "damaged_part": "front left bumper",
+    "damage_type": "crack",
+    "severity": "severe",
+    "description": "The front left bumper is torn and split with a large section hanging down. The front left fender and bumper area also show visible deformation and scratches.",
+    "image_quality_ok": true
+  },
+  "issues": [],
+  "missing_fields": [],
+  "ready_for_review": true
+}

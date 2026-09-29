@@ -1,0 +1,73 @@
+{
+  "claim_id": "C068",
+  "claim_form": {
+    "claim_number": "C068",
+    "date_submitted": "2026-09-06",
+    "claimant_name": "Hamza Ahmed",
+    "cnic": "77744-3310587-3",
+    "phone": "0316-5576940",
+    "policy_number": "PMC-2026-20068",
+    "vehicle": "Honda Civic",
+    "registration_number": "KHI-78-6884",
+    "incident_date": "2026-09-04",
+    "location": "Clifton, Karachi",
+    "description": "My car struck a raised divider, and the front bumper cracked. The\ndamage is serious.",
+    "amount_claimed": 130700.0
+  },
+  "estimate": {
+    "workshop": "Ittefaq Autos",
+    "invoice_number": "INV-419720",
+    "estimate_date": "2026-09-05",
+    "customer_name": "Hamza Ahmed",
+    "vehicle": "Honda Civic (KHI-78-6884)",
+    "registration_number": "KHI-78-6884",
+    "line_items": [
+      {
+        "item": "Front Bumper - replacement / repair parts",
+        "amount": 61300.0
+      },
+      {
+        "item": "Front Bumper - denting & painting",
+        "amount": 18200.0
+      },
+      {
+        "item": "Labour charges",
+        "amount": 51200.0
+      }
+    ],
+    "total": 130700.0
+  },
+  "photo": {
+    "is_vehicle_photo": true,
+    "all_damages": [
+      {
+        "part": "front bumper",
+        "damage_type": "dent",
+        "severity": "moderate"
+      },
+      {
+        "part": "front bumper",
+        "damage_type": "scratch",
+        "severity": "moderate"
+      },
+      {
+        "part": "front right fender area",
+        "damage_type": "scratch",
+        "severity": "moderate"
+      },
+      {
+        "part": "headlight",
+        "damage_type": "lamp broken",
+        "severity": "minor"
+      }
+    ],
+    "damaged_part": "front bumper",
+    "damage_type": "dent",
+    "severity": "moderate",
+    "description": "The front left side of the vehicle shows a deformed bumper with visible scraping and scuff marks. The headlight lens also appears damaged, and there are scratches near the front fender area.",
+    "image_quality_ok": true
+  },
+  "issues": [],
+  "missing_fields": [],
+  "ready_for_review": true
+}

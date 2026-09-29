@@ -1,0 +1,73 @@
+{
+  "claim_id": "C072",
+  "claim_form": {
+    "claim_number": "C072",
+    "date_submitted": "2026-08-30",
+    "claimant_name": "Sadia Ahmed",
+    "cnic": "38263-8762311-7",
+    "phone": "0305-9409777",
+    "policy_number": "PMC-2026-20072",
+    "vehicle": "Changan Alsvin",
+    "registration_number": "ICT-42-6474",
+    "incident_date": "2026-08-25",
+    "location": "G-11, Islamabad",
+    "description": "My car was in a major collision. The front door was torn off, the\nwindshield shattered and the front suspension is damaged.",
+    "amount_claimed": 360600.0
+  },
+  "estimate": {
+    "workshop": "City Car Care",
+    "invoice_number": "INV-160430",
+    "estimate_date": "2026-08-28",
+    "customer_name": "Sadia Ahmed",
+    "vehicle": "Changan Alsvin (ICT-42-6474)",
+    "registration_number": "ICT-42-6474",
+    "line_items": [
+      {
+        "item": "Front Door - replacement / repair parts",
+        "amount": 207600.0
+      },
+      {
+        "item": "Front Door - denting & painting",
+        "amount": 51300.0
+      },
+      {
+        "item": "Labour charges",
+        "amount": 101700.0
+      }
+    ],
+    "total": 360600.0
+  },
+  "photo": {
+    "is_vehicle_photo": true,
+    "all_damages": [
+      {
+        "part": "front left door",
+        "damage_type": "dent",
+        "severity": "severe"
+      },
+      {
+        "part": "front left door",
+        "damage_type": "scratch",
+        "severity": "moderate"
+      },
+      {
+        "part": "rear left door edge",
+        "damage_type": "dent",
+        "severity": "moderate"
+      },
+      {
+        "part": "rear left door edge",
+        "damage_type": "scratch",
+        "severity": "minor"
+      }
+    ],
+    "damaged_part": "front left door",
+    "damage_type": "dent",
+    "severity": "severe",
+    "description": "The front left door is heavily dented with long visible scratches and exposed underlying material. There is also deformation and minor scratching along the rear left door edge; some areas show pre-existing wear or old scuffs.",
+    "image_quality_ok": true
+  },
+  "issues": [],
+  "missing_fields": [],
+  "ready_for_review": true
+}

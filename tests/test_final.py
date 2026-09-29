@@ -105,3 +105,44 @@ def test_decisions_are_recorded_before_test2():
     lines = (ROOT / "outputs/policy_decisions.jsonl").read_text(encoding="utf-8").splitlines()
     text = " ".join(lines)
     assert "AI_ESCALATION=off" in text and "TYRE_REVIEW=on" in text and "test2" in text
+
+
+# ---------------------------------------------------------------------------
+# third held-out set
+# ---------------------------------------------------------------------------
+def test_test3_plan_uses_only_photos_test2_did_not_use():
+    import csv
+    from collections import Counter
+    import generate_test2
+    with open(ROOT / "data/labels_test2.csv", newline="", encoding="utf-8") as f:
+        labels = list(csv.DictReader(f))
+    generate_test2.use_set("test2")
+    p2, spare2 = generate_test2.plan(labels)
+    used2 = {r["photo"] for _, r in p2} | {spare2[0]["photo"]}
+    generate_test2.use_set("test3")
+    try:
+        rest = [r for r in labels if r["photo"] not in used2]
+        p3, spare3 = generate_test2.plan(rest)
+        assert not {r["photo"] for _, r in p3} & used2
+        assert Counter(s for s, _ in p3) == {"honest": 9, "inflated_estimate": 4, "exaggerated_damage": 2,
+                                             "new_policy": 1, "lapsed_policy": 1, "third_party_only": 1}
+        assert spare3  # one photo left for the duplicate-invoice claim
+    finally:
+        generate_test2.use_set("test2")
+
+
+def test_test3_must_test_the_same_system_as_test2():
+    import final_test
+    assert final_test.SETS["test3"]["same_system_as"] == "test2"
+    assert final_test.SETS["test3"]["required"] == final_test.SETS["test2"]["required"]
+
+
+def test_combined_refuses_different_systems(tmp_path, monkeypatch):
+    import final_test
+    base = {"complete": True, "rows": [{"scenario": "honest", "expected": "approve", "got": "approve",
+                                        "photo_type_ok": True, "photo_within_one": True}]}
+    for name, fp in (("a", "111"), ("b", "222")):
+        (tmp_path / f"{name}.json").write_text(json.dumps({**base, "fingerprint": fp}), encoding="utf-8")
+    monkeypatch.setattr(final_test, "SETS", {n: {"result": tmp_path / f"{n}.json"} for n in ("a", "b")})
+    with pytest.raises(SystemExit):
+        final_test.combined(["a", "b"])

@@ -1,0 +1,212 @@
+{
+ "time": "2026-09-29T15:30:14",
+ "set": "test2",
+ "fingerprint": "fff332788e25",
+ "settings": {
+  "LLM_PROVIDER": "openai",
+  "AI_CHECKS": "v2",
+  "PHOTO_PROMPT": "v3",
+  "OPENAI_VISION_MODEL": "gpt-5.4-mini",
+  "AI_ESCALATION": "off",
+  "TYRE_REVIEW": "on",
+  "intake_model": "gpt-5.4-mini",
+  "graph_model": "gpt-5.4-nano"
+ },
+ "complete": true,
+ "rows": [
+  {
+   "cid": "C059",
+   "scenario": "excluded_tyre",
+   "expected": "deny",
+   "got": "investigate",
+   "why": "coverage needs_review (rules): Claimant describes only a tyre problem, but the photo also shows scratch. If that damage is from this incident",
+   "photo_type_ok": true,
+   "photo_within_one": true
+  },
+  {
+   "cid": "C060",
+   "scenario": "excluded_tyre",
+   "expected": "deny",
+   "got": "deny",
+   "why": "",
+   "photo_type_ok": true,
+   "photo_within_one": true
+  },
+  {
+   "cid": "C061",
+   "scenario": "excluded_tyre",
+   "expected": "deny",
+   "got": "investigate",
+   "why": "coverage needs_review (rules): Claimant describes only a tyre problem, but the photo also shows crack. If that damage is from this incident t",
+   "photo_type_ok": true,
+   "photo_within_one": true
+  },
+  {
+   "cid": "C062",
+   "scenario": "honest",
+   "expected": "approve",
+   "got": "approve",
+   "why": "",
+   "photo_type_ok": true,
+   "photo_within_one": true
+  },
+  {
+   "cid": "C063",
+   "scenario": "honest",
+   "expected": "approve",
+   "got": "investigate",
+   "why": "estimate_far_above_typical (high): Claimed PKR 188,000 is 2.69x the typical maximum (PKR 70,000) for the damage in the photo.",
+   "photo_type_ok": false,
+   "photo_within_one": true
+  },
+  {
+   "cid": "C064",
+   "scenario": "honest",
+   "expected": "approve",
+   "got": "approve",
+   "why": "",
+   "photo_type_ok": true,
+   "photo_within_one": true
+  },
+  {
+   "cid": "C065",
+   "scenario": "honest",
+   "expected": "approve",
+   "got": "approve",
+   "why": "",
+   "photo_type_ok": true,
+   "photo_within_one": true
+  },
+  {
+   "cid": "C066",
+   "scenario": "honest",
+   "expected": "approve",
+   "got": "approve",
+   "why": "",
+   "photo_type_ok": true,
+   "photo_within_one": true
+  },
+  {
+   "cid": "C067",
+   "scenario": "honest",
+   "expected": "approve",
+   "got": "approve",
+   "why": "",
+   "photo_type_ok": true,
+   "photo_within_one": true
+  },
+  {
+   "cid": "C068",
+   "scenario": "honest",
+   "expected": "approve",
+   "got": "approve",
+   "why": "",
+   "photo_type_ok": false,
+   "photo_within_one": true
+  },
+  {
+   "cid": "C069",
+   "scenario": "inflated_estimate",
+   "expected": "investigate",
+   "got": "investigate",
+   "why": "",
+   "photo_type_ok": true,
+   "photo_within_one": true
+  },
+  {
+   "cid": "C070",
+   "scenario": "inflated_estimate",
+   "expected": "investigate",
+   "got": "investigate",
+   "why": "",
+   "photo_type_ok": true,
+   "photo_within_one": true
+  },
+  {
+   "cid": "C071",
+   "scenario": "inflated_estimate",
+   "expected": "investigate",
+   "got": "approve",
+   "why": "no flags (rules recommended approve)",
+   "photo_type_ok": true,
+   "photo_within_one": true
+  },
+  {
+   "cid": "C072",
+   "scenario": "exaggerated_damage",
+   "expected": "investigate",
+   "got": "investigate",
+   "why": "",
+   "photo_type_ok": true,
+   "photo_within_one": true
+  },
+  {
+   "cid": "C073",
+   "scenario": "exaggerated_damage",
+   "expected": "investigate",
+   "got": "investigate",
+   "why": "",
+   "photo_type_ok": false,
+   "photo_within_one": true
+  },
+  {
+   "cid": "C074",
+   "scenario": "new_policy",
+   "expected": "investigate",
+   "got": "investigate",
+   "why": "",
+   "photo_type_ok": true,
+   "photo_within_one": true
+  },
+  {
+   "cid": "C075",
+   "scenario": "lapsed_policy",
+   "expected": "deny",
+   "got": "deny",
+   "why": "",
+   "photo_type_ok": true,
+   "photo_within_one": true
+  },
+  {
+   "cid": "C076",
+   "scenario": "third_party_only",
+   "expected": "deny",
+   "got": "deny",
+   "why": "",
+   "photo_type_ok": true,
+   "photo_within_one": true
+  },
+  {
+   "cid": "C077",
+   "scenario": "reused_photo",
+   "expected": "investigate",
+   "got": "investigate",
+   "why": "",
+   "photo_type_ok": false,
+   "photo_within_one": true
+  },
+  {
+   "cid": "C078",
+   "scenario": "duplicate_invoice",
+   "expected": "investigate",
+   "got": "investigate",
+   "why": "",
+   "photo_type_ok": false,
+   "photo_within_one": true
+  }
+ ],
+ "summary": {
+  "claims": 20,
+  "correct": 16,
+  "accuracy": 0.8,
+  "wrong_approvals": 1,
+  "wrong_denials": 0,
+  "honest_held_up": 1,
+  "photo_type_correct": 15,
+  "photo_severity_within_one": 20
+ },
+ "cost_usd": 0.1054,
+ "tokens_in": 123990,
+ "tokens_out": 17776,
+ "seconds": 206
+}

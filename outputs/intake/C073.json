@@ -1,0 +1,63 @@
+{
+  "claim_id": "C073",
+  "claim_form": {
+    "claim_number": "C073",
+    "date_submitted": "2026-08-09",
+    "claimant_name": "Hina Raza",
+    "cnic": "35879-1941959-2",
+    "phone": "0319-3058316",
+    "policy_number": "PMC-2026-20073",
+    "vehicle": "Suzuki Cultus",
+    "registration_number": "ICT-14-2159",
+    "incident_date": "2026-08-04",
+    "location": "I-8, Islamabad",
+    "description": "The car rolled over on the motorway. The front fender, roof and both\ndoors on that side are badly crushed and several windows are broken.",
+    "amount_claimed": 584900.0
+  },
+  "estimate": {
+    "workshop": "City Car Care",
+    "invoice_number": "INV-725950",
+    "estimate_date": "2026-08-06",
+    "customer_name": "Hina Raza",
+    "vehicle": "Suzuki Cultus (ICT-14-2159)",
+    "registration_number": "ICT-14-2159",
+    "line_items": [
+      {
+        "item": "Front Fender - replacement / repair parts",
+        "amount": 237300.0
+      },
+      {
+        "item": "Front Fender - denting & painting",
+        "amount": 109200.0
+      },
+      {
+        "item": "Labour charges",
+        "amount": 238400.0
+      }
+    ],
+    "total": 584900.0
+  },
+  "photo": {
+    "is_vehicle_photo": true,
+    "all_damages": [
+      {
+        "part": "front left bumper",
+        "damage_type": "scratch",
+        "severity": "moderate"
+      },
+      {
+        "part": "front left bumper",
+        "damage_type": "dent",
+        "severity": "minor"
+      }
+    ],
+    "damaged_part": "front left bumper",
+    "damage_type": "dent",
+    "severity": "minor",
+    "description": "Visible scratches and a small deformation on the front left bumper near the wheel arch. No lamp, glass, or tyre damage is visible.",
+    "image_quality_ok": true
+  },
+  "issues": [],
+  "missing_fields": [],
+  "ready_for_review": true
+}

@@ -1,0 +1,73 @@
+{
+  "claim_id": "C062",
+  "claim_form": {
+    "claim_number": "C062",
+    "date_submitted": "2026-09-02",
+    "claimant_name": "Ali Javed",
+    "cnic": "81517-5211189-9",
+    "phone": "0334-9420478",
+    "policy_number": "PMC-2026-20062",
+    "vehicle": "MG HS",
+    "registration_number": "RIR-71-6685",
+    "incident_date": "2026-08-29",
+    "location": "Chaklala, Rawalpindi",
+    "description": "Another car hit my vehicle, causing a serious dent on the front fender.",
+    "amount_claimed": 231600.0
+  },
+  "estimate": {
+    "workshop": "Star Motors Body Shop",
+    "invoice_number": "INV-408673",
+    "estimate_date": "2026-08-31",
+    "customer_name": "Ali Javed",
+    "vehicle": "MG HS (RIR-71-6685)",
+    "registration_number": "RIR-71-6685",
+    "line_items": [
+      {
+        "item": "Front Fender - replacement / repair parts",
+        "amount": 93100.0
+      },
+      {
+        "item": "Front Fender - denting & painting",
+        "amount": 28400.0
+      },
+      {
+        "item": "Labour charges",
+        "amount": 110100.0
+      }
+    ],
+    "total": 231600.0
+  },
+  "photo": {
+    "is_vehicle_photo": true,
+    "all_damages": [
+      {
+        "part": "front left fender",
+        "damage_type": "dent",
+        "severity": "severe"
+      },
+      {
+        "part": "front left fender",
+        "damage_type": "scratch",
+        "severity": "moderate"
+      },
+      {
+        "part": "front bumper",
+        "damage_type": "scratch",
+        "severity": "moderate"
+      },
+      {
+        "part": "front left tire",
+        "damage_type": "tire flat",
+        "severity": "severe"
+      }
+    ],
+    "damaged_part": "front left fender",
+    "damage_type": "dent",
+    "severity": "severe",
+    "description": "The front left fender is heavily dented and scraped. The front bumper has visible scuffing, and the front left tire is flat.",
+    "image_quality_ok": true
+  },
+  "issues": [],
+  "missing_fields": [],
+  "ready_for_review": true
+}

@@ -1,0 +1,54 @@
+{
+  "claim_id": "C074",
+  "claim_form": {
+    "claim_number": "C074",
+    "date_submitted": "2026-01-09",
+    "claimant_name": "Saad Ahmed",
+    "cnic": "13724-7658179-5",
+    "phone": "0313-1391949",
+    "policy_number": "PMC-2026-20074",
+    "vehicle": "Suzuki Alto",
+    "registration_number": "ICT-45-8966",
+    "incident_date": "2026-01-07",
+    "location": "Srinagar Highway, Islamabad",
+    "description": "A stone hit the car and the windshield shattered. The damage is serious.",
+    "amount_claimed": 78300.0
+  },
+  "estimate": {
+    "workshop": "Ittefaq Autos",
+    "invoice_number": "INV-376631",
+    "estimate_date": "2026-01-09",
+    "customer_name": "Saad Ahmed",
+    "vehicle": "Suzuki Alto (ICT-45-8966)",
+    "registration_number": "ICT-45-8966",
+    "line_items": [
+      {
+        "item": "Windshield - replacement / repair parts",
+        "amount": 33500.0
+      },
+      {
+        "item": "Labour charges",
+        "amount": 44800.0
+      }
+    ],
+    "total": 78300.0
+  },
+  "photo": {
+    "is_vehicle_photo": true,
+    "all_damages": [
+      {
+        "part": "windshield",
+        "damage_type": "glass shatter",
+        "severity": "severe"
+      }
+    ],
+    "damaged_part": "windshield",
+    "damage_type": "glass shatter",
+    "severity": "severe",
+    "description": "The windshield is heavily shattered with extensive spiderweb cracking across most of the glass. The wiper area and surrounding trim are visible, with some pre-existing wear/dirt along the lower edge.",
+    "image_quality_ok": true
+  },
+  "issues": [],
+  "missing_fields": [],
+  "ready_for_review": true
+}

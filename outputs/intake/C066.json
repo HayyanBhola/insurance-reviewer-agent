@@ -1,0 +1,58 @@
+{
+  "claim_id": "C066",
+  "claim_form": {
+    "claim_number": "C066",
+    "date_submitted": "2026-09-09",
+    "claimant_name": "Hamza Chaudhry",
+    "cnic": "23911-7532175-2",
+    "phone": "0305-6929115",
+    "policy_number": "PMC-2026-20066",
+    "vehicle": "Suzuki Alto",
+    "registration_number": "FDA-13-8462",
+    "incident_date": "2026-09-07",
+    "location": "Canal Road, Faisalabad",
+    "description": "While parking, another vehicle scraped the rear door, leaving minor scratches on the paint.",
+    "amount_claimed": 12500.0
+  },
+  "estimate": {
+    "workshop": "City Car Care",
+    "invoice_number": "INV-815961",
+    "estimate_date": "2026-09-09",
+    "customer_name": "Hamza Chaudhry",
+    "vehicle": "Suzuki Alto (FDA-13-8462)",
+    "registration_number": "FDA-13-8462",
+    "line_items": [
+      {
+        "item": "Rear Door - replacement / repair parts",
+        "amount": 6100.0
+      },
+      {
+        "item": "Rear Door - denting & painting",
+        "amount": 3000.0
+      },
+      {
+        "item": "Labour charges",
+        "amount": 3400.0
+      }
+    ],
+    "total": 12500.0
+  },
+  "photo": {
+    "is_vehicle_photo": true,
+    "all_damages": [
+      {
+        "part": "lower side panel near front wheel",
+        "damage_type": "scratch",
+        "severity": "moderate"
+      }
+    ],
+    "damaged_part": "lower side panel near front wheel",
+    "damage_type": "scratch",
+    "severity": "moderate",
+    "description": "Visible white scratches/scuff marks on the lower side panel near the front wheel. No panel deformation or broken parts are visible; there is also pre-existing wear on the wheel-arch trim.",
+    "image_quality_ok": true
+  },
+  "issues": [],
+  "missing_fields": [],
+  "ready_for_review": true
+}

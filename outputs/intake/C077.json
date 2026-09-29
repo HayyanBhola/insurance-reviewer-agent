@@ -1,0 +1,73 @@
+{
+  "claim_id": "C077",
+  "claim_form": {
+    "claim_number": "C077",
+    "date_submitted": "2026-06-09",
+    "claimant_name": "Mariam Aslam",
+    "cnic": "15851-7598076-7",
+    "phone": "0348-3651537",
+    "policy_number": "PMC-2026-20077",
+    "vehicle": "Hyundai Tucson",
+    "registration_number": "KHI-23-1501",
+    "incident_date": "2026-06-04",
+    "location": "Shahrah-e-Faisal, Karachi",
+    "description": "Another car hit my vehicle, causing a serious dent on the front bumper.",
+    "amount_claimed": 154400.0
+  },
+  "estimate": {
+    "workshop": "Khan Denting & Painting",
+    "invoice_number": "INV-508118",
+    "estimate_date": "2026-06-06",
+    "customer_name": "Mariam Aslam",
+    "vehicle": "Hyundai Tucson",
+    "registration_number": "KHI-23-1501",
+    "line_items": [
+      {
+        "item": "Front Bumper - replacement / repair parts",
+        "amount": 78700.0
+      },
+      {
+        "item": "Front Bumper - denting & painting",
+        "amount": 22600.0
+      },
+      {
+        "item": "Labour charges",
+        "amount": 53100.0
+      }
+    ],
+    "total": 154400.0
+  },
+  "photo": {
+    "is_vehicle_photo": true,
+    "all_damages": [
+      {
+        "part": "front left bumper",
+        "damage_type": "scratch",
+        "severity": "moderate"
+      },
+      {
+        "part": "front left bumper",
+        "damage_type": "crack",
+        "severity": "moderate"
+      },
+      {
+        "part": "front left fender",
+        "damage_type": "scratch",
+        "severity": "moderate"
+      },
+      {
+        "part": "front left tire",
+        "damage_type": "tire flat",
+        "severity": "severe"
+      }
+    ],
+    "damaged_part": "front left bumper",
+    "damage_type": "crack",
+    "severity": "moderate",
+    "description": "The front left bumper shows visible scraping and a split/open tear near the corner. The front left tire is visibly deflated, and there are scratches on the front left bumper and fender.",
+    "image_quality_ok": true
+  },
+  "issues": [],
+  "missing_fields": [],
+  "ready_for_review": true
+}

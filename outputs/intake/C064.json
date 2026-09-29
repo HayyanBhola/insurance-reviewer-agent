@@ -1,0 +1,68 @@
+{
+  "claim_id": "C064",
+  "claim_form": {
+    "claim_number": "C064",
+    "date_submitted": "2026-01-06",
+    "claimant_name": "Hina Qureshi",
+    "cnic": "63911-3455491-8",
+    "phone": "0301-1003589",
+    "policy_number": "PMC-2026-20064",
+    "vehicle": "Kia Sportage",
+    "registration_number": "RIR-84-9055",
+    "incident_date": "2026-01-04",
+    "location": "Saddar, Rawalpindi",
+    "description": "My car struck a raised divider, and the front bumper cracked. The damage is serious.",
+    "amount_claimed": 127300.0
+  },
+  "estimate": {
+    "workshop": "Prime Auto Garage",
+    "invoice_number": "INV-932328",
+    "estimate_date": "2026-01-05",
+    "customer_name": "Hina Qureshi",
+    "vehicle": "Kia Sportage (RIR-84-9055)",
+    "registration_number": null,
+    "line_items": [
+      {
+        "item": "Front Bumper - replacement / repair parts",
+        "amount": 57200.0
+      },
+      {
+        "item": "Front Bumper - denting & painting",
+        "amount": 24600.0
+      },
+      {
+        "item": "Labour charges",
+        "amount": 45500.0
+      }
+    ],
+    "total": 127300.0
+  },
+  "photo": {
+    "is_vehicle_photo": true,
+    "all_damages": [
+      {
+        "part": "front bumper",
+        "damage_type": "crack",
+        "severity": "severe"
+      },
+      {
+        "part": "front bumper",
+        "damage_type": "scratch",
+        "severity": "moderate"
+      },
+      {
+        "part": "front right corner bumper area",
+        "damage_type": "other",
+        "severity": "severe"
+      }
+    ],
+    "damaged_part": "front bumper",
+    "damage_type": "crack",
+    "severity": "severe",
+    "description": "The front bumper is torn/split open at the right front corner with a large missing section and visible scuff marks. The headlight lens appears intact; some small pre-existing wear and minor marks are visible on the bumper.",
+    "image_quality_ok": true
+  },
+  "issues": [],
+  "missing_fields": [],
+  "ready_for_review": true
+}

@@ -1,0 +1,50 @@
+{
+ "file": "data/labels_test2.csv",
+ "sha256": "4b3083c0ab70f0d2f2771a8b8a196297ef8849666e4884c03dff284755a3de3e",
+ "frozen_at": "2026-09-29T14:37:19+05:00",
+ "photos_labelled": 38,
+ "photos_looked_at": 41,
+ "excluded": {
+  "car_056.jpg": [
+   "pass1 minor dent, pass2 minor scratch",
+   "EXCLUDE: too subtle to label reliably"
+  ],
+  "car_063.jpg": [
+   "pass1 tyre only, pass2 tyre + dents on the quarter panel above it",
+   "EXCLUDE: can't tell if the panel damage is part of this incident"
+  ],
+  "car_087.jpg": [
+   "pass1 moderate flat, pass2 tyre only looks low, maybe not flat",
+   "EXCLUDE: not clearly flat"
+  ]
+ },
+ "method": "Labelled by Claude by looking at each photo, same rules as data/labels.csv. Pass 1 on 2x2 sheets; pass 2 on every photo alone, larger, in a shuffled order. Disagreements re-examined and settled below. No model under test (mini, nano, gpt-5.4) has seen these photos or influenced these labels.",
+ "self_agreement": "35/41 photos labelled identically in both passes",
+ "disagreements_settled": {
+  "car_056.jpg": [
+   "pass1 minor dent, pass2 minor scratch",
+   "EXCLUDE: too subtle to label reliably"
+  ],
+  "car_063.jpg": [
+   "pass1 tyre only, pass2 tyre + dents on the quarter panel above it",
+   "EXCLUDE: can't tell if the panel damage is part of this incident"
+  ],
+  "car_087.jpg": [
+   "pass1 moderate flat, pass2 tyre only looks low, maybe not flat",
+   "EXCLUDE: not clearly flat"
+  ],
+  "car_099.jpg": [
+   "pass1 minor, pass2 moderate (lens pieces broken in lower section)",
+   "moderate"
+  ],
+  "car_082.jpg": [
+   "pass1 minor, pass2 moderate (hole in bumper, piece missing)",
+   "moderate"
+  ],
+  "car_097.jpg": [
+   "pass1 severe, pass2 moderate (cracked, not holed)",
+   "severe (same convention as windshield car_028)"
+  ]
+ },
+ "rule": "These labels are frozen. They are not changed after any model has been run on these photos."
+}

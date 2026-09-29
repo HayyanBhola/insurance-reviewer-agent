@@ -1,0 +1,39 @@
+photo,part,damage_type,severity,other_damage
+car_060.jpg,rear bumper,dent,moderate,
+car_061.jpg,rear bumper,crack,severe,rear quarter panel dented
+car_062.jpg,front fender,dent,moderate,scratch
+car_064.jpg,headlight,lamp broken,severe,front bumper corner torn
+car_065.jpg,front bumper,dent,severe,front fender dented; scratches
+car_066.jpg,front bumper,crack,severe,headlight mounting area broken
+car_067.jpg,trunk lid,dent,moderate,rear bumper scuffed
+car_068.jpg,rear quarter panel,dent,moderate,
+car_069.jpg,front bumper,crack,severe,scratches
+car_070.jpg,hood,dent,moderate,scratch
+car_071.jpg,front tire,tire flat,moderate,
+car_072.jpg,front bumper,crack,severe,
+car_073.jpg,rear door,scratch,minor,
+car_074.jpg,front fender,dent,severe,
+car_075.jpg,front door,scratch,moderate,small dent at door edge
+car_076.jpg,front bumper,scratch,minor,
+car_077.jpg,front fender,scratch,minor,
+car_078.jpg,front fender,dent,moderate,front bumper corner displaced
+car_079.jpg,side doors,dent,severe,
+car_080.jpg,front fender,dent,severe,tire flat; front bumper scratched
+car_081.jpg,front fender,dent,severe,front bumper scuffed; wheel cover broken
+car_082.jpg,front bumper,crack,moderate,scratches
+car_083.jpg,rear quarter panel,scratch,moderate,
+car_084.jpg,front fender,scratch,minor,
+car_085.jpg,rear tire,tire flat,moderate,
+car_086.jpg,front tire,tire flat,severe,
+car_088.jpg,front bumper,dent,severe,tire flat
+car_089.jpg,hood,dent,severe,front bumper torn off; grille destroyed
+car_090.jpg,front bumper,crack,severe,hood dented; front fender dented
+car_091.jpg,rear quarter panel,scratch,moderate,
+car_092.jpg,rear quarter panel,scratch,moderate,small dent
+car_093.jpg,front fender,dent,severe,scratches
+car_094.jpg,front fender,dent,severe,front bumper torn off; wheel pushed in
+car_095.jpg,front door,dent,moderate,long scratch
+car_096.jpg,windshield,glass shatter,severe,
+car_097.jpg,windshield,glass shatter,severe,
+car_098.jpg,rear side window,glass shatter,severe,
+car_099.jpg,tail light,lamp broken,moderate,

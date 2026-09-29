@@ -1,0 +1,58 @@
+{
+  "claim_id": "C017",
+  "claim_form": {
+    "claim_number": "C017",
+    "date_submitted": "2026-01-25",
+    "claimant_name": "Ali Ahmed",
+    "cnic": "51114-8321474-9",
+    "phone": "0306-4188992",
+    "policy_number": "PMC-2026-10017",
+    "vehicle": "Toyota Yaris",
+    "registration_number": "ICT-15-7244",
+    "incident_date": "2026-01-24",
+    "location": "F-7 Markaz, Islamabad",
+    "description": "My car was in a major collision. The rear quarter panel was torn off, the\nwindshield shattered and the front suspension is damaged.",
+    "amount_claimed": 505000.0
+  },
+  "estimate": {
+    "workshop": "Prime Auto Garage",
+    "invoice_number": "INV-945687",
+    "estimate_date": "2026-01-25",
+    "customer_name": "Ali Ahmed",
+    "vehicle": "Toyota Yaris (ICT-15-7244)",
+    "registration_number": "ICT-15-7244",
+    "line_items": [
+      {
+        "item": "Rear Quarter Panel - replacement / repair parts",
+        "amount": 238800.0
+      },
+      {
+        "item": "Rear Quarter Panel - denting & painting",
+        "amount": 55800.0
+      },
+      {
+        "item": "Labour charges",
+        "amount": 210400.0
+      }
+    ],
+    "total": 505000.0
+  },
+  "photo": {
+    "is_vehicle_photo": true,
+    "all_damages": [
+      {
+        "part": "rear left quarter panel",
+        "damage_type": "scratch",
+        "severity": "moderate"
+      }
+    ],
+    "damaged_part": "rear left quarter panel",
+    "damage_type": "scratch",
+    "severity": "moderate",
+    "description": "Visible long scratches and scuffing along the rear left quarter panel above the wheel arch. No panel deformation, broken lamp, cracked glass, or flat tyre is visible.",
+    "image_quality_ok": true
+  },
+  "issues": [],
+  "missing_fields": [],
+  "ready_for_review": true
+}

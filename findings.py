@@ -64,11 +64,22 @@ class CoverageFinding(BaseModel):
 # Evidence
 # ---------------------------------------------------------------------------
 class DescriptionCheck(BaseModel):
+    """LLM check: does the claimant EXAGGERATE the damage compared with the photo?"""
+    exaggerates: bool = Field(
+        description="True ONLY if the description claims clearly MORE or MORE SERIOUS damage than the photo shows")
+    claimed_damage_summary: str = Field(description="Short summary of the damage the claimant describes")
+    differences: str = Field(
+        description="Other differences (position, side, damage wording, photo shows more), or 'none'")
+    explanation: str = Field(description="One or two sentences explaining the judgement")
+
+
+class MatchCheck(BaseModel):
     """LLM comparison of what the claimant wrote vs what the photo shows."""
     consistent: bool = Field(
         description="False if the description claims clearly MORE or DIFFERENT damage than the photo shows")
     claimed_damage_summary: str = Field(description="Short summary of the damage the claimant describes")
     explanation: str = Field(description="One or two sentences explaining the judgement")
+# MatchCheck is the ORIGINAL story check (AI_CHECKS=v1). DescriptionCheck above is v2.
 
 
 class EvidenceFinding(BaseModel):

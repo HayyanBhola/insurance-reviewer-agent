@@ -1,0 +1,83 @@
+{
+  "claim_id": "C053",
+  "claim_form": {
+    "claim_number": "C053",
+    "date_submitted": "2026-01-17",
+    "claimant_name": "Zainab Mirza",
+    "cnic": "49251-1485654-1",
+    "phone": "0320-5921894",
+    "policy_number": "PMC-2026-10043",
+    "vehicle": "Honda City",
+    "registration_number": "ICT-57-7156",
+    "incident_date": "2026-01-13",
+    "location": "Blue Area, Islamabad",
+    "description": "Another car hit my vehicle, causing a serious dent on the side doors and\nrocker panel.",
+    "amount_claimed": 124900.0
+  },
+  "estimate": {
+    "workshop": "Star Motors Body Shop",
+    "invoice_number": "INV-656968",
+    "estimate_date": "2026-01-16",
+    "customer_name": "Zainab Mirza",
+    "vehicle": "Honda City",
+    "registration_number": "ICT-57-7156",
+    "line_items": [
+      {
+        "item": "Side Doors And Rocker Panel - replacement / repair parts",
+        "amount": 64100.0
+      },
+      {
+        "item": "Side Doors And Rocker Panel - denting & painting",
+        "amount": 27300.0
+      },
+      {
+        "item": "Labour charges",
+        "amount": 33500.0
+      }
+    ],
+    "total": 124900.0
+  },
+  "photo": {
+    "is_vehicle_photo": true,
+    "all_damages": [
+      {
+        "part": "front left door",
+        "damage_type": "dent",
+        "severity": "moderate"
+      },
+      {
+        "part": "front left door",
+        "damage_type": "scratch",
+        "severity": "moderate"
+      },
+      {
+        "part": "lower side sill",
+        "damage_type": "dent",
+        "severity": "severe"
+      },
+      {
+        "part": "lower side sill",
+        "damage_type": "scratch",
+        "severity": "moderate"
+      },
+      {
+        "part": "rear left quarter panel",
+        "damage_type": "dent",
+        "severity": "moderate"
+      },
+      {
+        "part": "rear left quarter panel",
+        "damage_type": "scratch",
+        "severity": "moderate"
+      }
+    ],
+    "damaged_part": "lower side sill",
+    "damage_type": "dent",
+    "severity": "severe",
+    "description": "The left side of the vehicle shows heavy deformation and scraping along the lower side sill and adjoining doors/panel. There are visible scratches across the damaged areas.",
+    "image_quality_ok": true
+  },
+  "issues": [],
+  "missing_fields": [],
+  "ready_for_review": true
+}

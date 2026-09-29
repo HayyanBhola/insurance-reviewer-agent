@@ -19,7 +19,7 @@ human-in-the-loop, and a checkpointer so a claim can pause for days and resume.
 
 import operator
 from datetime import datetime
-from typing import Annotated, Optional, TypedDict
+from typing import Annotated, TypedDict
 
 from langgraph.graph import END, START, StateGraph
 from langgraph.types import interrupt
@@ -28,6 +28,7 @@ from coverage_agent import check_coverage
 from data_access import build_claims_history, load_intake
 from decision_agent import (MAX_REVISIONS, critique, llm_writeup, recommend,
                             template_writeup)
+from llm import ai_escalation
 from evidence_agent import check_evidence
 from fraud_agent import check_fraud
 from policy_index import INDEX_FILE, PolicyIndex
@@ -129,7 +130,8 @@ def coverage_node(state: ClaimState, config=None):
 def evidence_node(state: ClaimState, config=None):
     f = check_evidence(_intake(state), use_llm=_use_llm(config))
     return {"evidence": f.model_dump(),
-            "audit": _audit("evidence", f"cost {f.cost_status}, story consistent={f.description_consistent}")}
+            "audit": _audit("evidence", f"cost {f.cost_status}, story " + {
+                None: "not checked", True: "ok", False: "EXAGGERATED"}[f.description_consistent])}
 
 
 def fraud_node(state: ClaimState):
@@ -148,12 +150,18 @@ def decide_node(state: ClaimState, config=None):
         w = llm_writeup(findings, rec, feedback=feedback if revisions else None)
         used_template = False
         if w.suggest_escalation and rec == "approve":
-            rec = "investigate"  # the AI may only make the outcome MORE cautious
+            if ai_escalation():
+                rec = "investigate"  # the AI may only make the outcome MORE cautious
+            else:  # AI_ESCALATION=off: the rules decide; the AI's concern stays visible in the audit
+                note_off = f"AI suggested escalation (switched off): {w.escalation_reason}"
+                w = w.model_copy(update={"suggest_escalation": False, "escalation_reason": ""})
     else:
         w = template_writeup(findings, rec)
         used_template = True
 
     note = "template (rules-only)" if used_template else f"AI write-up, attempt {revisions + 1}"
+    if not used_template and "note_off" in locals():
+        note += f"; {note_off}"
     if rec != rule_rec:
         note += f"; AI escalated {rule_rec} -> {rec}: {w.escalation_reason}"
     return {"rule_recommendation": rule_rec, "recommendation": rec,

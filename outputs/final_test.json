@@ -1,0 +1,119 @@
+{
+ "time": "2026-09-29T02:27:58",
+ "fingerprint": "dbb77a3d4454",
+ "settings": {
+  "LLM_PROVIDER": "openai",
+  "AI_CHECKS": "v2",
+  "PHOTO_PROMPT": "v3",
+  "OPENAI_VISION_MODEL": "gpt-5.4-mini",
+  "intake_model": "gpt-5.4-mini",
+  "graph_model": "gpt-5.4-nano"
+ },
+ "complete": true,
+ "rows": [
+  {
+   "cid": "C007",
+   "scenario": "excluded_tyre",
+   "expected": "deny",
+   "got": "approve",
+   "why": "no flags (rules recommended approve)",
+   "photo_type_ok": false,
+   "photo_within_one": true
+  },
+  {
+   "cid": "C010",
+   "scenario": "inflated_estimate",
+   "expected": "investigate",
+   "got": "investigate",
+   "why": "",
+   "photo_type_ok": true,
+   "photo_within_one": true
+  },
+  {
+   "cid": "C013",
+   "scenario": "reused_photo",
+   "expected": "investigate",
+   "got": "investigate",
+   "why": "",
+   "photo_type_ok": false,
+   "photo_within_one": true
+  },
+  {
+   "cid": "C016",
+   "scenario": "inflated_estimate",
+   "expected": "investigate",
+   "got": "investigate",
+   "why": "",
+   "photo_type_ok": true,
+   "photo_within_one": true
+  },
+  {
+   "cid": "C017",
+   "scenario": "exaggerated_damage",
+   "expected": "investigate",
+   "got": "investigate",
+   "why": "",
+   "photo_type_ok": true,
+   "photo_within_one": true
+  },
+  {
+   "cid": "C042",
+   "scenario": "inflated_estimate",
+   "expected": "investigate",
+   "got": "approve",
+   "why": "no flags (rules recommended approve)",
+   "photo_type_ok": false,
+   "photo_within_one": true
+  },
+  {
+   "cid": "C047",
+   "scenario": "excluded_tyre",
+   "expected": "deny",
+   "got": "approve",
+   "why": "no flags (rules recommended approve)",
+   "photo_type_ok": true,
+   "photo_within_one": true
+  },
+  {
+   "cid": "C053",
+   "scenario": "honest",
+   "expected": "approve",
+   "got": "approve",
+   "why": "",
+   "photo_type_ok": true,
+   "photo_within_one": true
+  },
+  {
+   "cid": "C054",
+   "scenario": "honest",
+   "expected": "approve",
+   "got": "approve",
+   "why": "",
+   "photo_type_ok": true,
+   "photo_within_one": true
+  },
+  {
+   "cid": "C057",
+   "scenario": "honest",
+   "expected": "approve",
+   "got": "investigate",
+   "why": "AI escalated: The findings flag that the claimed amount is 1.49x the typical maximum (estimate_above_typical) and that the c",
+   "photo_type_ok": false,
+   "photo_within_one": true
+  }
+ ],
+ "summary": {
+  "claims": 10,
+  "correct": 6,
+  "accuracy": 0.6,
+  "wrong_approvals": 3,
+  "wrong_denials": 0,
+  "honest_held_up": 1,
+  "photo_type_correct": 6,
+  "photo_severity_within_one": 10
+ },
+ "cost_usd": 0.0487,
+ "tokens_in": 59105,
+ "tokens_out": 9187,
+ "seconds": 109
+}

@@ -115,7 +115,7 @@ def main():
 
     if args.claim_id:
         cid = args.claim_id.upper()
-        if TRUTH.get(cid, {}).get("split") == "test":
+        if TRUTH.get(cid, {}).get("split", "dev") != "dev":
             sys.exit(f"{cid} is a TEST claim. Keep it for the final evaluation.")
         result = run_intake(cid)
         save(result)

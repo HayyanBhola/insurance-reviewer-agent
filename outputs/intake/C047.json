@@ -1,0 +1,59 @@
+{
+  "claim_id": "C047",
+  "claim_form": {
+    "claim_number": "C047",
+    "date_submitted": "2026-09-24",
+    "claimant_name": "Sadia Raza",
+    "cnic": "86622-8187926-7",
+    "phone": "0323-3320821",
+    "policy_number": "PMC-2026-10003",
+    "vehicle": "Hyundai Tucson",
+    "registration_number": "RIR-73-1589",
+    "incident_date": "2026-09-19",
+    "location": "Saddar, Rawalpindi",
+    "description": "The rear tire burst while driving and went completely flat.",
+    "amount_claimed": 12500.0
+  },
+  "estimate": {
+    "workshop": "Al-Madina Auto Works",
+    "invoice_number": "INV-260265",
+    "estimate_date": "2026-09-20",
+    "customer_name": "Sadia Raza",
+    "vehicle": "Hyundai Tucson",
+    "registration_number": "RIR-73-1589",
+    "line_items": [
+      {
+        "item": "Rear Tire - replacement / repair parts",
+        "amount": 7000.0
+      },
+      {
+        "item": "Labour charges",
+        "amount": 5500.0
+      }
+    ],
+    "total": 12500.0
+  },
+  "photo": {
+    "is_vehicle_photo": true,
+    "all_damages": [
+      {
+        "part": "front right tire",
+        "damage_type": "tire flat",
+        "severity": "severe"
+      },
+      {
+        "part": "front right lower side panel",
+        "damage_type": "scratch",
+        "severity": "minor"
+      }
+    ],
+    "damaged_part": "front right tire",
+    "damage_type": "tire flat",
+    "severity": "severe",
+    "description": "The front right tire is visibly deflated and collapsed at the bottom. There is also a small scratch/mark on the lower side panel near the wheel arch, and some pre-existing wear/rust is visible along the lower edge.",
+    "image_quality_ok": true
+  },
+  "issues": [],
+  "missing_fields": [],
+  "ready_for_review": true
+}

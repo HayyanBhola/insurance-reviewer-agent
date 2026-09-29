@@ -1,0 +1,83 @@
+{
+  "claim_id": "C010",
+  "claim_form": {
+    "claim_number": "C010",
+    "date_submitted": "2026-05-20",
+    "claimant_name": "Sana Aslam",
+    "cnic": "18418-7960328-7",
+    "phone": "0328-8816912",
+    "policy_number": "PMC-2026-10022",
+    "vehicle": "Honda Civic",
+    "registration_number": "ICT-17-3488",
+    "incident_date": "2026-05-16",
+    "location": "Srinagar Highway, Islamabad",
+    "description": "Another car hit my vehicle, causing a serious dent on the rear quarter\npanel.",
+    "amount_claimed": 1067900.0
+  },
+  "estimate": {
+    "workshop": "Ittefaq Autos",
+    "invoice_number": "INV-907189",
+    "estimate_date": "2026-05-16",
+    "customer_name": "Sana Aslam",
+    "vehicle": "Honda Civic (ICT-17-3488)",
+    "registration_number": "ICT-17-3488",
+    "line_items": [
+      {
+        "item": "Rear Quarter Panel - replacement / repair parts",
+        "amount": 610100.0
+      },
+      {
+        "item": "Rear Quarter Panel - denting & painting",
+        "amount": 229400.0
+      },
+      {
+        "item": "Labour charges",
+        "amount": 228400.0
+      }
+    ],
+    "total": 1067900.0
+  },
+  "photo": {
+    "is_vehicle_photo": true,
+    "all_damages": [
+      {
+        "part": "rear right quarter panel",
+        "damage_type": "dent",
+        "severity": "severe"
+      },
+      {
+        "part": "rear bumper",
+        "damage_type": "dent",
+        "severity": "severe"
+      },
+      {
+        "part": "rear right quarter panel",
+        "damage_type": "scratch",
+        "severity": "moderate"
+      },
+      {
+        "part": "rear bumper",
+        "damage_type": "scratch",
+        "severity": "moderate"
+      },
+      {
+        "part": "rear right tail light area",
+        "damage_type": "lamp broken",
+        "severity": "severe"
+      },
+      {
+        "part": "rear right quarter panel",
+        "damage_type": "crack",
+        "severity": "severe"
+      }
+    ],
+    "damaged_part": "rear right quarter panel",
+    "damage_type": "dent",
+    "severity": "severe",
+    "description": "The rear right quarter panel is heavily deformed with deep creasing and torn-looking bodywork around the rear corner. The rear bumper is also crushed and scraped, and the rear right tail light area is broken/open.",
+    "image_quality_ok": true
+  },
+  "issues": [],
+  "missing_fields": [],
+  "ready_for_review": true
+}

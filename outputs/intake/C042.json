@@ -1,0 +1,64 @@
+{
+  "claim_id": "C042",
+  "claim_form": {
+    "claim_number": "C042",
+    "date_submitted": "2026-09-22",
+    "claimant_name": "Tariq Sheikh",
+    "cnic": "30861-8963715-8",
+    "phone": "0323-5652512",
+    "policy_number": "PMC-2026-10021",
+    "vehicle": "Hyundai Tucson",
+    "registration_number": "FDA-72-4019",
+    "incident_date": "2026-09-18",
+    "location": "Canal Road, Faisalabad",
+    "description": "A motorcycle collided with my car and broke the tail light. The damage\nis serious.",
+    "amount_claimed": 597900.0
+  },
+  "estimate": {
+    "workshop": "Ittefaq Autos",
+    "invoice_number": "INV-181247",
+    "estimate_date": "2026-09-20",
+    "customer_name": "Tariq Sheikh",
+    "vehicle": "Hyundai Tucson",
+    "registration_number": "FDA-72-4019",
+    "line_items": [
+      {
+        "item": "Tail Light - replacement / repair parts",
+        "amount": 267200.0
+      },
+      {
+        "item": "Labour charges",
+        "amount": 330700.0
+      }
+    ],
+    "total": 597900.0
+  },
+  "photo": {
+    "is_vehicle_photo": true,
+    "all_damages": [
+      {
+        "part": "rear bumper",
+        "damage_type": "dent",
+        "severity": "severe"
+      },
+      {
+        "part": "rear bumper",
+        "damage_type": "scratch",
+        "severity": "moderate"
+      },
+      {
+        "part": "right tail light",
+        "damage_type": "lamp broken",
+        "severity": "severe"
+      }
+    ],
+    "damaged_part": "rear bumper",
+    "damage_type": "dent",
+    "severity": "severe",
+    "description": "The rear bumper is heavily crushed and creased on the right side with visible scraping. The right tail light lens/housing is broken.",
+    "image_quality_ok": true
+  },
+  "issues": [],
+  "missing_fields": [],
+  "ready_for_review": true
+}

@@ -1,0 +1,254 @@
+{
+ "label": "llm_v2_tyre",
+ "use_llm": true,
+ "models": [
+  "gpt-5.4-nano-2026-03-17"
+ ],
+ "complete": true,
+ "ai_checks": "v2",
+ "photo_prompt": "v3",
+ "ai_escalation": true,
+ "tyre_review": true,
+ "rows": {
+  "C001": {
+   "scenario": "lapsed_policy",
+   "expected": "deny",
+   "got": "deny"
+  },
+  "C002": {
+   "scenario": "honest",
+   "expected": "approve",
+   "got": "approve"
+  },
+  "C003": {
+   "scenario": "third_party_only",
+   "expected": "deny",
+   "got": "deny"
+  },
+  "C004": {
+   "scenario": "reused_photo",
+   "expected": "investigate",
+   "got": "investigate"
+  },
+  "C005": {
+   "scenario": "honest",
+   "expected": "approve",
+   "got": "approve"
+  },
+  "C006": {
+   "scenario": "exaggerated_damage",
+   "expected": "investigate",
+   "got": "investigate"
+  },
+  "C008": {
+   "scenario": "exaggerated_damage",
+   "expected": "investigate",
+   "got": "investigate"
+  },
+  "C009": {
+   "scenario": "third_party_only",
+   "expected": "deny",
+   "got": "deny"
+  },
+  "C011": {
+   "scenario": "honest",
+   "expected": "approve",
+   "got": "approve"
+  },
+  "C012": {
+   "scenario": "inflated_estimate",
+   "expected": "investigate",
+   "got": "approve"
+  },
+  "C014": {
+   "scenario": "honest",
+   "expected": "approve",
+   "got": "investigate"
+  },
+  "C015": {
+   "scenario": "lapsed_policy",
+   "expected": "deny",
+   "got": "deny"
+  },
+  "C018": {
+   "scenario": "new_policy",
+   "expected": "investigate",
+   "got": "investigate"
+  },
+  "C019": {
+   "scenario": "reused_photo",
+   "expected": "investigate",
+   "got": "investigate"
+  },
+  "C020": {
+   "scenario": "honest",
+   "expected": "approve",
+   "got": "approve"
+  },
+  "C021": {
+   "scenario": "duplicate_invoice",
+   "expected": "investigate",
+   "got": "investigate"
+  },
+  "C022": {
+   "scenario": "excluded_tyre",
+   "expected": "deny",
+   "got": "investigate"
+  },
+  "C023": {
+   "scenario": "new_policy",
+   "expected": "investigate",
+   "got": "investigate"
+  },
+  "C024": {
+   "scenario": "honest",
+   "expected": "approve",
+   "got": "approve"
+  },
+  "C025": {
+   "scenario": "third_party_only",
+   "expected": "deny",
+   "got": "deny"
+  },
+  "C026": {
+   "scenario": "honest",
+   "expected": "approve",
+   "got": "approve"
+  },
+  "C027": {
+   "scenario": "honest",
+   "expected": "approve",
+   "got": "approve"
+  },
+  "C028": {
+   "scenario": "duplicate_invoice",
+   "expected": "investigate",
+   "got": "investigate"
+  },
+  "C029": {
+   "scenario": "exaggerated_damage",
+   "expected": "investigate",
+   "got": "investigate"
+  },
+  "C030": {
+   "scenario": "honest",
+   "expected": "approve",
+   "got": "approve"
+  },
+  "C031": {
+   "scenario": "excluded_tyre",
+   "expected": "deny",
+   "got": "deny"
+  },
+  "C032": {
+   "scenario": "honest",
+   "expected": "approve",
+   "got": "approve"
+  },
+  "C033": {
+   "scenario": "honest",
+   "expected": "approve",
+   "got": "approve"
+  },
+  "C034": {
+   "scenario": "honest",
+   "expected": "approve",
+   "got": "approve"
+  },
+  "C035": {
+   "scenario": "lapsed_policy",
+   "expected": "deny",
+   "got": "deny"
+  },
+  "C036": {
+   "scenario": "exaggerated_damage",
+   "expected": "investigate",
+   "got": "investigate"
+  },
+  "C037": {
+   "scenario": "honest",
+   "expected": "approve",
+   "got": "approve"
+  },
+  "C038": {
+   "scenario": "honest",
+   "expected": "approve",
+   "got": "approve"
+  },
+  "C039": {
+   "scenario": "honest",
+   "expected": "approve",
+   "got": "investigate"
+  },
+  "C040": {
+   "scenario": "duplicate_invoice",
+   "expected": "investigate",
+   "got": "investigate"
+  },
+  "C041": {
+   "scenario": "honest",
+   "expected": "approve",
+   "got": "approve"
+  },
+  "C043": {
+   "scenario": "honest",
+   "expected": "approve",
+   "got": "approve"
+  },
+  "C044": {
+   "scenario": "honest",
+   "expected": "approve",
+   "got": "approve"
+  },
+  "C045": {
+   "scenario": "excluded_tyre",
+   "expected": "deny",
+   "got": "deny"
+  },
+  "C046": {
+   "scenario": "honest",
+   "expected": "approve",
+   "got": "approve"
+  },
+  "C048": {
+   "scenario": "honest",
+   "expected": "approve",
+   "got": "investigate"
+  },
+  "C049": {
+   "scenario": "honest",
+   "expected": "approve",
+   "got": "approve"
+  },
+  "C050": {
+   "scenario": "excluded_tyre",
+   "expected": "deny",
+   "got": "deny"
+  },
+  "C051": {
+   "scenario": "inflated_estimate",
+   "expected": "investigate",
+   "got": "investigate"
+  },
+  "C052": {
+   "scenario": "honest",
+   "expected": "approve",
+   "got": "approve"
+  },
+  "C055": {
+   "scenario": "honest",
+   "expected": "approve",
+   "got": "approve"
+  },
+  "C056": {
+   "scenario": "new_policy",
+   "expected": "investigate",
+   "got": "investigate"
+  },
+  "C058": {
+   "scenario": "honest",
+   "expected": "approve",
+   "got": "investigate"
+  }
+ }
+}

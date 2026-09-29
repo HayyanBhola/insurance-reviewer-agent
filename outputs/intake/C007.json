@@ -1,0 +1,74 @@
+{
+  "claim_id": "C007",
+  "claim_form": {
+    "claim_number": "C007",
+    "date_submitted": "2026-04-15",
+    "claimant_name": "Ayesha Mirza",
+    "cnic": "23238-7377459-5",
+    "phone": "0335-3728882",
+    "policy_number": "PMC-2026-10001",
+    "vehicle": "Honda City",
+    "registration_number": "FDA-55-3532",
+    "incident_date": "2026-04-14",
+    "location": "Jaranwala Road, Faisalabad",
+    "description": "The front tire burst while driving and went completely flat.",
+    "amount_claimed": 22500.0
+  },
+  "estimate": {
+    "workshop": "City Car Care",
+    "invoice_number": "INV-835911",
+    "estimate_date": "2026-04-14",
+    "customer_name": "Ayesha Mirza",
+    "vehicle": "Honda City",
+    "registration_number": "FDA-55-3532",
+    "line_items": [
+      {
+        "item": "Front Tire - replacement / repair parts",
+        "amount": 11700.0
+      },
+      {
+        "item": "Labour charges",
+        "amount": 10800.0
+      }
+    ],
+    "total": 22500.0
+  },
+  "photo": {
+    "is_vehicle_photo": true,
+    "all_damages": [
+      {
+        "part": "front left fender",
+        "damage_type": "crack",
+        "severity": "severe"
+      },
+      {
+        "part": "front left fender",
+        "damage_type": "dent",
+        "severity": "severe"
+      },
+      {
+        "part": "left rocker panel / lower side sill",
+        "damage_type": "crack",
+        "severity": "severe"
+      },
+      {
+        "part": "left front tire",
+        "damage_type": "tire flat",
+        "severity": "severe"
+      },
+      {
+        "part": "front left headlight",
+        "damage_type": "lamp broken",
+        "severity": "moderate"
+      }
+    ],
+    "damaged_part": "front left fender",
+    "damage_type": "crack",
+    "severity": "severe",
+    "description": "Severe rusted-through and torn damage is visible around the front left fender and lower side sill. The front left tire is flat, and the front left headlight lens appears damaged.",
+    "image_quality_ok": true
+  },
+  "issues": [],
+  "missing_fields": [],
+  "ready_for_review": true
+}

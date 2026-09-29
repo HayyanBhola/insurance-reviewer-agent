@@ -1,0 +1,54 @@
+{
+  "claim_id": "C054",
+  "claim_form": {
+    "claim_number": "C054",
+    "date_submitted": "2026-07-01",
+    "claimant_name": "Rabia Khan",
+    "cnic": "67963-5666692-3",
+    "phone": "0346-9249789",
+    "policy_number": "PMC-2026-10036",
+    "vehicle": "Suzuki Cultus",
+    "registration_number": "FDA-70-5800",
+    "incident_date": "2026-06-27",
+    "location": "Canal Road, Faisalabad",
+    "description": "A stone hit the car and the rear side window shattered. The damage is serious.",
+    "amount_claimed": 111900.0
+  },
+  "estimate": {
+    "workshop": "City Car Care",
+    "invoice_number": "INV-436653",
+    "estimate_date": "2026-06-27",
+    "customer_name": "Rabia Khan",
+    "vehicle": "Suzuki Cultus (FDA-70-5800)",
+    "registration_number": "FDA-70-5800",
+    "line_items": [
+      {
+        "item": "Rear Side Window - replacement / repair parts",
+        "amount": 64000.0
+      },
+      {
+        "item": "Labour charges",
+        "amount": 47900.0
+      }
+    ],
+    "total": 111900.0
+  },
+  "photo": {
+    "is_vehicle_photo": true,
+    "all_damages": [
+      {
+        "part": "rear side window",
+        "damage_type": "glass shatter",
+        "severity": "severe"
+      }
+    ],
+    "damaged_part": "rear side window",
+    "damage_type": "glass shatter",
+    "severity": "severe",
+    "description": "The rear side window is shattered with a large hole in the glass. The surrounding vehicle body appears intact in this view.",
+    "image_quality_ok": true
+  },
+  "issues": [],
+  "missing_fields": [],
+  "ready_for_review": true
+}

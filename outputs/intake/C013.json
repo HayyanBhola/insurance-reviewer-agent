@@ -1,0 +1,63 @@
+{
+  "claim_id": "C013",
+  "claim_form": {
+    "claim_number": "C013",
+    "date_submitted": "2026-03-15",
+    "claimant_name": "Nida Chaudhry",
+    "cnic": "38183-8215376-8",
+    "phone": "0316-6686328",
+    "policy_number": "PMC-2026-10053",
+    "vehicle": "Kia Sportage",
+    "registration_number": "RIR-61-6915",
+    "incident_date": "2026-03-10",
+    "location": "Saddar, Rawalpindi",
+    "description": "While parking, another vehicle scraped the front bumper, leaving\nnoticeable scratches on the paint.",
+    "amount_claimed": 37500.0
+  },
+  "estimate": {
+    "workshop": "City Car Care",
+    "invoice_number": "INV-547494",
+    "estimate_date": "2026-03-12",
+    "customer_name": "Nida Chaudhry",
+    "vehicle": "Kia Sportage (RIR-61-6915)",
+    "registration_number": "RIR-61-6915",
+    "line_items": [
+      {
+        "item": "Front Bumper - replacement / repair parts",
+        "amount": 20000.0
+      },
+      {
+        "item": "Front Bumper - denting & painting",
+        "amount": 5900.0
+      },
+      {
+        "item": "Labour charges",
+        "amount": 11600.0
+      }
+    ],
+    "total": 37500.0
+  },
+  "photo": {
+    "is_vehicle_photo": true,
+    "all_damages": [
+      {
+        "part": "front bumper",
+        "damage_type": "crack",
+        "severity": "moderate"
+      },
+      {
+        "part": "front bumper",
+        "damage_type": "scratch",
+        "severity": "moderate"
+      }
+    ],
+    "damaged_part": "front bumper",
+    "damage_type": "crack",
+    "severity": "moderate",
+    "description": "The front bumper shows a vertical crack near the corner and several scraped paint marks. The headlight and indicator visible in the photo do not show obvious damage.",
+    "image_quality_ok": true
+  },
+  "issues": [],
+  "missing_fields": [],
+  "ready_for_review": true
+}

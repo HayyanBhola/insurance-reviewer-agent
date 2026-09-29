@@ -143,6 +143,41 @@ def structured_call(schema, messages, openai_model=None):
     raise error
 
 
+AI_CHECK_VERSIONS = ("v1", "v2")
+
+
+def checks_version():
+    """Which AI check prompts to use (AI_CHECKS in .env).
+    v1 = original coverage + story checks (kept for comparison)
+    v2 = coverage judged by exclusions; story check flags only exaggeration (chosen 2026-09-29)"""
+    v = os.getenv("AI_CHECKS", "v2")
+    if v not in AI_CHECK_VERSIONS:
+        raise ValueError(f"AI_CHECKS must be one of {AI_CHECK_VERSIONS}, got {v!r}")
+    return v
+
+
+def switch(name, default):
+    """On/off settings in .env (on/off, true/false, 1/0)."""
+    v = os.getenv(name, default).strip().lower()
+    if v in ("on", "true", "1", "yes"):
+        return True
+    if v in ("off", "false", "0", "no"):
+        return False
+    raise ValueError(f"{name} must be on or off, got {v!r}")
+
+
+def ai_escalation():
+    """AI_ESCALATION=on: the decision writer may turn approve into investigate (original).
+    off: the AI only writes the note; the rules alone decide the recommendation."""
+    return switch("AI_ESCALATION", "on")
+
+
+def tyre_review():
+    """TYRE_REVIEW=on: if the claimant describes only a tyre problem but the photo also shows
+    body damage, a human must check whether that damage is from this incident (needs_review)."""
+    return switch("TYRE_REVIEW", "off")
+
+
 def out_of_credit(exc):
     """OpenAI also answers 429 when the account has no credit left; retrying can't fix that."""
     text = str(exc).lower()

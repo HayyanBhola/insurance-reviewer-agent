@@ -1,0 +1,73 @@
+{
+  "claim_id": "C057",
+  "claim_form": {
+    "claim_number": "C057",
+    "date_submitted": "2026-06-07",
+    "claimant_name": "Tariq Mirza",
+    "cnic": "91381-5204819-3",
+    "phone": "0300-6183033",
+    "policy_number": "PMC-2026-10046",
+    "vehicle": "Kia Sportage",
+    "registration_number": "LE-14-9595",
+    "incident_date": "2026-06-05",
+    "location": "Model Town, Lahore",
+    "description": "Another car hit my vehicle, causing a serious dent on the hood.",
+    "amount_claimed": 223700.0
+  },
+  "estimate": {
+    "workshop": "Khan Denting & Painting",
+    "invoice_number": "INV-237795",
+    "estimate_date": "2026-06-05",
+    "customer_name": "Tariq Mirza",
+    "vehicle": "Kia Sportage",
+    "registration_number": "LE-14-9595",
+    "line_items": [
+      {
+        "item": "Hood - replacement / repair parts",
+        "amount": 130200.0
+      },
+      {
+        "item": "Hood - denting & painting",
+        "amount": 33300.0
+      },
+      {
+        "item": "Labour charges",
+        "amount": 60200.0
+      }
+    ],
+    "total": 223700.0
+  },
+  "photo": {
+    "is_vehicle_photo": true,
+    "all_damages": [
+      {
+        "part": "front hood",
+        "damage_type": "dent",
+        "severity": "moderate"
+      },
+      {
+        "part": "front hood",
+        "damage_type": "scratch",
+        "severity": "moderate"
+      },
+      {
+        "part": "front left headlight",
+        "damage_type": "lamp broken",
+        "severity": "moderate"
+      },
+      {
+        "part": "front bumper",
+        "damage_type": "crack",
+        "severity": "severe"
+      }
+    ],
+    "damaged_part": "front bumper",
+    "damage_type": "crack",
+    "severity": "severe",
+    "description": "The front bumper is broken/open with a visible split area. The front hood above it is dented and scraped, and the front left headlight appears damaged.",
+    "image_quality_ok": true
+  },
+  "issues": [],
+  "missing_fields": [],
+  "ready_for_review": true
+}

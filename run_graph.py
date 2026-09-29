@@ -8,6 +8,8 @@ Run the Phase 4 LangGraph workflow.
   python run_graph.py C002 --status            -> where is this claim? (saved state + audit trail)
   python run_graph.py --dev [--limit 5] [--llm] -> all dev claims, auto-accepting, with a score
   python run_graph.py --draw                    -> save the graph diagram (Mermaid) to outputs/
+  python run_graph.py --dev --llm --save NAME   -> also save the 48 decisions to outputs/graph_runs/NAME.json
+  python run_graph.py --compare-runs OLD NEW    -> compare two saved runs with the rule decided in advance
 
 Paused claims are saved in outputs/checkpoints.sqlite, so you can close the terminal
 and resume a claim later: that is what the checkpointer is for.
@@ -19,7 +21,6 @@ import sqlite3
 import sys
 import time
 import warnings
-from collections import Counter
 from pathlib import Path
 
 warnings.filterwarnings("ignore")
@@ -114,7 +115,108 @@ def why(s):
     return "\n            ".join(parts) or "no flags (rules recommended approve)"
 
 
-def run_batch(limit, use_llm):
+RUNS = Path("outputs/graph_runs")
+FRAUD_SCENARIOS = {"exaggerated_damage", "inflated_estimate", "reused_photo", "duplicate_invoice",
+                   "new_policy", "lapsed_policy", "third_party_only"}
+
+
+def keep_rule(old, new):
+    """Decided BEFORE seeing the new run. A change is kept only if ALL are true.
+    old/new: {claim_id: {"scenario", "expected", "got"}} over the same claims."""
+    def correct(rows, pick=lambda r: True):
+        return sum(r["got"] == r["expected"] for r in rows.values() if pick(r))
+
+    def money_out(rows):  # approved although it should not be: the costly mistake
+        return sum(r["got"] == "approve" and r["expected"] != "approve" for r in rows.values())
+
+    checks = [("honest claims: more correct",
+               correct(new, lambda r: r["scenario"] == "honest") > correct(old, lambda r: r["scenario"] == "honest"))]
+    for sc in sorted(FRAUD_SCENARIOS):
+        checks.append((f"{sc}: not worse",
+                       correct(new, lambda r, sc=sc: r["scenario"] == sc) >= correct(old, lambda r, sc=sc: r["scenario"] == sc)))
+    checks.append(("excluded_tyre: not worse",
+                   correct(new, lambda r: r["scenario"] == "excluded_tyre") >= correct(old, lambda r: r["scenario"] == "excluded_tyre")))
+    checks.append(("no more wrong approvals (money out)", money_out(new) <= money_out(old)))
+    return all(ok for _, ok in checks), checks
+
+
+def _load_run(name):
+    path = RUNS / f"{name}.json"
+    if not path.exists():
+        saved = sorted(p.stem for p in RUNS.glob("*.json")) if RUNS.exists() else []
+        raise SystemExit(f"No saved run called '{name}'. Saved runs: {saved or 'none'}")
+    return json.loads(path.read_text(encoding="utf-8"))["rows"]
+
+
+def keep_rule_money_out(old, new):
+    """For TYRE_REVIEW (decided before the run): fewer wrong approvals, no fraud scenario worse,
+    at most 2 more honest claims held up."""
+    def money_out(rows):
+        return sum(r["got"] == "approve" and r["expected"] != "approve" for r in rows.values())
+
+    def correct(rows, sc):
+        return sum(r["got"] == r["expected"] for r in rows.values() if r["scenario"] == sc)
+
+    def held(rows):
+        return sum(r["scenario"] == "honest" and r["got"] != "approve" for r in rows.values())
+
+    checks = [("fewer wrong approvals (money out)", money_out(new) < money_out(old))]
+    for sc in sorted(FRAUD_SCENARIOS):
+        checks.append((f"{sc}: not worse", correct(new, sc) >= correct(old, sc)))
+    checks.append((f"honest held up: at most 2 more ({held(old)} -> {held(new)})", held(new) - held(old) <= 2))
+    return all(ok for _, ok in checks), checks
+
+
+RULES = {"honest": keep_rule, "money_out": keep_rule_money_out}
+
+
+def compare_runs(old_name, new_name, rule="honest"):
+    old, new = _load_run(old_name), _load_run(new_name)
+    dev = {c for c, t in TRUTH.items() if t["split"] == "dev"}
+    missing = {name: sorted(dev - set(rows)) for name, rows in ((old_name, old), (new_name, new))}
+    if any(missing.values()):
+        # a claim that failed could be exactly the one a change breaks: no verdict on a partial run
+        for name, m in missing.items():
+            if m:
+                print(f"Run '{name}' is missing {len(m)} dev claim(s): {m}")
+        raise SystemExit("No verdict: both runs must cover all dev claims. Re-run the incomplete one "
+                         "(answers that already came back are cached, so it is cheap).")
+    common = sorted(dev)
+    old, new = {c: old[c] for c in common}, {c: new[c] for c in common}
+    print(f"\n{'scenario':<20}{old_name:>16}{new_name:>16}")
+    for sc in sorted({r["scenario"] for r in old.values()}):
+        a = [r for r in old.values() if r["scenario"] == sc]
+        b = [r for r in new.values() if r["scenario"] == sc]
+        print(f"{sc:<20}{sum(r['got'] == r['expected'] for r in a):>13}/{len(a):<2}"
+              f"{sum(r['got'] == r['expected'] for r in b):>13}/{len(b):<2}")
+    print(f"{'TOTAL':<20}{sum(r['got'] == r['expected'] for r in old.values()):>13}/{len(old):<2}"
+          f"{sum(r['got'] == r['expected'] for r in new.values()):>13}/{len(new):<2}")
+    changed = [c for c in common if old[c]["got"] != new[c]["got"]]
+    if changed:
+        print("\nChanged decisions:")
+        for c in changed:
+            mark = "fixed" if new[c]["got"] == new[c]["expected"] else (
+                "BROKE" if old[c]["got"] == old[c]["expected"] else "still wrong")
+            print(f"  {c} {old[c]['scenario']:<19} expected {old[c]['expected']:<11} "
+                  f"{old[c]['got']:>11} -> {new[c]['got']:<11} {mark}")
+    keep, checks = RULES[rule](old, new)
+    print(f"\nRule '{rule}', decided in advance (all must pass):")
+    for text, ok in checks:
+        print(f"  [{'PASS' if ok else 'FAIL'}] {text}")
+    print(f"\nVERDICT: {'KEEP the change' if keep else 'REJECT the change'}")
+    return keep
+
+
+def run_batch(limit, use_llm, save=None):
+    import os
+    from llm import checks_version
+    from llm import ai_escalation, tyre_review
+    versions = {"ai_checks": checks_version() if use_llm else "rules-only",
+                "photo_prompt": os.getenv("PHOTO_PROMPT", "v1"),
+                "ai_escalation": ai_escalation(), "tyre_review": tyre_review()}
+    print(f"AI checks: {versions['ai_checks']} | photo prompt: {versions['photo_prompt']} | "
+          f"AI escalation: {'on' if versions['ai_escalation'] else 'off'} | "
+          f"tyre review: {'on' if versions['tyre_review'] else 'off'}")
     graph = build_graph(InMemorySaver())
     ids = [c for c, t in TRUTH.items() if t["split"] == "dev"][:limit]
     rows, lat, start = [], [], time.time()
@@ -147,6 +249,15 @@ def run_batch(limit, use_llm):
     n = len(rows)
     if not n:
         return
+    if save:
+        RUNS.mkdir(parents=True, exist_ok=True)
+        complete = n == len(ids)
+        (RUNS / f"{save}.json").write_text(json.dumps({
+            "label": save, "use_llm": use_llm, "models": list(usage), "complete": complete, **versions,
+            "rows": {r["cid"]: {k: r[k] for k in ("scenario", "expected", "got")} for r in rows}},
+            indent=1), encoding="utf-8")
+        print(f"Saved {n} decisions to {RUNS / (save + '.json')}"
+              + ("" if complete else "  (INCOMPLETE: some claims failed)"))
     ok = sum(r["got"] == r["expected"] for r in rows)
     print(f"\nProcessed {n} claims through the graph in {time.time() - start:.0f}s")
     print(f"Decision accuracy: {ok}/{n} = {ok / n:.0%}")
@@ -178,6 +289,10 @@ def main():
     ap.add_argument("--dev", action="store_true")
     ap.add_argument("--limit", type=int)
     ap.add_argument("--draw", action="store_true")
+    ap.add_argument("--save", help="with --dev: save the decisions under this name")
+    ap.add_argument("--compare-runs", nargs=2, metavar=("OLD", "NEW"))
+    ap.add_argument("--rule", choices=["honest", "money_out"], default="honest",
+                    help="which keep rule --compare-runs applies")
     args = ap.parse_args()
 
     if args.draw:
@@ -185,15 +300,18 @@ def main():
         Path("outputs/claim_graph.mmd").write_text(build_graph().get_graph().draw_mermaid(), encoding="utf-8")
         print("Saved outputs/claim_graph.mmd (paste it into https://mermaid.live to see the diagram)")
         return
+    if args.compare_runs:
+        compare_runs(*args.compare_runs, rule=args.rule)
+        return
     if args.dev:
-        run_batch(args.limit, args.llm)
+        run_batch(args.limit, args.llm, save=args.save)
         return
     if not args.claim_id:
         ap.print_help()
         return
 
     cid = args.claim_id.upper()
-    if TRUTH.get(cid, {}).get("split") == "test":
+    if TRUTH.get(cid, {}).get("split", "dev") != "dev":
         sys.exit(f"{cid} is a TEST claim. Keep it for the final evaluation.")
     graph = persistent_graph()
     cfg = config_for(cid, args.llm)

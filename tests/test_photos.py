@@ -43,8 +43,9 @@ def test_phantom_damage_cannot_raise_the_price_ceiling():
     from evidence_agent import cost_check
     from schemas import GroundedPhotoAssessment
     truth = json.loads(Path("data/ground_truth.json").read_text(encoding="utf-8"))
-    cid, t = next((c, t) for c, t in truth.items()
-                  if t["scenario"] == "inflated_estimate" and (ROOT / f"outputs/intake/{c}.json").exists())
+    cid, t = next((c, t) for c, t in truth.items()   # dev claims only: test claims are off limits
+                  if t["split"] == "dev" and t["scenario"] == "inflated_estimate"
+                  and (ROOT / f"outputs/intake/{c}.json").exists())
     real = t["true_damage"]
     r = load_intake(cid)
 

@@ -1,0 +1,68 @@
+{
+  "claim_id": "C016",
+  "claim_form": {
+    "claim_number": "C016",
+    "date_submitted": "2026-01-18",
+    "claimant_name": "Rabia Iqbal",
+    "cnic": "52906-4551070-8",
+    "phone": "0325-7360682",
+    "policy_number": "PMC-2026-10024",
+    "vehicle": "Toyota Yaris",
+    "registration_number": "FDA-63-4233",
+    "incident_date": "2026-01-14",
+    "location": "D Ground, Faisalabad",
+    "description": "Another car hit my vehicle, causing a serious dent on the rear bumper.",
+    "amount_claimed": 867100.0
+  },
+  "estimate": {
+    "workshop": "Ittefaq Autos",
+    "invoice_number": "INV-120324",
+    "estimate_date": "2026-01-14",
+    "customer_name": "Rabia Iqbal",
+    "vehicle": "Toyota Yaris (FDA-63-4233)",
+    "registration_number": "FDA-63-4233",
+    "line_items": [
+      {
+        "item": "Rear Bumper - replacement / repair parts",
+        "amount": 520200.0
+      },
+      {
+        "item": "Rear Bumper - denting & painting",
+        "amount": 132200.0
+      },
+      {
+        "item": "Labour charges",
+        "amount": 214700.0
+      }
+    ],
+    "total": 867100.0
+  },
+  "photo": {
+    "is_vehicle_photo": true,
+    "all_damages": [
+      {
+        "part": "rear bumper",
+        "damage_type": "dent",
+        "severity": "severe"
+      },
+      {
+        "part": "rear bumper",
+        "damage_type": "scratch",
+        "severity": "moderate"
+      },
+      {
+        "part": "left tail light",
+        "damage_type": "lamp broken",
+        "severity": "moderate"
+      }
+    ],
+    "damaged_part": "rear bumper",
+    "damage_type": "dent",
+    "severity": "severe",
+    "description": "The rear bumper is heavily deformed and scraped, especially on the left side. The left tail light housing also appears damaged.",
+    "image_quality_ok": true
+  },
+  "issues": [],
+  "missing_fields": [],
+  "ready_for_review": true
+}

@@ -1,3 +1,5 @@
 *.pdf binary
 *.jpg binary
 *.png binary
+data/labels_test2.csv -text
+data/labels_test2_freeze.json -text
